@@ -5,11 +5,17 @@ public class Main
         Container container = new Container();
         container.count += 7843;
 
+        System.out.println(sumDigits(1234567890));
+
     }
 
-    public Integer sumDigits(Integer number)
+    public static Integer sumDigits(Integer number)
     {
-        //@TODO: write code here
-        return 0;
+        int sum = 0;
+        String num = Integer.toString(number);
+        for (int i = 0 ; i < num.length() ; i++)
+            sum += Character.getNumericValue(num.charAt(i));
+
+        return sum;
     }
 }
