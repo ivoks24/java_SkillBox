@@ -1,3 +1,4 @@
+import static java.lang.Integer.parseInt;
 
 public class Loader
 {
@@ -5,6 +6,17 @@ public class Loader
     {
         String text = "Вася заработал 5000 рублей, Петя - 7563 рубля, а Маша - 30000 рублей";
 
-        System.out.println(text);
+        text = text.replaceAll("[^0-9\\s]+", "").trim();
+        text = text.replaceAll("\\s+", " ");
+
+        String[] array = text.split(" ");
+        int sum = 0;
+
+        for (String s : array) {
+
+            sum += parseInt(s);
+        }
+
+        System.out.println(sum);
     }
 }
