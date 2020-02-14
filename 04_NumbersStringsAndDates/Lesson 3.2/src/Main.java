@@ -8,29 +8,34 @@ public class Main {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         int boxes = Integer.parseInt(reader.readLine());
 
-        int trucks = (int)Math.ceil((double) boxes/12/27);
-        int containers = (int)Math.ceil((double) boxes/27);
+        int BOXES_IN_THE_CONTAINER = 5;
+        int BOXES_IN_THE_TRUCK = 2 * BOXES_IN_THE_CONTAINER;
 
-        for (int i = 1; i <= trucks; i++) {
-            System.out.println("Грузовик " + i + ":");
-            int restCont = 0; int lastTruck = i;
+        boolean writeContainer = false;
+        boolean writeTruck = false;
 
-            if (trucks == i) {
-                restCont = containers%12;
-                lastTruck = lastTruck - 1;
+        for (int i = 1; i <= boxes; i++) {
+
+            if (writeTruck || i == 1) {
+
+                System.out.println("Truck " + (i/BOXES_IN_THE_TRUCK + 1) + ":");
+                writeTruck = false;
             }
 
-            for (int k = 1 + (i - 1)*12; k <= lastTruck*12 + restCont; k++) {
-                System.out.println("Контейнер " + k + ":");
-                int restBoxes = 0; int lastCont = k;
+            if (writeContainer || i == 1) {
 
-                if (containers == k) {
-                    restBoxes = boxes%27;
-                    lastCont = lastCont - 1;
-                }
-                for (int b = 1 + (k - 1)*27; b <= lastCont*27 + restBoxes; b++) {
-                    System.out.println("Ящик " + b);
-                }
+                System.out.println("\t container " + (i/BOXES_IN_THE_CONTAINER + 1) + ":");
+                writeContainer = false;
+            }
+
+            System.out.println("\t\t box " + i);
+
+            if (i % BOXES_IN_THE_TRUCK == 0) {
+                writeTruck = true;
+            }
+
+            if (i % BOXES_IN_THE_CONTAINER == 0) {
+                writeContainer = true;
             }
         }
     }
