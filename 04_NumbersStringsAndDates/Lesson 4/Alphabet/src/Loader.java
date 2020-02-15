@@ -1,12 +1,12 @@
 public class Loader {
     public static void main(String[] args) {
 
-        String alphabet = "Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Xx Yy Zz";
+        for (char i = 'A'; i <= 'Z'; i++) {
 
-        for (int i = 0; i < alphabet.length(); i++) {
+            int a_z = 'a' - 'A';
 
-            if ((int) alphabet.charAt(i) == 32) continue;
-            System.out.println(alphabet.charAt(i) + " - " + (int) alphabet.charAt(i));
+            System.out.println(i + " - " + (int) i);
+            System.out.println((char) (i + a_z) + " - " + (i + a_z));
 
         }
     }

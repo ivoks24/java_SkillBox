@@ -2,27 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="74551ef3-e027-45c0-ba92-5e70ee5f73c4" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/../Lesson 4/FIO/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lesson 4/FIO/out/production/FIO/Loader.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lesson 4/FIO/src/Loader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lesson 5/English text/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lesson 5/English text/src/Loader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lesson 5/FIO/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lesson 5/Phone number/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lesson 5/Phone number/src/Loader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/StringExperiments/Loader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Loader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Loader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Alphabet/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../Lesson 2/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Alphabet/out/production/Alphabet/Loader.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Lesson 4/Alphabet/out/production/Alphabet/Loader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Alphabet/src/Loader.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lesson 4/Alphabet/src/Loader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Experiments/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../Lesson 3/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Experiments/out/production/Experiments/Loader.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Lesson 2/out/production/Experiments/Loader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Experiments/src/Loader.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lesson 2/src/Loader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Transportation/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../Lesson 4/Alphabet/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Transportation/out/production/Transportation/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Lesson 3/out/production/Transportation/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Transportation/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lesson 3/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IntegerExperiments/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../IntegerExperiments/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lesson 3.2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lesson 3.2/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
