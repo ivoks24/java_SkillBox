@@ -1,4 +1,5 @@
 import java.text.DateFormat;
+import java.text.MessageFormat;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
@@ -14,7 +15,9 @@ public class Loader {
         int i = 0;
 
         for (;;) {
-            System.out.println(i++ + " - " + dateFormat.format(birthday.getTime()) + " - " + DAY_WEEK.format(birthday.getTime()));
+            System.out.printf("%2d - " + dateFormat.format(birthday.getTime()) + " - %tA%n", i++, birthday.getTime());
+            //System.out.println(MessageFormat.format("{0} - {1} - {2}",
+            //       i, dateFormat.format(birthday.getTime()), DAY_WEEK.format(birthday.getTime())));
             birthday.add(Calendar.YEAR, 1);
             if (birthday.after(now)) {
                 break;
