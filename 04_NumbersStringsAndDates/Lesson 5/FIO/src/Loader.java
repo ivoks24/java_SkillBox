@@ -8,7 +8,7 @@ public class Loader {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
         System.out.println("Please enter your name: ");
-        String[] FIO = reader.readLine().replaceAll("^[A-Z[a-z]А-Я[a-я]]\\s+", "")
+        String[] FIO = reader.readLine().replaceAll("^[A-Za-zА-Яa-я]\\s+", "")
                 .trim().replaceAll("\\s+", " ").split(" ");
 
         if (FIO.length > 2) {
