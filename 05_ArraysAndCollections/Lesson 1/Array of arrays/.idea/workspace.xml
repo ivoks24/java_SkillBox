@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="52f4e6cd-8b98-4555-82ea-3cb39eac6aa1" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1Xo3OGscdzxtaKhMDzu8QRrMZgr" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Loader" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Loader" />
+      <module name="Array of arrays" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Loader" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="52f4e6cd-8b98-4555-82ea-3cb39eac6aa1" name="Default Changelist" comment="" />
+      <created>1581698585112</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1581698585112</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="421" y="116" key="FileChooserDialogImpl" timestamp="1582130304115">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="421" y="116" key="FileChooserDialogImpl/0.0.1280.720@0.0.1280.720" timestamp="1582130304115" />
+    <state width="1238" height="176" key="GridCell.Tab.0.bottom" timestamp="1582202441988">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state width="1238" height="176" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1582202441988" />
+    <state width="1238" height="176" key="GridCell.Tab.0.center" timestamp="1582202441987">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state width="1238" height="176" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1582202441987" />
+    <state width="1238" height="176" key="GridCell.Tab.0.left" timestamp="1582202441987">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state width="1238" height="176" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1582202441987" />
+    <state width="1238" height="176" key="GridCell.Tab.0.right" timestamp="1582202441987">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state width="1238" height="176" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1582202441987" />
+    <state x="65" y="0" key="new project wizard" timestamp="1581702846984">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="65" y="0" key="new project wizard/0.0.1280.720@0.0.1280.720" timestamp="1581702846984" />
+  </component>
+</project>
