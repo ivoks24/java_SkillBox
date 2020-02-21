@@ -19,9 +19,10 @@ public class Loader {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         ArrayList<String> listOfCases = new ArrayList<>();
 
-        System.out.println(" LIST OF CASES");
+        System.out.println(" --- LIST OF CASES --- ");
 
         for (;;) {
+            System.out.println("type the command: ");
             line = reader.readLine().trim().replaceAll("\\s+", " ");
             hasLineNumber = false;
 
@@ -37,6 +38,7 @@ public class Loader {
             command = array[0];
 
             if (array.length == 1) {
+                System.out.println(" - incorrect input - ");
                 continue;
             }
 
@@ -49,35 +51,37 @@ public class Loader {
             } catch (NumberFormatException e) {
                 if (command.equals("ADD") && array.length == 2) {
                     listOfCases.add(array[1]);
-                    System.out.println("- added -");
+                    System.out.println(" - added - ");
                     continue;
                 }
                 if (command.equals("ADD") && array.length == 3) {
                     listOfCases.add(array[1] + " " + array[2]);
-                    System.out.println("- added -");
+                    System.out.println(" - added - ");
                     continue;
                 }
             }
 
             if (array[0].equals("DELETE") && array.length == 2 && hasLineNumber) {
                 listOfCases.remove(lineNumber);
-                System.out.println("- deleted -");
+                System.out.println(" - deleted - ");
                 continue;
             }
 
             if (array[0].equals("EDIT") && array.length == 3 && hasLineNumber) {
                 listOfCases.set(lineNumber, array[2]);
-                System.out.println("- edited -");
+                System.out.println(" - edited - ");
                 continue;
             }
 
             if (command.equals("ADD") && array.length == 3 && hasLineNumber) {
                 listOfCases.add(lineNumber, array[2]);
-                System.out.println("- added -");
+                System.out.println(" - added - ");
             } else if (command.equals("ADD") && array.length == 3) {
                 listOfCases.add(array[2]);
-                System.out.println("- added -");
+                System.out.println(" - added - ");
+                continue;
             }
+            System.out.println(" - incorrect input - ");
 
         }
     }
