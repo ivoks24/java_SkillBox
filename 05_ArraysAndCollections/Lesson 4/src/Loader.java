@@ -24,23 +24,23 @@ public class Loader {
             }
 
             if (handbook.containsKey(record)) {
-                System.out.println(" name: " + handbook.get(record));
+                System.out.println(" phone: " + handbook.get(record));
                 continue;
             }
 
             if (handbook.containsValue(record)) {
-                findName(handbook, record);
+                findPhone(handbook, record);
                 continue;
             }
 
             if (keyOrV) {
                 System.out.print("Type the phone number for this name: ");
                 String phoneNumber = scanner.nextLine().trim();
-                handbook.put(phoneNumber, record);
+                handbook.put(record, phoneNumber);
             } else {
                 System.out.print("Type a name for this phone number: ");
                 String name = scanner.nextLine().trim();
-                handbook.put(record, name);
+                handbook.put(name, record);
             }
         }
     }
@@ -52,11 +52,11 @@ public class Loader {
         }
     }
 
-    private static void findName(Map<String, String> map, String record) {
+    private static void findPhone(Map<String, String> map, String record) {
 
         for (String key : map.keySet()) {
             if (map.get(key).equals(record)) {
-                System.out.println(" phone: " + key);
+                System.out.println(" name: " + key);
             }
         }
     }
