@@ -18,6 +18,8 @@ public class Loader {
         long duration;
         boolean availability;
 
+        Collections.sort(arrayList);
+
         for (;;) {
             System.out.print("Enter the car number: ");
             number = scanner.nextLine();
@@ -31,7 +33,6 @@ public class Loader {
                 System.out.println("\nПоиск перебором: номер не найден, поиск занял " + duration + "нс.");
             }
 
-            Collections.sort(arrayList);
             start = System.nanoTime();
             int index = Collections.binarySearch(arrayList, number);
             duration = System.nanoTime() - start;
