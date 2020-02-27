@@ -6,19 +6,21 @@ import java.util.GregorianCalendar;
 
 public class DepositoryCurrentAccount extends Account{
 
-    private Calendar openDate;
+    private Calendar openDate = new GregorianCalendar();
 
+@Override
     public void putMoney(double money) {
         setOpenDate();
         super.putMoney(money);
     }
 
-    public void getMoney(int money) {
+@Override
+    public void getMoney(double money) {
 
         Calendar now = new GregorianCalendar();
         openDate.add(Calendar.MONTH, 1);
 
-        if (openDate.before(now)) {
+        if (openDate.before(now) ) {
             super.getMoney(money);
         } else {
             System.out.println("Operation is not possible!");

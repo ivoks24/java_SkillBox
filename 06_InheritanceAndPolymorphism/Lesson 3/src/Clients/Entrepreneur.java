@@ -2,6 +2,7 @@ package Clients;
 
 public class Entrepreneur extends Client {
 
+@Override
     public void setMoney(double money) {
 
         double commission = money * 0.005;
