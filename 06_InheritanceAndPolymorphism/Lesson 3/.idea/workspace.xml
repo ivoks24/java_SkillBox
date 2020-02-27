@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="92702e9f-7f9d-40c5-85b7-9568434a8079" name="Default Changelist" comment="" />
+    <list default="true" id="92702e9f-7f9d-40c5-85b7-9568434a8079" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,7 +16,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
   <component name="ProjectId" id="1XzG3YD7fUhBJuYthJMyaXA5IO7" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -22,6 +28,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunManager">
@@ -64,25 +71,33 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="421" y="116" key="FileChooserDialogImpl" timestamp="1582042677371">
+    <state x="446" y="70" key="#com.intellij.ide.util.MemberChooser" timestamp="1582730121671">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="421" y="116" key="FileChooserDialogImpl/0.0.1280.720@0.0.1280.720" timestamp="1582042677371" />
-    <state width="1238" height="176" key="GridCell.Tab.0.bottom" timestamp="1582049367153">
+    <state x="446" y="70" key="#com.intellij.ide.util.MemberChooser/0.0.1280.720@0.0.1280.720" timestamp="1582730121671" />
+    <state x="209" y="0" key="CommitChangelistDialog2" timestamp="1582808931496">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1238" height="176" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1582049367153" />
-    <state width="1238" height="176" key="GridCell.Tab.0.center" timestamp="1582049367153">
+    <state x="209" y="0" key="CommitChangelistDialog2/0.0.1280.720@0.0.1280.720" timestamp="1582808931496" />
+    <state x="421" y="116" key="FileChooserDialogImpl" timestamp="1582733720759">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1238" height="176" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1582049367153" />
-    <state width="1238" height="176" key="GridCell.Tab.0.left" timestamp="1582049367153">
+    <state x="421" y="116" key="FileChooserDialogImpl/0.0.1280.720@0.0.1280.720" timestamp="1582733720759" />
+    <state width="1237" height="176" key="GridCell.Tab.0.bottom" timestamp="1582808860582">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1238" height="176" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1582049367153" />
-    <state width="1238" height="176" key="GridCell.Tab.0.right" timestamp="1582049367153">
+    <state width="1237" height="176" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1582808860582" />
+    <state width="1237" height="176" key="GridCell.Tab.0.center" timestamp="1582808860581">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1238" height="176" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1582049367153" />
+    <state width="1237" height="176" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1582808860581" />
+    <state width="1237" height="176" key="GridCell.Tab.0.left" timestamp="1582808860579">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state width="1237" height="176" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1582808860579" />
+    <state width="1237" height="176" key="GridCell.Tab.0.right" timestamp="1582808860582">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state width="1237" height="176" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1582808860582" />
   </component>
 </project>

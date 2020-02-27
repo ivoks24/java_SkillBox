@@ -10,8 +10,8 @@ public abstract class Client {
         paymentAccount = 1_000_000 + (int) (Math.random() * 9_000_000);
     }
 
-    public int getPaymentAccount() {
-        return paymentAccount;
+    public String getPaymentAccount() {
+        return "Your account: " + paymentAccount;
     }
 
     public void getMoney(double money) {

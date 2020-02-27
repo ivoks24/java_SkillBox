@@ -2,14 +2,13 @@ package Clients;
 
 public class Entrepreneur extends Client {
 
+@Override
     public void setMoney(double money) {
 
-        double commission = money * 0.005;
-
         if (money < 1000) {
-            super.setMoney(money - commission);
+            super.setMoney(money * 0.99);
         } else {
-            super.setMoney(money - commission * 2);
+            super.setMoney(money * 0.995);
         }
 
     }
