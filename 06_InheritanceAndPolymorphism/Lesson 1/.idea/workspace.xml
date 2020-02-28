@@ -2,18 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="755ef75d-5565-4cad-abad-40b735996377" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lesson 3/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lesson 1/Banking/CardAccount.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lesson 1/Banking/CardAccount.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Lesson 1/Banking/DepositoryCurrentAccount.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lesson 1/Banking/DepositoryCurrentAccount.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lesson 1/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lesson 1/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Banking/CardAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Banking/CardAccount.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Banking/DepositoryCurrentAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Banking/DepositoryCurrentAccount.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Lesson 3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lesson 3/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lesson 3/out/production/Lesson 3/Clients/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Lesson 3/out/production/Lesson 3/Clients/Client.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lesson 3/out/production/Lesson 3/Clients/Entrepreneur.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Lesson 3/out/production/Lesson 3/Clients/Entrepreneur.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lesson 3/out/production/Lesson 3/Clients/LegalPerson.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Lesson 3/out/production/Lesson 3/Clients/LegalPerson.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lesson 3/out/production/Lesson 3/Clients/NaturalPerson.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Lesson 3/out/production/Lesson 3/Clients/NaturalPerson.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lesson 3/out/production/Lesson 3/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Lesson 3/out/production/Lesson 3/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lesson 3/src/Clients/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lesson 3/src/Clients/Client.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Lesson 3/src/Clients/Entrepreneur.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lesson 3/src/Clients/Entrepreneur.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Lesson 3/src/Clients/LegalPerson.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lesson 3/src/Clients/LegalPerson.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lesson 3/src/Clients/NaturalPerson.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lesson 3/src/Clients/NaturalPerson.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lesson 3/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lesson 3/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +42,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Lesson 4" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Lesson 3" />
   </component>
   <component name="RecentsManager">
     <key name="ExtractSuperBase.RECENT_KEYS">
@@ -91,25 +93,29 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="446" y="45" key="#com.intellij.ide.util.MemberChooser/0.0.1280.720@0.0.1280.720" timestamp="1582027209997" />
-    <state x="421" y="116" key="FileChooserDialogImpl" timestamp="1582807400498">
+    <state x="421" y="116" key="FileChooserDialogImpl" timestamp="1582892349240">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="421" y="116" key="FileChooserDialogImpl/0.0.1280.720@0.0.1280.720" timestamp="1582807400498" />
-    <state width="1237" height="176" key="GridCell.Tab.0.bottom" timestamp="1582807401786">
+    <state x="421" y="116" key="FileChooserDialogImpl/0.0.1280.720@0.0.1280.720" timestamp="1582892349240" />
+    <state width="1237" height="176" key="GridCell.Tab.0.bottom" timestamp="1582894351428">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="176" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1582807401786" />
-    <state width="1237" height="176" key="GridCell.Tab.0.center" timestamp="1582807401785">
+    <state width="1237" height="176" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1582894351428" />
+    <state width="1237" height="176" key="GridCell.Tab.0.center" timestamp="1582894351428">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="176" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1582807401785" />
-    <state width="1237" height="176" key="GridCell.Tab.0.left" timestamp="1582807401785">
+    <state width="1237" height="176" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1582894351428" />
+    <state width="1237" height="176" key="GridCell.Tab.0.left" timestamp="1582894351428">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="176" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1582807401785" />
-    <state width="1237" height="176" key="GridCell.Tab.0.right" timestamp="1582807401786">
+    <state width="1237" height="176" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1582894351428" />
+    <state width="1237" height="176" key="GridCell.Tab.0.right" timestamp="1582894351428">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="176" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1582807401786" />
+    <state width="1237" height="176" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1582894351428" />
+    <state x="448" y="277" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1582894350397">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="448" y="277" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.720@0.0.1280.720" timestamp="1582894350397" />
   </component>
 </project>

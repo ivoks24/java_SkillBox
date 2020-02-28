@@ -3,7 +3,6 @@ package Clients;
 public abstract class Client {
 
     private int paymentAccount;
-    private double money;
 
     public Client() {
 
@@ -14,25 +13,9 @@ public abstract class Client {
         return "Your account: " + paymentAccount;
     }
 
-    public void getMoney(double money) {
+    public abstract void getMoney(double money);
 
-        if (this.money >= money && money > 0) {
-            this.money -= money;
-        } else {
-            System.out.println("Insufficient funds!");
-        }
-    }
+    public abstract void setMoney(double money);
 
-    public void setMoney(double money) {
-
-        if (money > 0) {
-            this.money += money;
-        } else {
-            System.out.println("Insufficient funds!");
-        }
-    }
-
-    public double balance() {
-        return money;
-    }
+    public abstract double balance();
 }

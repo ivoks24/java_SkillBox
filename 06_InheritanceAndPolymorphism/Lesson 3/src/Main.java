@@ -9,6 +9,7 @@ public class Main {
         Entrepreneur entrepreneur = new Entrepreneur();
         LegalPerson legalPerson = new LegalPerson();
 
+
         entrepreneur.setMoney(9000);
         entrepreneur.getMoney(10000);
         System.out.println(entrepreneur.balance());

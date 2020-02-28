@@ -6,7 +6,7 @@ import java.util.GregorianCalendar;
 
 public class DepositoryCurrentAccount extends Account{
 
-    private Calendar openDate = new GregorianCalendar();
+    private Calendar openDate;
 
 @Override
     public void putMoney(double money) {
@@ -17,21 +17,30 @@ public class DepositoryCurrentAccount extends Account{
 @Override
     public void getMoney(double money) {
 
-        Calendar now = new GregorianCalendar();
-        openDate.add(Calendar.MONTH, 1);
-
-        if (openDate.before(now) ) {
-            super.getMoney(money);
-        } else {
+        try {
+            Calendar now = new GregorianCalendar();
+            if (openDate.before(now)) {
+                super.getMoney(money);
+            } else {
+                System.out.println("Operation is not possible!");
+            }
+        } catch (NullPointerException e) {
             System.out.println("Operation is not possible!");
         }
     }
 
     private void setOpenDate() {
+
         openDate = new GregorianCalendar();
+        openDate.add(Calendar.MONTH, 1);
     }
 
     public Date getOpenDate() {
-        return openDate.getTime();
+
+        try {
+            return openDate.getTime();
+        } catch (NullPointerException e){
+            return null;
+        }
     }
 }
