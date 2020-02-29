@@ -2,7 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="36718f2f-fb9e-4962-9b36-d96efe1ba5f1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../06_InheritanceAndPolymorphism/Lesson 3/src/Clients/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../06_InheritanceAndPolymorphism/Lesson 3/src/Clients/Entrepreneur.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../06_InheritanceAndPolymorphism/Lesson 3/src/Clients/LegalPerson.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../06_InheritanceAndPolymorphism/Lesson 3/src/Clients/NaturalPerson.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../06_InheritanceAndPolymorphism/Lesson 3/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../06_InheritanceAndPolymorphism/Lesson 4/src/Company.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../06_InheritanceAndPolymorphism/Lesson 4/src/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../06_InheritanceAndPolymorphism/Lesson 4/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../06_InheritanceAndPolymorphism/Lesson 4/src/Manager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../06_InheritanceAndPolymorphism/Lesson 4/src/Operator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../06_InheritanceAndPolymorphism/Lesson 4/src/TopManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
