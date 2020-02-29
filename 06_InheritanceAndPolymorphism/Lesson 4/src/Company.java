@@ -1,17 +1,41 @@
+import java.text.MessageFormat;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class Company {
 
     private List<Employee> staff = new ArrayList<>();
+    private long incomeCompany;
 
-    public Company() {
+    public Company(long income) {
+        incomeCompany = income;
+    }
 
+    public long getProfitCompany() {
+
+        long expenses = 0;
+        for (Employee employee : staff) {
+
+            expenses += employee.getMonthSalary();
+        }
+        return incomeCompany - expenses;
+    }
+
+    public long getIncome() {
+        return incomeCompany;
+    }
+
+    public void fire(int number) {
+        if (staff.size() >= number)
+            while (number > 0) {
+                staff.remove(0);
+                number--;
+            }
     }
 
     public void hire(Employee employee) {
         staff.add(employee);
-        System.out.println("\nSalary: " + employee.getMonthSalary());
     }
 
     public void hireAll(Employee employee, int count) {
@@ -35,64 +59,73 @@ public class Company {
 
     public ArrayList<Employee> getTopSalaryStaff(int count) {
 
-        int[] salary = new int[count];
+        if (count > staff.size())
+            System.exit(0);
+
+        ArrayList<Integer> salary = new ArrayList<>();
         ArrayList<Employee> topSalaryStaff = new ArrayList<>();
-        int min;
 
-        for (Employee employee : staff) {
-            System.out.println(employee.getMonthSalary());
-            for (int i = 0; i < count; i++) {
+        for (Employee employee : staff)
+            salary.add(employee.getMonthSalary());
 
-                min = salary[0];
-                if (min > salary[i])
-                    min = salary[i];
+        salary.sort(Collections.reverseOrder());
+        int index = 0;
 
-                if (employee.getMonthSalary() > min) {
+        do {
+            for (Employee employee : staff) {
+                if (salary.get(index).equals(employee.getMonthSalary()) && index < count) {
 
-                    salary[i] = employee.getMonthSalary();
-                    System.out.println(salary[i]);
-                    break;
+                    topSalaryStaff.add(employee);
+                    index++;
                 }
             }
-        }
+        } while (index < count);
 
-        for (Employee employee : staff) {
-            if (salary.equals(employee.getMonthSalary()) && count != 0) {
-
-                topSalaryStaff.add(employee);
-                count--;
-            }
-        }
+        PrintTopStaff(topSalaryStaff, true);
         return topSalaryStaff;
     }
 
     public ArrayList<Employee> getLowestSalaryStaff(int count) {
 
-        int[] salary = new int[count];
+        if (count > staff.size())
+            System.exit(0);
+
+        ArrayList<Integer> salary = new ArrayList<>();
         ArrayList<Employee> lowestSalaryStaff = new ArrayList<>();
 
-        for (Employee employee : staff) {
-            for (int i = 0; i < count; i++) {
-                if (salary[i] == 0 || employee.getMonthSalary() < salary[i]) {
+        for (Employee employee : staff)
+            salary.add(employee.getMonthSalary());
 
-                    salary[i] = employee.getMonthSalary();
-                    break;
+        Collections.sort(salary);
+        int index = 0;
+
+        do {
+            for (Employee employee : staff) {
+                if (salary.get(index).equals(employee.getMonthSalary()) && index < count) {
+
+                    lowestSalaryStaff.add(employee);
+                    index++;
                 }
             }
-        }
+        } while (index < count);
 
-        for (Employee employee : staff) {
-            if (salary.equals(employee.getMonthSalary()) && count != 0) {
-                lowestSalaryStaff.add(employee);
-                count--;
-            }
-        }
+        PrintTopStaff(lowestSalaryStaff, false);
         return lowestSalaryStaff;
     }
 
-    private ArrayList<Employee> topStaff(boolean b) {
+    private void PrintTopStaff(ArrayList<Employee> employees, boolean b) {
 
-        return null;
+        int number = 1;
+        String string = (b)?
+                MessageFormat.format("\n{0, choice, 1#Самая высокая зарпалта:|2#Список {0} зарплат по убыванию:}\n", employees.size())
+                :
+                MessageFormat.format("\n{0, choice, 1#Самая низкая зарпалта:|2#Список {0} зарплат по возрастанию:\n}", employees.size());
+
+        System.out.println(string);
+
+        for (Employee e : employees) {
+            System.out.format("%3d. %,6d руб.%n", number++, e.getMonthSalary());
+        }
 
     }
 }
