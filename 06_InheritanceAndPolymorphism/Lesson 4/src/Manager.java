@@ -5,12 +5,16 @@ public class Manager implements Employee {
 
     public Manager() {
 
-        salary = 120_000 + (int) ((Math.random() * 3000) * 10 + (company.getProfitCompany() * 0.05));
+        salary = 120_000 + (int) (Math.random() * 3000) * 10;
     }
 
     @Override
     public int getMonthSalary() {
-        return salary;
-        //System.out.println("Manager's salary: " + salary);
+
+        return (company != null) ? salary + company.getBonusForManagers() : salary;
+    }
+
+    public void setCompany(Company company) {
+        this.company = company;
     }
 }

@@ -5,16 +5,20 @@ public class TopManager implements Employee {
 
     public TopManager() {
 
-        salary = 150_000 + (int) (Math.random() * 5000) * 10;
-
-        if (company.getIncome() > 10_000_000) {
-            salary = (int) (salary * 2.5);
-        }
+        salary = 150_000 + (int) (Math.random() * 3500) * 10;
     }
 
     @Override
     public int getMonthSalary() {
         return salary;
-        //System.out.println("The salary of a top Manager: " + salary);
+    }
+
+    @Override
+    public void setCompany(Company company) {
+
+        this.company = company;
+
+        if (company.getIncome() > 10_000_000)
+            salary = (int) (salary * 2.5);
     }
 }

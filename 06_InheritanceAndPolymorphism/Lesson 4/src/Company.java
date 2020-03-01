@@ -7,19 +7,31 @@ public class Company {
 
     private List<Employee> staff = new ArrayList<>();
     private long incomeCompany;
+    private int countManager = 0;
+    private int bonusForManagers;
 
     public Company(long income) {
+
         incomeCompany = income;
     }
 
-    public long getProfitCompany() {
+    private long getProfitCompany() {
 
         long expenses = 0;
         for (Employee employee : staff) {
 
             expenses += employee.getMonthSalary();
         }
-        return incomeCompany - expenses;
+        if ((incomeCompany - expenses) / 20 > 0 && countManager > 0) {
+            bonusForManagers = (int) ((incomeCompany - expenses) / (20 * countManager));
+        } else {
+            bonusForManagers = 0;
+        }
+        return incomeCompany - expenses - bonusForManagers;
+    }
+
+    public int getBonusForManagers() {
+        return bonusForManagers;
     }
 
     public long getIncome() {
@@ -27,34 +39,47 @@ public class Company {
     }
 
     public void fire(int number) {
+
         if (staff.size() >= number)
             while (number > 0) {
+
+                if (staff.get(0) instanceof Manager)
+                    countManager--;
+
                 staff.remove(0);
                 number--;
             }
+        getProfitCompany();
     }
 
     public void hire(Employee employee) {
+
+        employee.setCompany(this);
         staff.add(employee);
+
+        if (employee instanceof Manager) {
+            countManager++;
+            getProfitCompany();
+        }
     }
 
     public void hireAll(Employee employee, int count) {
 
-        if (employee instanceof Operator) {
+            for (int i = 0; i < count; i++) {
 
-            for (int i = 0; i < count; i++)
-                staff.add(new Operator());
+                if (employee instanceof Operator) {
+                    employee = new Operator();
+                } else if (employee instanceof TopManager) {
+                    employee = new TopManager();
+                } else if (employee instanceof Manager) {
+                    employee = new Manager();
+                    countManager++;
+                    getProfitCompany();
+                }
 
-        } else if (employee instanceof Manager) {
-
-            for (int i = 0; i < count; i++)
-                staff.add(new Manager());
-
-        } else if (employee instanceof TopManager) {
-
-            for (int i = 0; i < count; i++)
-                staff.add(new TopManager());
-        }
+                employee.setCompany(this);
+                staff.add(employee);
+            }
     }
 
     public ArrayList<Employee> getTopSalaryStaff(int count) {
@@ -73,10 +98,12 @@ public class Company {
 
         do {
             for (Employee employee : staff) {
-                if (salary.get(index).equals(employee.getMonthSalary()) && index < count) {
+                if (index < count) {
+                    if (salary.get(index).equals(employee.getMonthSalary())) {
 
-                    topSalaryStaff.add(employee);
-                    index++;
+                        topSalaryStaff.add(employee);
+                        index++;
+                    }
                 }
             }
         } while (index < count);
@@ -101,10 +128,12 @@ public class Company {
 
         do {
             for (Employee employee : staff) {
-                if (salary.get(index).equals(employee.getMonthSalary()) && index < count) {
+                if (index < count) {
+                    if (salary.get(index).equals(employee.getMonthSalary())) {
 
-                    lowestSalaryStaff.add(employee);
-                    index++;
+                        lowestSalaryStaff.add(employee);
+                        index++;
+                    }
                 }
             }
         } while (index < count);
@@ -117,15 +146,14 @@ public class Company {
 
         int number = 1;
         String string = (b)?
-                MessageFormat.format("\n{0, choice, 1#Самая высокая зарпалта:|2#Список {0} зарплат по убыванию:}\n", employees.size())
+                MessageFormat.format("\n{0, choice, 1#Самая высокая зарпалта:|2#Список самых высоких {0} зарплат по убыванию:}\n", employees.size())
                 :
-                MessageFormat.format("\n{0, choice, 1#Самая низкая зарпалта:|2#Список {0} зарплат по возрастанию:\n}", employees.size());
+                MessageFormat.format("\n{0, choice, 1#Самая низкая зарпалта:|2#Список самых низких {0} зарплат по возрастанию:}\n", employees.size());
 
-        System.out.println(string);
+        System.out.print(string);
 
         for (Employee e : employees) {
             System.out.format("%3d. %,6d руб.%n", number++, e.getMonthSalary());
         }
-
     }
 }
