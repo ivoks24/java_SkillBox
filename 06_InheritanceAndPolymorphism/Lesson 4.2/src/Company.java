@@ -85,23 +85,11 @@ public class Company {
         if (count > staff.size())
             return null;
 
-        ArrayList<Integer> salary = new ArrayList<>();
+        staff.sort((o1, o2) -> String.valueOf(o2.getMonthSalary()).compareTo(String.valueOf(o1.getMonthSalary())));
         ArrayList<Employee> topSalaryStaff = new ArrayList<>();
 
-        for (Employee employee : staff)
-            salary.add(employee.getMonthSalary());
-
-        salary.sort(Collections.reverseOrder());
-        salary.subList(count, salary.size()).clear();
-
-        for (Integer i : salary) {
-            for (Employee employee : staff) {
-                if (i.equals(employee.getMonthSalary())) {
-
-                    topSalaryStaff.add(employee);
-                    break;
-                }
-            }
+        for (int i = 0; i < count; i++) {
+            topSalaryStaff.add(staff.get(i));
         }
 
         printTopStaff(topSalaryStaff, true);
@@ -113,23 +101,11 @@ public class Company {
         if (count > staff.size())
             return null;
 
-        ArrayList<Integer> salary = new ArrayList<>();
+        staff.sort((o1, o2) -> String.valueOf(o1.getMonthSalary()).compareTo(String.valueOf(o2.getMonthSalary())));
         ArrayList<Employee> lowestSalaryStaff = new ArrayList<>();
 
-        for (Employee employee : staff)
-            salary.add(employee.getMonthSalary());
-
-        Collections.sort(salary);
-        salary.subList(count, salary.size()).clear();
-
-        for (Integer i : salary) {
-            for (Employee employee : staff) {
-                if (i.equals(employee.getMonthSalary())) {
-
-                    lowestSalaryStaff.add(employee);
-                    break;
-                }
-            }
+        for (int i = 0; i < count; i++) {
+            lowestSalaryStaff.add(staff.get(i));
         }
 
         printTopStaff(lowestSalaryStaff, false);
