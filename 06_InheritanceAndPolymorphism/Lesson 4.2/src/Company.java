@@ -54,7 +54,6 @@ public class Company {
 
     public void hire(Employee employee) {
 
-        employee.setCompany(this);
         staff.add(employee);
 
         if (employee instanceof Manager) {
@@ -68,16 +67,15 @@ public class Company {
             for (int i = 0; i < count; i++) {
 
                 if (employee instanceof Operator) {
-                    employee = new Operator();
+                    employee = new Operator(this);
                 } else if (employee instanceof TopManager) {
-                    employee = new TopManager();
+                    employee = new TopManager(this);
                 } else if (employee instanceof Manager) {
-                    employee = new Manager();
+                    employee = new Manager(this);
                     countManager++;
                     getProfitCompany();
                 }
 
-                employee.setCompany(this);
                 staff.add(employee);
             }
     }
