@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="baabd658-2e59-4748-887f-1bdd396c992b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../04_NumbersStringsAndDates/IntegerExperiments/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../04_NumbersStringsAndDates/IntegerExperiments/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../04_NumbersStringsAndDates/StringExperiments/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../04_NumbersStringsAndDates/StringExperiments/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../05_ArraysAndCollections/Lesson 1/Array of arrays/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../05_ArraysAndCollections/Lesson 1/Array of arrays/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../05_ArraysAndCollections/Lesson 2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../05_ArraysAndCollections/Lesson 2/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LambdaExpressions/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LambdaExpressions/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -20,6 +24,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+    <option name="UPDATE_TYPE" value="MERGE" />
   </component>
   <component name="ProjectId" id="1YZycu9laMh7AbJiNcRmnw9EHKs" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -31,7 +36,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558674161968" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../04_NumbersStringsAndDates/Lesson 2" />
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -61,22 +66,30 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1237" height="203" key="GridCell.Tab.0.bottom" timestamp="1583169329113">
+    <state x="421" y="115" key="FileChooserDialogImpl" timestamp="1583242599491">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="203" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1583169329113" />
-    <state width="1237" height="203" key="GridCell.Tab.0.center" timestamp="1583169329113">
+    <state x="421" y="115" key="FileChooserDialogImpl/0.0.1280.720@0.0.1280.720" timestamp="1583242599491" />
+    <state width="1237" height="203" key="GridCell.Tab.0.bottom" timestamp="1583245996634">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="203" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1583169329113" />
-    <state width="1237" height="203" key="GridCell.Tab.0.left" timestamp="1583169329113">
+    <state width="1237" height="203" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1583245996634" />
+    <state width="1237" height="203" key="GridCell.Tab.0.center" timestamp="1583245996633">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="203" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1583169329113" />
-    <state width="1237" height="203" key="GridCell.Tab.0.right" timestamp="1583169329113">
+    <state width="1237" height="203" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1583245996633" />
+    <state width="1237" height="203" key="GridCell.Tab.0.left" timestamp="1583245996633">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="203" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1583169329113" />
+    <state width="1237" height="203" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1583245996633" />
+    <state width="1237" height="203" key="GridCell.Tab.0.right" timestamp="1583245996633">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state width="1237" height="203" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1583245996633" />
+    <state x="448" y="277" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1583245978146">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="448" y="277" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.720@0.0.1280.720" timestamp="1583245978146" />
   </component>
   <component name="masterDetails">
     <states>

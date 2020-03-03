@@ -2,17 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="36718f2f-fb9e-4962-9b36-d96efe1ba5f1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../06_InheritanceAndPolymorphism/Lesson 3/src/Clients/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../06_InheritanceAndPolymorphism/Lesson 3/src/Clients/Entrepreneur.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../06_InheritanceAndPolymorphism/Lesson 3/src/Clients/LegalPerson.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../06_InheritanceAndPolymorphism/Lesson 3/src/Clients/NaturalPerson.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../06_InheritanceAndPolymorphism/Lesson 3/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../06_InheritanceAndPolymorphism/Lesson 4/src/Company.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../06_InheritanceAndPolymorphism/Lesson 4/src/Employee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../06_InheritanceAndPolymorphism/Lesson 4/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../06_InheritanceAndPolymorphism/Lesson 4/src/Manager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../06_InheritanceAndPolymorphism/Lesson 4/src/Operator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../06_InheritanceAndPolymorphism/Lesson 4/src/TopManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../07_AdvancedOOPFeatures/LambdaExpressions/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../07_AdvancedOOPFeatures/LambdaExpressions/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../07_AdvancedOOPFeatures/LambdaExpressions/out/production/LambdaExpressions/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../07_AdvancedOOPFeatures/LambdaExpressions/out/production/LambdaExpressions/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../07_AdvancedOOPFeatures/LambdaExpressions/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../07_AdvancedOOPFeatures/LambdaExpressions/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +31,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Lesson 3" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -92,10 +84,10 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="489" y="147" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1280.720@0.0.1280.720" timestamp="1581532595135" />
-    <state x="421" y="116" key="FileChooserDialogImpl" timestamp="1582291476759">
+    <state x="421" y="116" key="FileChooserDialogImpl" timestamp="1583242178307">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="421" y="116" key="FileChooserDialogImpl/0.0.1280.720@0.0.1280.720" timestamp="1582291476759" />
+    <state x="421" y="116" key="FileChooserDialogImpl/0.0.1280.720@0.0.1280.720" timestamp="1583242178307" />
     <state width="1237" height="176" key="GridCell.Tab.0.bottom" timestamp="1582291478784">
       <screen x="0" y="0" width="1280" height="720" />
     </state>

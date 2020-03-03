@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="52d8d626-1917-42f9-80d7-13c8d641ae20" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../Lesson 3.2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lesson 3.2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../StringExperiments/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../StringExperiments/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../05_ArraysAndCollections/Lesson 1/Array of arrays/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../05_ArraysAndCollections/Lesson 1/Array of arrays/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../05_ArraysAndCollections/Lesson 2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../05_ArraysAndCollections/Lesson 2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../07_AdvancedOOPFeatures/LambdaExpressions/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../07_AdvancedOOPFeatures/LambdaExpressions/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../07_AdvancedOOPFeatures/LambdaExpressions/out/production/LambdaExpressions/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../07_AdvancedOOPFeatures/LambdaExpressions/out/production/LambdaExpressions/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../07_AdvancedOOPFeatures/LambdaExpressions/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../07_AdvancedOOPFeatures/LambdaExpressions/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,7 +28,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551865119735" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../StringExperiments" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Lesson 2" />
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -65,10 +70,10 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="410" y="104" key="FileChooserDialogImpl" timestamp="1581706966157">
+    <state x="410" y="104" key="FileChooserDialogImpl" timestamp="1583242228337">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="410" y="104" key="FileChooserDialogImpl/0.0.1280.720@0.0.1280.720" timestamp="1581706966157" />
+    <state x="410" y="104" key="FileChooserDialogImpl/0.0.1280.720@0.0.1280.720" timestamp="1583242228337" />
     <state x="453" y="104" key="FileChooserDialogImpl/63.0.1217.720@63.0.1217.720" timestamp="1581217406154" />
     <state width="1174" height="176" key="GridCell.Tab.0.bottom" timestamp="1581184208444">
       <screen x="63" y="0" width="1217" height="720" />
