@@ -2,6 +2,7 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.time.Year;
 import java.util.*;
 
 public class Main
@@ -13,10 +14,18 @@ public class Main
     {
         ArrayList<Employee> staff = loadStaffFromFile();
 
+        //Lesson 1 ---------------
         Comparator<Employee> comparator = Comparator.comparing(Employee::getSalary).thenComparing(Employee::getName);
         staff.sort(comparator);
         staff.forEach(System.out::println);
+        // -----------------------
 
+
+        //Lesson 2 ---------------
+//        System.out.println(staff.stream().filter(d -> d.getWorkStart().toString()
+//                .substring(d.getWorkStart().toString().length() - 4).equals("2017"))
+//                .max(Comparator.comparing(Employee::getSalary)).get().getSalary());
+        // -----------------------
     }
 
     private static ArrayList<Employee> loadStaffFromFile()
