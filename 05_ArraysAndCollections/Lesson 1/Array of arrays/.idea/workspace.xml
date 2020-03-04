@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="52f4e6cd-8b98-4555-82ea-3cb39eac6aa1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../Lesson 2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lesson 2/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../07_AdvancedOOPFeatures/LambdaExpressions/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../07_AdvancedOOPFeatures/LambdaExpressions/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../07_AdvancedOOPFeatures/LambdaExpressions/out/production/LambdaExpressions/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../07_AdvancedOOPFeatures/LambdaExpressions/out/production/LambdaExpressions/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../07_AdvancedOOPFeatures/LambdaExpressions/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../07_AdvancedOOPFeatures/LambdaExpressions/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,7 +28,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../04_NumbersStringsAndDates/StringExperiments" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Lesson 2" />
   </component>
   <component name="RunManager">
     <configuration name="Loader" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -73,10 +70,10 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="421" y="116" key="FileChooserDialogImpl" timestamp="1583242204153">
+    <state x="421" y="116" key="FileChooserDialogImpl" timestamp="1583326400182">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="421" y="116" key="FileChooserDialogImpl/0.0.1280.720@0.0.1280.720" timestamp="1583242204153" />
+    <state x="421" y="116" key="FileChooserDialogImpl/0.0.1280.720@0.0.1280.720" timestamp="1583326400182" />
     <state width="1238" height="176" key="GridCell.Tab.0.bottom" timestamp="1582202441988">
       <screen x="0" y="0" width="1280" height="720" />
     </state>

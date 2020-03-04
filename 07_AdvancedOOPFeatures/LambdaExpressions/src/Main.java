@@ -15,16 +15,17 @@ public class Main
         ArrayList<Employee> staff = loadStaffFromFile();
 
         //Lesson 1 ---------------
-        Comparator<Employee> comparator = Comparator.comparing(Employee::getSalary).thenComparing(Employee::getName);
-        staff.sort(comparator);
-        staff.forEach(System.out::println);
+//        Comparator<Employee> comparator = Comparator.comparing(Employee::getSalary).thenComparing(Employee::getName);
+//        staff.sort(comparator);
+//        staff.forEach(System.out::println);
         // -----------------------
 
 
         //Lesson 2 ---------------
-//        System.out.println(staff.stream().filter(d -> d.getWorkStart().toString()
-//                .substring(d.getWorkStart().toString().length() - 4).equals("2017"))
-//                .max(Comparator.comparing(Employee::getSalary)).get().getSalary());
+
+        System.out.println(staff.stream().filter(d -> d.getWorkStart().toString().contains("2017"))
+                .max(Comparator.comparing(Employee::getSalary)).get().getSalary());
+
         // -----------------------
     }
 

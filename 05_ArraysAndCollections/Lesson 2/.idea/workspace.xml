@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="36718f2f-fb9e-4962-9b36-d96efe1ba5f1" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../Lesson 1/Array of arrays/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lesson 1/Array of arrays/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../07_AdvancedOOPFeatures/LambdaExpressions/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../07_AdvancedOOPFeatures/LambdaExpressions/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../07_AdvancedOOPFeatures/LambdaExpressions/out/production/LambdaExpressions/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../07_AdvancedOOPFeatures/LambdaExpressions/out/production/LambdaExpressions/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../07_AdvancedOOPFeatures/LambdaExpressions/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../07_AdvancedOOPFeatures/LambdaExpressions/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,10 +83,10 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="489" y="147" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1280.720@0.0.1280.720" timestamp="1581532595135" />
-    <state x="421" y="116" key="FileChooserDialogImpl" timestamp="1583242178307">
+    <state x="421" y="116" key="FileChooserDialogImpl" timestamp="1583326423219">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="421" y="116" key="FileChooserDialogImpl/0.0.1280.720@0.0.1280.720" timestamp="1583242178307" />
+    <state x="421" y="116" key="FileChooserDialogImpl/0.0.1280.720@0.0.1280.720" timestamp="1583326423219" />
     <state width="1237" height="176" key="GridCell.Tab.0.bottom" timestamp="1582291478784">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
