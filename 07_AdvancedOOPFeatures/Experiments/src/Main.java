@@ -1,5 +1,6 @@
 import com.skillbox.airport.Airport;
 
+import java.util.Calendar;
 import java.util.Date;
 
 public class Main {
@@ -7,14 +8,12 @@ public class Main {
 
         Airport airport = Airport.getInstance();
 
-        Date dateNow = new Date();
-        Date extremeDated = new Date();
-
-        extremeDated.setTime(extremeDated.getTime() + 2 * 60 * 60 * 1000);
+        Calendar calendar = Calendar.getInstance();
+        calendar.add(Calendar.HOUR_OF_DAY, 2);
 
         airport.getTerminals()
                 .forEach(terminal -> terminal.getFlights().stream()
-                        .filter(flight -> flight.getDate().after(dateNow) && flight.getDate().before(extremeDated))
+                        .filter(flight -> flight.getDate().after(new Date()) && flight.getDate().before(calendar.getTime()))
                         .forEach(flight -> System.out.println(flight.getDate() + " - " + flight.getAircraft())))
         ;
     }

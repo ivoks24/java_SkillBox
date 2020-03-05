@@ -1,8 +1,6 @@
 import java.nio.file.Files;
 import java.nio.file.Paths;
-import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.time.Year;
 import java.util.*;
 
 public class Main
@@ -23,10 +21,18 @@ public class Main
 
         //Lesson 2 ---------------
 
-        System.out.println(staff.stream().filter(d -> d.getWorkStart().toString().contains("2017"))
+
+        System.out.println(staff.stream().filter(date -> dateToCalendar(date.getWorkStart()).get(Calendar.YEAR) == 2017)
                 .max(Comparator.comparing(Employee::getSalary)).get().getSalary());
 
         // -----------------------
+    }
+
+    private static Calendar dateToCalendar(Date date) {
+
+        Calendar calendar = Calendar.getInstance();
+        calendar.setTime(date);
+        return calendar;
     }
 
     private static ArrayList<Employee> loadStaffFromFile()
