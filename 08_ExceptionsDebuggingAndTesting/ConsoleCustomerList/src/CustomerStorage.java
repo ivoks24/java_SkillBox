@@ -17,31 +17,32 @@ public class CustomerStorage
         storage = new HashMap<>();
     }
 
-    public void addCustomer(String data)
-    {
+    public void addCustomer(String data) throws IndexOutOfBoundsException {
+
         String[] components = data.split("\\s+");
-        if (components.length != 4) throw new IllegalArgumentException("Wrong format!");
+        if (components.length != 4) throw new IndexOutOfBoundsException("Wrong format!"); //ArrayIndexOutOfBoundsException
+
         String name = components[0] + " " + components[1];
         storage.put(name, new Customer(name, checkPhone(components[3]), checkMail(components[2])));
     }
 
-    private String checkMail(String mail) {
+    private String checkMail(String mail) throws IndexOutOfBoundsException {
 
         if (mail.contains("@"))
             if (speciesMails.contains(mail.substring(mail.indexOf("@"))))
                 return mail;
 
-        throw new IllegalArgumentException("Incorrect mail format!");
+        throw new IndexOutOfBoundsException("Incorrect mail format!"); //StringIndexOutOfBoundsException
     }
 
-    private String checkPhone(String phone) {
+    private String checkPhone(String phone) throws IndexOutOfBoundsException {
 
-        String[] ph = phone.replaceAll("[^0-9]", "").split("");
-        if (ph.length == 12) {
-            phone = String.format("+%s(%s) %s-%s-%s", ph[0], ph[1]+ph[2]+ph[3], ph[4]+ph[5]+ph[6]+ph[7], ph[8]+ph[9], ph[10]+ph[11]);
-        } else if (ph.length == 11) {
-            phone = String.format("+7(%s%s%s) %s%s%s%s-%s%s-%s%s", ph[0], ph[1], ph[2], ph[3], ph[4], ph[5], ph[6], ph[7], ph[8], ph[9], ph[10]);
-        } else throw new IllegalArgumentException("Incorrect format of phone!");
+        String ph = phone.replaceAll("[^0-9]", "");
+        if (ph.length() == 10) ph = "7" + ph;
+        if (ph.length() == 11) phone = String.format("+%s(%s) %s-%s-%s",
+                ph.substring(0, 1), ph.substring(1, 4), ph.substring(4, 8), ph.substring(8, 10), ph.substring(10));
+
+        else throw new IndexOutOfBoundsException("Incorrect format of phone!"); //StringIndexOutOfBoundsException
         return phone;
     }
 
@@ -50,9 +51,9 @@ public class CustomerStorage
         storage.values().forEach(System.out::println);
     }
 
-    public void removeCustomer(String name)
-    {
-        if (!storage.containsKey(name)) System.out.println("Wrong format!");
+    public void removeCustomer(String name) {
+
+        if (!storage.containsKey(name)) System.err.println("Name is missing!");
         storage.remove(name);
     }
 

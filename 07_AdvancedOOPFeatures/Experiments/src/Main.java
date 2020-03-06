@@ -13,8 +13,14 @@ public class Main {
 
         airport.getTerminals()
                 .forEach(terminal -> terminal.getFlights().stream()
-                        .filter(flight -> flight.getDate().after(new Date()) && flight.getDate().before(calendar.getTime()))
+                        .filter(flight -> dateToCalendar(flight.getDate()).after(Calendar.getInstance()) && dateToCalendar(flight.getDate()).before(calendar))
                         .forEach(flight -> System.out.println(flight.getDate() + " - " + flight.getAircraft())))
         ;
+    }
+
+    private static Calendar dateToCalendar(Date date) {
+        Calendar calendar = Calendar.getInstance();
+        calendar.setTime(date);
+        return calendar;
     }
 }

@@ -20,8 +20,8 @@ public class Main
                 String command = scanner.nextLine();
                 String[] tokens = command.split("\\s+", 2);
 
-                if (tokens.length != 2 && !tokens[0].equals("list") && tokens.length == 1)
-                    throw new IllegalArgumentException("Wrong format!");
+                if (!tokens[0].equals("list") && tokens.length == 1)
+                    throw new IndexOutOfBoundsException("Wrong format!");
 
                 if (tokens[0].equals("add")) {
                     executor.addCustomer(tokens[1]);
@@ -36,8 +36,8 @@ public class Main
                 } else {
                     System.out.println(commandError);
                 }
-            } catch (IllegalArgumentException e) {
-                System.out.println(e.getMessage() + "\n" + helpText);
+            } catch (IndexOutOfBoundsException e) {
+                System.err.println(e.getMessage());
             }
         }
     }
