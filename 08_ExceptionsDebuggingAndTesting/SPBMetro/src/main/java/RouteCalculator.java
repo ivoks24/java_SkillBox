@@ -52,7 +52,7 @@ public class RouteCalculator
 
     //=========================================================================
 
-    private List<Station> getRouteOnTheLine(Station from, Station to)
+    public List<Station> getRouteOnTheLine(Station from, Station to)
     {
         if(!from.getLine().equals(to.getLine())) {
             return null;
@@ -86,7 +86,7 @@ public class RouteCalculator
         return route;
     }
 
-    private List<Station> getRouteWithOneConnection(Station from, Station to)
+    public List<Station> getRouteWithOneConnection(Station from, Station to)
     {
         if(from.getLine().equals(to.getLine())) {
             return null;
@@ -116,13 +116,13 @@ public class RouteCalculator
         return route;
     }
 
-    private boolean isConnected(Station station1, Station station2)
+    public boolean isConnected(Station station1, Station station2)
     {
         Set<Station> connected = stationIndex.getConnectedStations(station1);
         return connected.contains(station2);
     }
 
-    private List<Station> getRouteViaConnectedLine(Station from, Station to)
+    public List<Station> getRouteViaConnectedLine(Station from, Station to)
     {
         Set<Station> fromConnected = stationIndex.getConnectedStations(from);
         Set<Station> toConnected = stationIndex.getConnectedStations(to);
@@ -138,7 +138,7 @@ public class RouteCalculator
         return null;
     }
 
-    private List<Station> getRouteWithTwoConnections(Station from, Station to)
+    public List<Station> getRouteWithTwoConnections(Station from, Station to)
     {
         if (from.getLine().equals(to.getLine())) {
             return null;
