@@ -2,21 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8a5e1234-1100-4917-9bdf-687150e205e8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SPBMetro.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/RouteCalculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/StationIndex.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/core/Line.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/core/Station.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/map.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/log4j_core_2_13_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/app.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/errors.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/history.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j2.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SPBMetro/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SPBMetro/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SPBMetro/src/main/java/RouteCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SPBMetro/src/main/java/RouteCalculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/RouteCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/RouteCalculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/RouteCalculator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/RouteCalculator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spb-metro-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/spb-metro-1.0-SNAPSHOT.jar" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,35 +41,39 @@
     </option>
   </component>
   <component name="ProjectId" id="1YtqXeEDmW4WOsmGdqY1HE6yKnI" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559622580090" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../SPBMetro" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/resources" />
-      <recent name="$PROJECT_DIR$" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/main/java" />
       <recent name="$PROJECT_DIR$/src/main/resources" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Uladzislau\Desktop\java_basics\08_ExceptionsDebuggingAndTesting\logging\lib" />
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
   </component>
   <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="SPBMetro" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -120,31 +123,55 @@
       <configuration name="All in SPBMetro" configurationId="JUnit" />
     </history-entry>
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="421" y="115" key="FileChooserDialogImpl" timestamp="1583843118125">
+    <state x="357" y="19" key="#Main" timestamp="1583887041772">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="421" y="115" key="FileChooserDialogImpl/0.0.1280.720/2560.0.1280.720@0.0.1280.720" timestamp="1583843118125" />
-    <state width="1238" height="168" key="GridCell.Tab.0.bottom" timestamp="1583777081295">
+    <state x="357" y="19" key="#Main/0.0.1280.720/2560.0.1280.720@0.0.1280.720" timestamp="1583887041772" />
+    <state x="405" y="163" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1583868623499">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1238" height="168" key="GridCell.Tab.0.bottom/0.0.1280.720/2560.0.1280.720@0.0.1280.720" timestamp="1583777081295" />
-    <state width="1238" height="168" key="GridCell.Tab.0.center" timestamp="1583777081295">
+    <state x="405" y="163" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.720/2560.0.1280.720@0.0.1280.720" timestamp="1583868623499" />
+    <state x="421" y="115" key="FileChooserDialogImpl" timestamp="1583887003866">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1238" height="168" key="GridCell.Tab.0.center/0.0.1280.720/2560.0.1280.720@0.0.1280.720" timestamp="1583777081295" />
-    <state width="1238" height="168" key="GridCell.Tab.0.left" timestamp="1583777081295">
+    <state x="421" y="115" key="FileChooserDialogImpl/0.0.1280.720/2560.0.1280.720@0.0.1280.720" timestamp="1583887003866" />
+    <state width="1238" height="128" key="GridCell.Tab.0.bottom" timestamp="1583889049559">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1238" height="168" key="GridCell.Tab.0.left/0.0.1280.720/2560.0.1280.720@0.0.1280.720" timestamp="1583777081295" />
-    <state width="1238" height="168" key="GridCell.Tab.0.right" timestamp="1583777081295">
+    <state width="1238" height="128" key="GridCell.Tab.0.bottom/0.0.1280.720/2560.0.1280.720@0.0.1280.720" timestamp="1583889049559" />
+    <state width="1238" height="128" key="GridCell.Tab.0.center" timestamp="1583889049559">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1238" height="168" key="GridCell.Tab.0.right/0.0.1280.720/2560.0.1280.720@0.0.1280.720" timestamp="1583777081295" />
-    <state x="121" y="0" key="SettingsEditor" timestamp="1583775579911">
+    <state width="1238" height="128" key="GridCell.Tab.0.center/0.0.1280.720/2560.0.1280.720@0.0.1280.720" timestamp="1583889049559" />
+    <state width="1238" height="128" key="GridCell.Tab.0.left" timestamp="1583889049558">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="121" y="0" key="SettingsEditor/0.0.1280.720/2560.0.1280.720@0.0.1280.720" timestamp="1583775579911" />
+    <state width="1238" height="128" key="GridCell.Tab.0.left/0.0.1280.720/2560.0.1280.720@0.0.1280.720" timestamp="1583889049558" />
+    <state width="1238" height="128" key="GridCell.Tab.0.right" timestamp="1583889049559">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state width="1238" height="128" key="GridCell.Tab.0.right/0.0.1280.720/2560.0.1280.720@0.0.1280.720" timestamp="1583889049559" />
+    <state x="121" y="0" key="SettingsEditor" timestamp="1583866427848">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="121" y="0" key="SettingsEditor/0.0.1280.720/2560.0.1280.720@0.0.1280.720" timestamp="1583866427848" />
     <state x="299" y="162" width="672" height="677" key="run.anything.popup" timestamp="1583775527947">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
