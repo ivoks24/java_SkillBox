@@ -2,6 +2,8 @@ import core.Line;
 import core.Station;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.Marker;
+import org.apache.logging.log4j.MarkerManager;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
@@ -15,6 +17,8 @@ import java.util.Scanner;
 public class Main
 {
     private static Logger logger;
+    private static final Marker CORRECT_INPUT = MarkerManager.getMarker("CORRECT");
+    private static final Marker INCORRECT_INPUT = MarkerManager.getMarker("INCORRECT");
 
     private static String dataFile = "src/main/resources/map.json";
     private static Scanner scanner;
@@ -40,7 +44,7 @@ public class Main
 
 //                from = null;
                 List<Station> route = calculator.getShortestRoute(from, to);
-                logger.info("Запрос: " + from + " - " + to);
+                logger.info(CORRECT_INPUT, "Запрос: " + from + " - " + to);
 
                 System.out.println("Маршрут:");
                 printRoute(route);
@@ -90,7 +94,7 @@ public class Main
             if(station != null) {
                 return station;
             }
-            logger.info("Станция не найдена: " + line);
+            logger.info(INCORRECT_INPUT, "Станция не найдена: " + line);
             System.out.println("Станция не найдена :(");
         }
     }

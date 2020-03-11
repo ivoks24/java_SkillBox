@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8a5e1234-1100-4917-9bdf-687150e205e8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../09_FilesAndNetwork/Files_task/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/app.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/app.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/log4j2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/log4j2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_FilesAndNetwork/Files_task/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../09_FilesAndNetwork/Files_task/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_FilesAndNetwork/Files_task/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../09_FilesAndNetwork/Files_task/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,6 +113,9 @@
       <configuration name="All in SPBMetro" configurationId="JUnit" />
     </history-entry>
   </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.log" />
+  </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
@@ -131,10 +133,11 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="357" y="19" key="#Main" timestamp="1583887041772">
+    <state x="357" y="19" key="#Main" timestamp="1583954250987">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="357" y="19" key="#Main/0.0.1280.720/2560.0.1280.720@0.0.1280.720" timestamp="1583887041772" />
+    <state x="357" y="19" key="#Main/0.0.1280.720@0.0.1280.720" timestamp="1583954250987" />
     <state x="405" y="163" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1583868623499">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
@@ -143,22 +146,26 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="421" y="115" key="FileChooserDialogImpl/0.0.1280.720/2560.0.1280.720@0.0.1280.720" timestamp="1583906837233" />
-    <state width="1238" height="128" key="GridCell.Tab.0.bottom" timestamp="1583889049559">
+    <state width="1238" height="95" key="GridCell.Tab.0.bottom" timestamp="1583954253252">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state width="1238" height="128" key="GridCell.Tab.0.bottom/0.0.1280.720/2560.0.1280.720@0.0.1280.720" timestamp="1583889049559" />
-    <state width="1238" height="128" key="GridCell.Tab.0.center" timestamp="1583889049559">
+    <state width="1238" height="95" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1583954253252" />
+    <state width="1238" height="95" key="GridCell.Tab.0.center" timestamp="1583954253251">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state width="1238" height="128" key="GridCell.Tab.0.center/0.0.1280.720/2560.0.1280.720@0.0.1280.720" timestamp="1583889049559" />
-    <state width="1238" height="128" key="GridCell.Tab.0.left" timestamp="1583889049558">
+    <state width="1238" height="95" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1583954253251" />
+    <state width="1238" height="95" key="GridCell.Tab.0.left" timestamp="1583954253251">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state width="1238" height="128" key="GridCell.Tab.0.left/0.0.1280.720/2560.0.1280.720@0.0.1280.720" timestamp="1583889049558" />
-    <state width="1238" height="128" key="GridCell.Tab.0.right" timestamp="1583889049559">
+    <state width="1238" height="95" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1583954253251" />
+    <state width="1238" height="95" key="GridCell.Tab.0.right" timestamp="1583954253252">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state width="1238" height="128" key="GridCell.Tab.0.right/0.0.1280.720/2560.0.1280.720@0.0.1280.720" timestamp="1583889049559" />
+    <state width="1238" height="95" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1583954253252" />
     <state x="121" y="0" key="SettingsEditor" timestamp="1583866427848">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
