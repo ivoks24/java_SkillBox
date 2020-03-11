@@ -1,35 +1,37 @@
 import java.io.*;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Locale;
-import java.util.Scanner;
+import java.util.*;
 
 public class Main {
+
+    private static long size;
+    private static List<File> folders = new ArrayList<>();
+    private static File[] files;
+
     public static void main(String[] args) {
 
-        //        String path = "C:/Users/Uladzislau/Desktop";
-
         System.out.print("Enter the path: ");
-        Scanner path = new Scanner(System.in);
-        File folder = new File(path.nextLine());
+//        folders.addAll(Collections.singleton(new File(((new Scanner(System.in)).nextLine()))));
+//        не совсем понял как работает singleton, по-этому переписал по-другому
 
-        long size = 0;
-
-        File[] files = folder.listFiles();
-        List<File> folders = new ArrayList<>();
-
-        
-        for (;;) {
-            if (files != null)
-                for (File file : files)
-                    if (file.isFile()) size = size + file.length();
-                    else folders.add(file);
-
-            if (folders.size() == 0) break;
-
-            files = folders.remove(0).listFiles();
+        files = (new File(((new Scanner(System.in)).nextLine()))).listFiles();
+        if (files != null) {
+            Collections.addAll(folders, files);
+            operation(folders.remove(0));
         }
+
         printSize(size);
+    }
+
+    private static void operation(File folder) {
+
+        files = folder.listFiles();
+
+        if (files != null)
+            for (File file : files)
+                if (file.isFile()) size = size + file.length();
+                else folders.add(file);
+
+        if (!(folders.size() == 0)) operation(folders.remove(0));
     }
 
     private static void printSize(Long size) {
