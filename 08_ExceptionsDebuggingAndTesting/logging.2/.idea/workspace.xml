@@ -2,62 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8a5e1234-1100-4917-9bdf-687150e205e8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/log4j_core_2_13_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SPBMetro.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/app.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/errors.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/history.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/RouteCalculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/StationIndex.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/core/Line.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/core/Station.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/map.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/RouteCalculator.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/StationIndex.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/core/Line.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/core/Station.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/log4j2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/map.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/spb-metro-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../09_FilesAndNetwork/Lesson 1. Files/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../09_FilesAndNetwork/Lesson 1. Files/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../09_FilesAndNetwork/Lesson 1. Files/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../09_FilesAndNetwork/Lesson 1. Files/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../09_FilesAndNetwork/Lesson 1. Files/Data/file.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../09_FilesAndNetwork/Lesson 1. Files/Lesson 1. Files.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../09_FilesAndNetwork/Lesson 1. Files/out/production/Lesson 1. Files/Main.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../09_FilesAndNetwork/Lesson 1. Files/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../09_FilesAndNetwork/Lesson 2. Copy/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../09_FilesAndNetwork/Lesson 2. Copy/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../09_FilesAndNetwork/Lesson 2. Copy/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../09_FilesAndNetwork/Lesson 2. Copy/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../09_FilesAndNetwork/Lesson 2. Copy/Lesson 2. Copy.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../09_FilesAndNetwork/Lesson 2. Copy/data/file.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../09_FilesAndNetwork/Lesson 2. Copy/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../logging/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../logging/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../logging/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../logging/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_FilesAndNetwork/Files_task/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_FilesAndNetwork/Files_task/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_FilesAndNetwork/Files_task/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_FilesAndNetwork/Files_task/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_FilesAndNetwork/Files_task/Data/file.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_FilesAndNetwork/Files_task/Files.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_FilesAndNetwork/Files_task/out/production/Files/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../09_FilesAndNetwork/Files_task/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +40,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559622580090" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../06_InheritanceAndPolymorphism/Lesson 4" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -194,11 +139,11 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="405" y="163" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.720/2560.0.1280.720@0.0.1280.720" timestamp="1583868623499" />
-    <state x="421" y="115" key="FileChooserDialogImpl" timestamp="1583955989001">
+    <state x="421" y="115" key="FileChooserDialogImpl" timestamp="1584083667415">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="421" y="115" key="FileChooserDialogImpl/0.0.1280.720/2560.0.1280.720@0.0.1280.720" timestamp="1583906837233" />
-    <state x="421" y="115" key="FileChooserDialogImpl/0.0.1280.720@0.0.1280.720" timestamp="1583955989001" />
+    <state x="421" y="115" key="FileChooserDialogImpl/0.0.1280.720@0.0.1280.720" timestamp="1584083667415" />
     <state width="1238" height="95" key="GridCell.Tab.0.bottom" timestamp="1584047354601">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
