@@ -1,58 +1,26 @@
 
-import java.io.*;
-import java.nio.file.Files;
+import java.io.IOException;
+import java.nio.file.*;
 import java.util.*;
 
 public class Main {
 
-    private static String pathCopy;
-    private static String initial;
-
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
 
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Путь объекта: ");
-        String pathObject = scanner.nextLine();
-        System.out.print("Путь копии: ");
-        pathCopy = scanner.nextLine();
-        initial = pathObject.substring(pathObject.lastIndexOf('\\'));
 
-        File file = new File(pathObject);
-        if (file.isDirectory()) ifDirectory(file);
-            else fileCreation(file);
-    }
+        System.out.print("Путь объекта: "); // C:/Users/Uladzislau/Desktop/files
+        Path originalPath = Paths.get(scanner.nextLine().trim());
+//        System.out.println(originalPath.isAbsolute());
 
-    private static String setPath(String s) {
-        return pathCopy + s.substring(s.indexOf(initial));
-    }
+        System.out.print("Путь копии: "); // C:/Users/Uladzislau/Desktop/copy
+        Path copyPath = Paths.get(scanner.nextLine().trim() + "/" + originalPath.getFileName());
 
-    private static void fileCreation(File file) {
+        CopyingDirectory visitor = new CopyingDirectory(originalPath, copyPath);
         try {
-            List<String> lines = Files.readAllLines(file.toPath());
-            PrintWriter writer = new PrintWriter(setPath(file.getPath()));
-
-            lines.forEach(line -> writer.write(line + "\n"));
-            writer.flush();
-            writer.close();
+            Files.walkFileTree(originalPath, visitor);
         } catch (Exception ex) {
-            ex.printStackTrace();
-        }
-    }
-
-    private static void ifDirectory(File file) {
-        try {
-            for (File d : file.listFiles()) {
-                if (d.isDirectory()) {
-                    File dir = new File(setPath(d.getPath()));
-                    dir.mkdirs();
-                    ifDirectory(d);
-                } else {
-                    fileCreation(d);
-                }
-            }
-        }
-        catch(Exception ex){
-            ex.printStackTrace();
+            System.err.println("No such file!");
         }
     }
 }
