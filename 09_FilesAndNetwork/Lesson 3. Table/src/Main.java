@@ -54,6 +54,7 @@ public class Main {
         if (currency.contains("\"")) {
             rub = conversion(currency);
         }
+        System.out.println(rub);
         double finalRub = Double.parseDouble(rub);
         addPlace(allExpenditure, finalPlace, finalRub);
         expenditureRub = expenditureRub + finalRub;
