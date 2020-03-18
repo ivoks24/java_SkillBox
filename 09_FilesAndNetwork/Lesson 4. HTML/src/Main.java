@@ -24,7 +24,7 @@ public class Main {
         //get file name from image path
         String strImageName = strImageURL.substring(strImageURL.lastIndexOf("/") + 1);
 
-        System.out.printf("Saving: %.15 s, from: %s", strImageName, strImageURL);
+        System.out.printf("Saving: %.15s, from: %s", strImageName, strImageURL);
 
         try {
 

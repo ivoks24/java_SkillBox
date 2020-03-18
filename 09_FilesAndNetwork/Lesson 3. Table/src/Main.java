@@ -21,50 +21,47 @@ public class Main {
             e.printStackTrace();
         }
 
-
-        System.out.printf("%nОбщая сумма приходов - %.2f%nСводный отчет о расходе:%n\t===============%n", comingRub);
+        System.out.printf("%nОбщая сумма прихода - %.2f%nСводный отчет о приходе:%n\t===============%n", comingRub);
         allComing.keySet().forEach(k -> System.out.printf("\t%-13s : %.2f%n", k, allComing.get(k)));
 
-        System.out.printf("%nОбщая сумма расходов - %.2f%nСводный отчет о расходе:%n\t===============%n", expenditureRub);
+        System.out.printf("%nОбщая сумма расхода - %.2f%nСводный отчет о расходе:%n\t===============%n", expenditureRub);
         allExpenditure.keySet().forEach(k -> System.out.printf("\t%-13s : %.2f%n", k, allExpenditure.get(k)));
     }
 
     private static void pars(String line) {
 
-        String[] str = line.split("\\s+" + " ");
+        double RUB = getMoney(line);
 
-        if (str[1].length() == 6) {
-            setComingRub(str[2], str[3]);
+        if (line.contains("MCC6536")) {
+           addOperation(allComing, getPlace(line), RUB);
+           comingRub += RUB;
         } else {
-            setExpenditure(str[1], str[3], str[4]);
+            addOperation(allExpenditure, getPlace(line), RUB);
+            expenditureRub += RUB;
         }
 
     }
 
-    private static void setComingRub(String place, String money) {
-        String finalPlace = place.substring(place.lastIndexOf("/") + 1);
-        double finalRub = Double.parseDouble(money.substring(money.lastIndexOf(" ") + 1));
-        addPlace(allComing, finalPlace, finalRub);
-        comingRub = comingRub + finalRub;
+    private static String getPlace(String line) {
+        String[] str = line.split( " {3,}");
+        return str[1];
     }
 
-    private static void setExpenditure(String place, String rub, String currency) {
+    private static Double getMoney(String getRUB) {
 
-        String finalPlace = place.substring(place.lastIndexOf("\\") + 1);
-        if (currency.contains("\"")) {
-            rub = conversion(currency);
+        if (getRUB.contains("\"")) {
+            getRUB = getRUB.substring(getRUB.indexOf("\"") + 1,
+                    getRUB.lastIndexOf("\""));
+        } else if (getRUB.contains("MCC6536")) {
+            getRUB = getRUB.substring(getRUB.lastIndexOf(" "), getRUB.lastIndexOf(","));
+            getRUB = getRUB.substring(getRUB.lastIndexOf(",") + 1);
+        } else {
+            getRUB = getRUB.substring(getRUB.lastIndexOf(",") + 1);
         }
-        double finalRub = Double.parseDouble(rub);
-        addPlace(allExpenditure, finalPlace, finalRub);
-        expenditureRub = expenditureRub + finalRub;
+        return Double.parseDouble(getRUB.replace(",", "."));
     }
 
-    private static String conversion(String currency) {
-        return currency.substring(currency.indexOf("\"") + 1, currency
-                .lastIndexOf("\"")).replace(",", ".");
-    }
-
-    private static void addPlace(HashMap<String, Double> map, String place, Double money) {
+    private static void addOperation(HashMap<String, Double> map, String place, Double money) {
 
         if (!map.containsKey(place)) {
             map.put(place, money);
