@@ -2,7 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8a5e1234-1100-4917-9bdf-687150e205e8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../09_FilesAndNetwork/Lesson 5. JSON/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../09_FilesAndNetwork/Lesson 5. JSON/.idea/libraries/json_simple_1_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../09_FilesAndNetwork/Lesson 5. JSON/.idea/libraries/jsoup_1_13_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../09_FilesAndNetwork/Lesson 5. JSON/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../09_FilesAndNetwork/Lesson 5. JSON/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../09_FilesAndNetwork/Lesson 5. JSON/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../09_FilesAndNetwork/Lesson 5. JSON/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../09_FilesAndNetwork/Lesson 5. JSON/Lesson 5. JSON.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../09_FilesAndNetwork/Lesson 5. JSON/data/metro.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../09_FilesAndNetwork/Lesson 5. JSON/lib/json-simple-1.1.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../09_FilesAndNetwork/Lesson 5. JSON/lib/jsoup-1.13.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../09_FilesAndNetwork/Lesson 5. JSON/src/Line.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../09_FilesAndNetwork/Lesson 5. JSON/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../09_FilesAndNetwork/Lesson 5. JSON/src/Metro.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../09_FilesAndNetwork/Lesson 5. JSON/src/Station.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,9 +52,10 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559622580090" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../06_InheritanceAndPolymorphism/Lesson 4" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />

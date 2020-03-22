@@ -2,30 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="020e5092-1208-494e-b08a-63187e7af290" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/file.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lesson 1. Files.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Lesson 1. Files/Main.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lesson 2. Copy/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lesson 2. Copy/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lesson 2. Copy/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lesson 2. Copy/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lesson 2. Copy/Lesson 2. Copy.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lesson 2. Copy/data/file.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lesson 2. Copy/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../08_ExceptionsDebuggingAndTesting/logging/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../08_ExceptionsDebuggingAndTesting/logging/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Files_task/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Files_task/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Files_task/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Files_task/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Files_task/Data/file.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Files_task/Files.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Files_task/out/production/Files/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Files_task/src/Main.java" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson 5. JSON/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson 5. JSON/.idea/libraries/json_simple_1_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson 5. JSON/.idea/libraries/jsoup_1_13_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson 5. JSON/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson 5. JSON/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson 5. JSON/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson 5. JSON/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson 5. JSON/Lesson 5. JSON.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson 5. JSON/data/metro.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson 5. JSON/lib/json-simple-1.1.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson 5. JSON/lib/jsoup-1.13.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson 5. JSON/src/Line.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson 5. JSON/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson 5. JSON/src/Metro.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson 5. JSON/src/Station.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson 5. JSON_#2/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson 5. JSON_#2/.idea/libraries/json_simple_1_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson 5. JSON_#2/.idea/libraries/jsoup_1_13_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson 5. JSON_#2/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson 5. JSON_#2/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson 5. JSON_#2/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson 5. JSON_#2/Lesson 5. JSON_#2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson 5. JSON_#2/data/metro.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson 5. JSON_#2/lib/json-simple-1.1.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson 5. JSON_#2/lib/jsoup-1.13.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson 5. JSON_#2/src/Line.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson 5. JSON_#2/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../08_ExceptionsDebuggingAndTesting/logging.2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../08_ExceptionsDebuggingAndTesting/logging.2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +57,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Lesson 2. Copy" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Lesson 3. Table" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -91,9 +96,10 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="421" y="115" key="FileChooserDialogImpl" timestamp="1584029460918">
-      <screen x="0" y="0" width="1280" height="720" />
+    <state x="421" y="110" key="FileChooserDialogImpl" timestamp="1584852079730">
+      <screen x="0" y="0" width="1280" height="690" />
     </state>
+    <state x="421" y="110" key="FileChooserDialogImpl/0.0.1280.690@0.0.1280.690" timestamp="1584852079730" />
     <state x="421" y="115" key="FileChooserDialogImpl/0.0.1280.720/2560.0.1280.720@0.0.1280.720" timestamp="1583763106814" />
     <state x="421" y="115" key="FileChooserDialogImpl/0.0.1280.720@0.0.1280.720" timestamp="1584029460918" />
     <state width="1238" height="141" key="GridCell.Tab.0.bottom" timestamp="1584004508311">
