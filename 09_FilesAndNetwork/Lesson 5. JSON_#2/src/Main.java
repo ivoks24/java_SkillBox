@@ -1,3 +1,4 @@
+import com.fasterxml.jackson.databind.ObjectMapper;
 import org.json.simple.JSONObject;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
@@ -40,6 +41,19 @@ public class Main {
 //        lines.keySet().forEach(line -> {
 //            System.out.println(line + ": " + lines.get(line).getStations());
 //        });
+
+        ObjectMapper objectMapper = new ObjectMapper();
+
+        try {
+            String json = objectMapper.writeValueAsString(list);
+            writer = new PrintWriter("data/jsonFile'objectMapper'.json");
+            writer.write(object.toJSONString());
+            writer.flush();
+            writer.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
 
     }
 
