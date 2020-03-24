@@ -13,7 +13,7 @@ public class Main {
                 "&serverTimezone=UTC";
 
         String user = "root";
-        String pass = "9241026ivoks";
+        String pass = "";
 
         try {
             Connection connection = DriverManager.getConnection(url_2, user, pass);
@@ -23,12 +23,13 @@ public class Main {
             ResultSet resultSet = statement.executeQuery(
                     "SELECT course_name, COUNT(course_name) / TIMESTAMPDIFF(MONTH, min(subscription_date), max(subscription_date)) AS Month " +
                             "FROM purchaselist GROUP BY course_name;");
+
             while (resultSet.next()) {
 
 //                String courseName = resultSet.getString("name");
                 System.out.println(resultSet.getString(1) + " - " + resultSet.getString(2));
             }
-            
+
             resultSet.close();
             statement.close();
             connection.close();
