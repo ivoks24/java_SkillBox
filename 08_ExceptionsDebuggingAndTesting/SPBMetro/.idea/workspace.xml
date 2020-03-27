@@ -2,19 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8a5e1234-1100-4917-9bdf-687150e205e8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../logging/.idea/libraries/log4j_core_2_13_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../logging/logs/app.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../logging/logs/errors.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../logging/logs/history.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../logging/src/main/resources/log4j2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../10_SQLAndHibernate/Lesson 3/src/main/java/PurchaseList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../10_SQLAndHibernate/Lesson 3/src/main/java/Subscription.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../logging/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../logging/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../logging/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../logging/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../logging/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../logging/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../logging/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../logging/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../logging/src/main/java/RouteCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../logging/src/main/java/RouteCalculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../logging/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../logging/target/classes/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../logging/target/spb-metro-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../logging/target/spb-metro-1.0-SNAPSHOT.jar" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
