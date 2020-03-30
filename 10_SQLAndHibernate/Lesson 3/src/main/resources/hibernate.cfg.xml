@@ -25,6 +25,7 @@
         <mapping class="Student"/>
         <mapping class="Teacher"/>
         <mapping class="Subscription"/>
+<!--        <mapping class="PurchaseList"/>-->
 
     </session-factory>
 </hibernate-configuration>

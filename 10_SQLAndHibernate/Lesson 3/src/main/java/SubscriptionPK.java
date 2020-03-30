@@ -2,9 +2,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.Column;
-import javax.persistence.Embeddable;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.io.Serializable;
 
 @Embeddable
@@ -13,10 +11,12 @@ import java.io.Serializable;
 @AllArgsConstructor
 public class SubscriptionPK implements Serializable {
 
-    @Column(name = "student_id")
-    private int student;
+    @ManyToOne//(fetch = FetchType.LAZY, optional=false)
+    @JoinColumn(name = "student_id") //insertable = false, updatable = false, nullable=false
+    private Student student;
 
-    @Column(name = "course_id")
-    private int course;
+    @ManyToOne//(fetch = FetchType.LAZY, optional=false)
+    @JoinColumn(name = "course_id")
+    private Course course;
 
 }
