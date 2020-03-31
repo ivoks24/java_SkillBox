@@ -30,7 +30,13 @@ public class Main {
 //            System.out.println(student.getName());
 //        }
 
-        Subscription subscription = session.get(Subscription.class, 1);
+        Student student = session.get(Student.class, 1);
+        Course course = session.get(Course.class, 2);
+        SubscriptionPK subscriptionPK = new SubscriptionPK();
+        subscriptionPK.setCourse(course);
+        subscriptionPK.setStudent(student);
+
+        Subscription subscription = session.get(Subscription.class, subscriptionPK);
         System.out.println(subscription);
 
         transaction.commit();

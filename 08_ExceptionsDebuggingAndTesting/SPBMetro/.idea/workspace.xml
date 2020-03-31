@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8a5e1234-1100-4917-9bdf-687150e205e8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../10_SQLAndHibernate/Lesson 3/src/main/java/PurchaseList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../10_SQLAndHibernate/Lesson 3/src/main/java/Subscription.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -46,7 +44,7 @@
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559622580090" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../09_FilesAndNetwork/Lesson 5. JSON_#2" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -150,9 +148,10 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="93" y="93" width="1093" height="533" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1280.720/2560.0.1280.720@0.0.1280.720" timestamp="1583724466543" />
-    <state x="421" y="115" key="FileChooserDialogImpl" timestamp="1583844374121">
-      <screen x="0" y="0" width="1280" height="720" />
+    <state x="421" y="110" key="FileChooserDialogImpl" timestamp="1585663090669">
+      <screen x="0" y="0" width="1280" height="690" />
     </state>
+    <state x="421" y="110" key="FileChooserDialogImpl/0.0.1280.690@0.0.1280.690" timestamp="1585663090669" />
     <state x="421" y="115" key="FileChooserDialogImpl/0.0.1280.720/2560.0.1280.720@0.0.1280.720" timestamp="1583844374121" />
     <state x="421" y="115" key="FileChooserDialogImpl/0.0.1280.720@0.0.1280.720" timestamp="1583492324567" />
     <state width="1238" height="131" key="GridCell.Tab.0.bottom" timestamp="1583844375142">
