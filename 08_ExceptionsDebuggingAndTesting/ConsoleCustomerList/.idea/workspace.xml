@@ -2,14 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f368384a-e66f-46cb-aa05-8a5865081856" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../SPBMetro/lib/hamcrest-core-1.3.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SPBMetro/lib/json-simple-1.1.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SPBMetro/lib/junit-4.12.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SPBMetro/src/test/java/RouteCalculatorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../11_Multithreading/Concurrency/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../11_Multithreading/Concurrency/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../11_Multithreading/Concurrency/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../11_Multithreading/Concurrency/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../11_Multithreading/Concurrency/Concurrency.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../11_Multithreading/Concurrency/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../11_Multithreading/Concurrency/src/Task.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../11_Multithreading/Concurrency/src/ValueStorage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../11_Multithreading/Transactions/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../11_Multithreading/Transactions/src/Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SPBMetro/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SPBMetro/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SPBMetro/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SPBMetro/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SPBMetro/src/main/java/RouteCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SPBMetro/src/main/java/RouteCalculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../10_SQLAndHibernate/Lesson 2. Hibernate/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../10_SQLAndHibernate/Lesson 2. Hibernate/src/main/resources/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../11_Multithreading/Deadlock/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../11_Multithreading/Deadlock/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../11_Multithreading/Deadlock/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../11_Multithreading/Deadlock/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../11_Multithreading/ImageResizer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../11_Multithreading/ImageResizer/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../11_Multithreading/Transactions/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../11_Multithreading/Transactions/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../11_Multithreading/Transactions/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../11_Multithreading/Transactions/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../11_Multithreading/Transactions/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../11_Multithreading/Transactions/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../11_Multithreading/Transactions/src/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../11_Multithreading/Transactions/src/Account.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../11_Multithreading/Transactions/src/Bank.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../11_Multithreading/Transactions/src/Bank.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -2,38 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7457d19e-13ad-4b3a-92f7-9338e578582d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../10_SQLAndHibernate/Lesson 4/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../10_SQLAndHibernate/Lesson 4/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../10_SQLAndHibernate/Lesson 4/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../10_SQLAndHibernate/Lesson 4/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../10_SQLAndHibernate/Lesson 4/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../10_SQLAndHibernate/Lesson 4/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../10_SQLAndHibernate/Lesson 4/jdbc-exp.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../10_SQLAndHibernate/Lesson 4/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../10_SQLAndHibernate/Lesson 4/src/main/java/CompositeKey.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../10_SQLAndHibernate/Lesson 4/src/main/java/Course.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../10_SQLAndHibernate/Lesson 4/src/main/java/CourseType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../10_SQLAndHibernate/Lesson 4/src/main/java/LinkedPurchaseList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../10_SQLAndHibernate/Lesson 4/src/main/java/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../10_SQLAndHibernate/Lesson 4/src/main/java/PurchaseList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../10_SQLAndHibernate/Lesson 4/src/main/java/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../10_SQLAndHibernate/Lesson 4/src/main/java/Subscription.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../10_SQLAndHibernate/Lesson 4/src/main/java/Teacher.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../10_SQLAndHibernate/Lesson 4/src/main/resources/hibernate.cfg.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../10_SQLAndHibernate/Lesson 4/target/classes/Course.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../10_SQLAndHibernate/Lesson 4/target/classes/CourseType.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../10_SQLAndHibernate/Lesson 4/target/classes/Main.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../10_SQLAndHibernate/Lesson 4/target/classes/PurchaseList.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../10_SQLAndHibernate/Lesson 4/target/classes/Student.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../10_SQLAndHibernate/Lesson 4/target/classes/Subscription.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../10_SQLAndHibernate/Lesson 4/target/classes/SubscriptionPK.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../10_SQLAndHibernate/Lesson 4/target/classes/Teacher.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../10_SQLAndHibernate/Lesson 4/target/classes/hibernate.cfg.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ImagesResizer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../10_SQLAndHibernate/Lesson 3/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../10_SQLAndHibernate/Lesson 3/src/main/resources/hibernate.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../10_SQLAndHibernate/Lesson 3/target/classes/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../10_SQLAndHibernate/Lesson 3/target/classes/hibernate.cfg.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Concurrency/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Concurrency/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Concurrency/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Concurrency/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Concurrency/Concurrency.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Concurrency/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Concurrency/src/Task.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Concurrency/src/ValueStorage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Transactions/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Transactions/src/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../08_ExceptionsDebuggingAndTesting/ConsoleCustomerList/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../08_ExceptionsDebuggingAndTesting/ConsoleCustomerList/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../10_SQLAndHibernate/Lesson 2. Hibernate/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../10_SQLAndHibernate/Lesson 2. Hibernate/src/main/resources/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Deadlock/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Deadlock/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Deadlock/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Deadlock/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Transactions/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Transactions/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Transactions/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Transactions/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Transactions/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Transactions/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Transactions/src/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Transactions/src/Account.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Transactions/src/Bank.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Transactions/src/Bank.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +47,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1564647381235" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../10_SQLAndHibernate/Lesson 4" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -93,10 +81,10 @@
       <screen x="0" y="0" width="1280" height="690" />
     </state>
     <state x="446" y="61" key="#com.intellij.ide.util.MemberChooser/0.0.1280.690@0.0.1280.690" timestamp="1585882522711" />
-    <state x="421" y="100" key="FileChooserDialogImpl" timestamp="1585970726667">
+    <state x="421" y="100" key="FileChooserDialogImpl" timestamp="1585976908087">
       <screen x="0" y="0" width="1280" height="690" />
     </state>
-    <state x="421" y="100" key="FileChooserDialogImpl/0.0.1280.690@0.0.1280.690" timestamp="1585970726667" />
+    <state x="421" y="100" key="FileChooserDialogImpl/0.0.1280.690@0.0.1280.690" timestamp="1585976908087" />
     <state width="1238" height="146" key="GridCell.Tab.0.bottom" timestamp="1585972105751">
       <screen x="0" y="0" width="1280" height="690" />
     </state>
