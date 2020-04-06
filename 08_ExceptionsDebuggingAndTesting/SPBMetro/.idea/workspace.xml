@@ -2,7 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8a5e1234-1100-4917-9bdf-687150e205e8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../11_Multithreading/Transactions/.idea/libraries/junit_4_12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../11_Multithreading/Transactions/lib/junit-4.12.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../11_Multithreading/Transactions/src/BankTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../11_Multithreading/Transactions/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../11_Multithreading/Transactions/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../11_Multithreading/Transactions/Transactions.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../11_Multithreading/Transactions/Transactions.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../11_Multithreading/Transactions/out/production/Transactions/Account.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../11_Multithreading/Transactions/out/production/Transactions/Account.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../11_Multithreading/Transactions/out/production/Transactions/Bank.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../11_Multithreading/Transactions/out/production/Transactions/Bank.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../11_Multithreading/Transactions/out/production/Transactions/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../11_Multithreading/Transactions/out/production/Transactions/Test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../11_Multithreading/Transactions/src/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../11_Multithreading/Transactions/src/Account.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../11_Multithreading/Transactions/src/Bank.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../11_Multithreading/Transactions/src/Bank.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../11_Multithreading/Transactions/src/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../11_Multithreading/Transactions/src/Test.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +55,7 @@
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559622580090" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../09_FilesAndNetwork/Lesson 5. JSON_#2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />

@@ -1,17 +1,18 @@
+import java.util.concurrent.atomic.AtomicLong;
+
 public class Account
 {
-    private long money;
+    private AtomicLong money = new AtomicLong();
     private String accNumber;
     private static int accountCount = 1;
     private boolean block = false;
 
     public Account() {
 
-        money = (int) (Math.random() * 90_000 + 1000_000);
+        money.set(0); //(int) (Math.random() * 90_000 + 100_000));
 
         accNumber = String.format("%06d", accountCount);
         accountCount++;
-        System.out.println(accNumber);
     }
 
     public boolean isBlock() {
@@ -23,15 +24,15 @@ public class Account
     }
 
     public void getMoney(long money) {
-        this.money -= money;
+        this.money.set(this.money.get() - money);
     }
 
     public void setMoney(long money) {
-        this.money += money;
+        this.money.set(this.money.get() + money);
     }
 
     public long getBalance() {
-        return money;
+        return money.get();
     }
 
     public String getAccNumber() {

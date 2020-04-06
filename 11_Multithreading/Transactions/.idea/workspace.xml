@@ -2,26 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d71cd778-2a81-4f76-b368-5740cedb784f" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/../Concurrency/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Concurrency/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Concurrency/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Concurrency/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Concurrency/Concurrency.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Concurrency/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Concurrency/src/Task.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Concurrency/src/ValueStorage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../08_ExceptionsDebuggingAndTesting/ConsoleCustomerList/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../08_ExceptionsDebuggingAndTesting/ConsoleCustomerList/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../10_SQLAndHibernate/Lesson 2. Hibernate/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../10_SQLAndHibernate/Lesson 2. Hibernate/src/main/resources/hibernate.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Deadlock/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Deadlock/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Deadlock/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Deadlock/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ImageResizer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ImageResizer/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/junit_4_12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/mockito_all_1_10_19.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/junit-4.12.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/mockito-all-1.10.19.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BankTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../08_ExceptionsDebuggingAndTesting/SPBMetro/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../08_ExceptionsDebuggingAndTesting/SPBMetro/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Transactions.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Transactions.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Transactions/Account.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Transactions/Account.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Transactions/Bank.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Transactions/Bank.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Transactions/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Transactions/Test.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Account.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Bank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Bank.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,12 +52,11 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="create.test.in.the.same.root" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../08_ExceptionsDebuggingAndTesting/ConsoleCustomerList" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ImageResizer" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="File.Encoding" />
-    <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.ChangelistConflict" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -72,8 +65,11 @@
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Uladzislau\Desktop\java_basics\11_Multithreading\Transactions\lib" />
+    </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.BankTest.testTransfer">
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
       <module name="" />
       <option name="ACTIVITY_CLASS" value="" />
@@ -135,6 +131,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="BankTest.testTransfer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Transactions" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="BankTest" />
+      <option name="METHOD_NAME" value="testTransfer" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BankTest.testTransfer_isBlock" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Transactions" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="BankTest" />
+      <option name="METHOD_NAME" value="testTransfer_isBlock" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -162,6 +180,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BankTest.testTransfer" />
+        <item itemvalue="JUnit.BankTest.testTransfer_isBlock" />
         <item itemvalue="Application.Test" />
       </list>
     </recent_temporary>
@@ -188,30 +208,34 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state x="446" y="29" key="#com.intellij.ide.util.MemberChooser" timestamp="1586005481736">
+    <state x="93" y="93" width="1093" height="503" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1586102228351">
       <screen x="0" y="0" width="1280" height="690" />
     </state>
-    <state x="446" y="29" key="#com.intellij.ide.util.MemberChooser/0.0.1280.690@0.0.1280.690" timestamp="1586005481736" />
-    <state x="421" y="100" key="FileChooserDialogImpl" timestamp="1586073970594">
+    <state x="93" y="93" width="1093" height="503" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1280.690@0.0.1280.690" timestamp="1586102228351" />
+    <state x="306" y="54" key="#com.intellij.ide.util.MemberChooser" timestamp="1586098251278">
       <screen x="0" y="0" width="1280" height="690" />
     </state>
-    <state x="421" y="100" key="FileChooserDialogImpl/0.0.1280.690@0.0.1280.690" timestamp="1586073970594" />
-    <state width="1238" height="174" key="GridCell.Tab.0.bottom" timestamp="1586072037372">
+    <state x="306" y="54" key="#com.intellij.ide.util.MemberChooser/0.0.1280.690@0.0.1280.690" timestamp="1586098251278" />
+    <state x="421" y="100" key="FileChooserDialogImpl" timestamp="1586150001419">
       <screen x="0" y="0" width="1280" height="690" />
     </state>
-    <state width="1238" height="174" key="GridCell.Tab.0.bottom/0.0.1280.690@0.0.1280.690" timestamp="1586072037372" />
-    <state width="1238" height="174" key="GridCell.Tab.0.center" timestamp="1586072037371">
+    <state x="421" y="100" key="FileChooserDialogImpl/0.0.1280.690@0.0.1280.690" timestamp="1586150001419" />
+    <state width="1238" height="182" key="GridCell.Tab.0.bottom" timestamp="1586110466619">
       <screen x="0" y="0" width="1280" height="690" />
     </state>
-    <state width="1238" height="174" key="GridCell.Tab.0.center/0.0.1280.690@0.0.1280.690" timestamp="1586072037371" />
-    <state width="1238" height="174" key="GridCell.Tab.0.left" timestamp="1586072037371">
+    <state width="1238" height="182" key="GridCell.Tab.0.bottom/0.0.1280.690@0.0.1280.690" timestamp="1586110466619" />
+    <state width="1238" height="182" key="GridCell.Tab.0.center" timestamp="1586110466619">
       <screen x="0" y="0" width="1280" height="690" />
     </state>
-    <state width="1238" height="174" key="GridCell.Tab.0.left/0.0.1280.690@0.0.1280.690" timestamp="1586072037371" />
-    <state width="1238" height="174" key="GridCell.Tab.0.right" timestamp="1586072037371">
+    <state width="1238" height="182" key="GridCell.Tab.0.center/0.0.1280.690@0.0.1280.690" timestamp="1586110466619" />
+    <state width="1238" height="182" key="GridCell.Tab.0.left" timestamp="1586110466619">
       <screen x="0" y="0" width="1280" height="690" />
     </state>
-    <state width="1238" height="174" key="GridCell.Tab.0.right/0.0.1280.690@0.0.1280.690" timestamp="1586072037371" />
+    <state width="1238" height="182" key="GridCell.Tab.0.left/0.0.1280.690@0.0.1280.690" timestamp="1586110466619" />
+    <state width="1238" height="182" key="GridCell.Tab.0.right" timestamp="1586110466619">
+      <screen x="0" y="0" width="1280" height="690" />
+    </state>
+    <state width="1238" height="182" key="GridCell.Tab.0.right/0.0.1280.690@0.0.1280.690" timestamp="1586110466619" />
     <state width="1238" height="172" key="GridCell.Tab.1.bottom" timestamp="1586025537257">
       <screen x="0" y="0" width="1280" height="690" />
     </state>
@@ -228,13 +252,17 @@
       <screen x="0" y="0" width="1280" height="690" />
     </state>
     <state width="1238" height="172" key="GridCell.Tab.1.right/0.0.1280.690@0.0.1280.690" timestamp="1586025537256" />
-    <state x="412" y="48" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1586003230525">
+    <state x="142" y="0" key="SettingsEditor" timestamp="1586149331794">
       <screen x="0" y="0" width="1280" height="690" />
     </state>
-    <state x="412" y="48" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1280.690@0.0.1280.690" timestamp="1586003230525" />
-    <state x="301" y="14" width="672" height="678" key="search.everywhere.popup" timestamp="1586003181366">
+    <state x="142" y="0" key="SettingsEditor/0.0.1280.690@0.0.1280.690" timestamp="1586149331794" />
+    <state x="813" y="73" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1586097588162">
       <screen x="0" y="0" width="1280" height="690" />
     </state>
-    <state x="301" y="14" width="672" height="678" key="search.everywhere.popup/0.0.1280.690@0.0.1280.690" timestamp="1586003181366" />
+    <state x="813" y="73" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1280.690@0.0.1280.690" timestamp="1586097588162" />
+    <state x="303" y="16" width="672" height="678" key="search.everywhere.popup" timestamp="1586098224468">
+      <screen x="0" y="0" width="1280" height="690" />
+    </state>
+    <state x="303" y="16" width="672" height="678" key="search.everywhere.popup/0.0.1280.690@0.0.1280.690" timestamp="1586098224468" />
   </component>
 </project>

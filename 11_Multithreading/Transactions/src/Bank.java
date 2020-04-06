@@ -57,11 +57,9 @@ public class Bank {
                     }
                 }
             }
-
         });
 
         thread.start();
-
     }
 
     /**
@@ -75,7 +73,7 @@ public class Bank {
         }
     }
 
-    private Account getAccount(String accountNum) {
+    private synchronized Account getAccount(String accountNum) {
         return accounts.getOrDefault(accountNum, null);
     }
 

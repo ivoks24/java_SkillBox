@@ -11,31 +11,21 @@ public class Main {
 
         File srcDir = new File(srcFolder);
 
+        int cores = Runtime.getRuntime().availableProcessors();
         long start = System.currentTimeMillis();
 
-        File[] files = srcDir.listFiles();
-        int middle = files.length / 4;
+        File[] allFiles = srcDir.listFiles();
+        int middle = allFiles.length / cores;
+        int size = middle;
 
-        File[] files1 = new File[middle];
-        System.arraycopy(files, 0, files1, 0, files1.length);
-        ImagesResizer resizer1 = new ImagesResizer(files1, newWidth, dstFolder, start);
-        new Thread(resizer1).start();
+        for (int i = 0; i < cores; i++) {
 
-        File[] files2 = new File[middle];
-        System.arraycopy(files, middle, files2, 0, files2.length);
-        ImagesResizer resizer2 = new ImagesResizer(files2, newWidth, dstFolder, start);
-        new Thread(resizer2).start();
+            if (i == cores - 1) size = allFiles.length - middle * (cores - 1);
 
-        File[] files3 = new File[middle];
-        System.arraycopy(files, middle * 2, files3, 0, files3.length);
-        ImagesResizer resizer3 = new ImagesResizer(files3, newWidth, dstFolder, start);
-        new Thread(resizer3).start();
-
-        File[] files4 = new File[files.length - middle * 3];
-        System.arraycopy(files, middle * 3, files4, 0, files4.length);
-        ImagesResizer resizer4 = new ImagesResizer(files4, newWidth, dstFolder, start);
-        new Thread(resizer4).start();
-
-
+            File[] files = new File[size];
+            System.arraycopy(allFiles, middle * i, files, 0, size);
+            ImagesResizer resize = new ImagesResizer(files, newWidth, dstFolder, start);
+            new Thread(resize).start();
+        }
     }
 }

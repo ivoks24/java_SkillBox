@@ -2,26 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7457d19e-13ad-4b3a-92f7-9338e578582d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Concurrency/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Concurrency/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Concurrency/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Concurrency/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Concurrency/Concurrency.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Concurrency/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Concurrency/src/Task.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Concurrency/src/ValueStorage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Transactions/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Transactions/src/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../08_ExceptionsDebuggingAndTesting/ConsoleCustomerList/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../08_ExceptionsDebuggingAndTesting/ConsoleCustomerList/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../10_SQLAndHibernate/Lesson 2. Hibernate/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../10_SQLAndHibernate/Lesson 2. Hibernate/src/main/resources/hibernate.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Deadlock/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Deadlock/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Deadlock/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Deadlock/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Transactions/.idea/libraries/junit_4_12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Transactions/.idea/libraries/mockito_all_1_10_19.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Transactions/lib/junit-4.12.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Transactions/lib/mockito-all-1.10.19.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Transactions/src/BankTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../08_ExceptionsDebuggingAndTesting/SPBMetro/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../08_ExceptionsDebuggingAndTesting/SPBMetro/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Transactions/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Transactions/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Transactions/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Transactions/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Transactions/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Transactions/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Transactions/Transactions.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Transactions/Transactions.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Transactions/out/production/Transactions/Account.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Transactions/out/production/Transactions/Account.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Transactions/out/production/Transactions/Bank.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Transactions/out/production/Transactions/Bank.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Transactions/out/production/Transactions/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Transactions/out/production/Transactions/Test.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Transactions/src/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Transactions/src/Account.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Transactions/src/Bank.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Transactions/src/Bank.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Transactions/src/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Transactions/src/Test.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,22 +81,38 @@
       <screen x="0" y="0" width="1280" height="690" />
     </state>
     <state x="421" y="100" key="FileChooserDialogImpl/0.0.1280.690@0.0.1280.690" timestamp="1585976908087" />
-    <state width="1238" height="146" key="GridCell.Tab.0.bottom" timestamp="1585972105751">
+    <state width="1238" height="194" key="GridCell.Tab.0.bottom" timestamp="1586161696635">
       <screen x="0" y="0" width="1280" height="690" />
     </state>
-    <state width="1238" height="146" key="GridCell.Tab.0.bottom/0.0.1280.690@0.0.1280.690" timestamp="1585972105751" />
-    <state width="1238" height="146" key="GridCell.Tab.0.center" timestamp="1585972105749">
+    <state width="1238" height="194" key="GridCell.Tab.0.bottom/0.0.1280.690@0.0.1280.690" timestamp="1586161696635" />
+    <state width="1238" height="194" key="GridCell.Tab.0.center" timestamp="1586161696635">
       <screen x="0" y="0" width="1280" height="690" />
     </state>
-    <state width="1238" height="146" key="GridCell.Tab.0.center/0.0.1280.690@0.0.1280.690" timestamp="1585972105749" />
-    <state width="1238" height="146" key="GridCell.Tab.0.left" timestamp="1585972105749">
+    <state width="1238" height="194" key="GridCell.Tab.0.center/0.0.1280.690@0.0.1280.690" timestamp="1586161696635" />
+    <state width="1238" height="194" key="GridCell.Tab.0.left" timestamp="1586161696635">
       <screen x="0" y="0" width="1280" height="690" />
     </state>
-    <state width="1238" height="146" key="GridCell.Tab.0.left/0.0.1280.690@0.0.1280.690" timestamp="1585972105749" />
-    <state width="1238" height="146" key="GridCell.Tab.0.right" timestamp="1585972105750">
+    <state width="1238" height="194" key="GridCell.Tab.0.left/0.0.1280.690@0.0.1280.690" timestamp="1586161696635" />
+    <state width="1238" height="194" key="GridCell.Tab.0.right" timestamp="1586161696635">
       <screen x="0" y="0" width="1280" height="690" />
     </state>
-    <state width="1238" height="146" key="GridCell.Tab.0.right/0.0.1280.690@0.0.1280.690" timestamp="1585972105750" />
+    <state width="1238" height="194" key="GridCell.Tab.0.right/0.0.1280.690@0.0.1280.690" timestamp="1586161696635" />
+    <state width="1238" height="233" key="GridCell.Tab.1.bottom" timestamp="1586161326025">
+      <screen x="0" y="0" width="1280" height="690" />
+    </state>
+    <state width="1238" height="233" key="GridCell.Tab.1.bottom/0.0.1280.690@0.0.1280.690" timestamp="1586161326025" />
+    <state width="1238" height="233" key="GridCell.Tab.1.center" timestamp="1586161326025">
+      <screen x="0" y="0" width="1280" height="690" />
+    </state>
+    <state width="1238" height="233" key="GridCell.Tab.1.center/0.0.1280.690@0.0.1280.690" timestamp="1586161326025" />
+    <state width="1238" height="233" key="GridCell.Tab.1.left" timestamp="1586161326025">
+      <screen x="0" y="0" width="1280" height="690" />
+    </state>
+    <state width="1238" height="233" key="GridCell.Tab.1.left/0.0.1280.690@0.0.1280.690" timestamp="1586161326025" />
+    <state width="1238" height="233" key="GridCell.Tab.1.right" timestamp="1586161326025">
+      <screen x="0" y="0" width="1280" height="690" />
+    </state>
+    <state width="1238" height="233" key="GridCell.Tab.1.right/0.0.1280.690@0.0.1280.690" timestamp="1586161326025" />
   </component>
   <component name="masterDetails">
     <states>
