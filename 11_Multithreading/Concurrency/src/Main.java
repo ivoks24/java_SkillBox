@@ -1,28 +1,31 @@
-import java.util.ArrayList;
+import java.util.concurrent.Callable;
+import java.util.concurrent.ExecutionException;
+import java.util.concurrent.FutureTask;
 
 public class Main {
 
-    private static ArrayList<Double> numbers = new ArrayList<>();
-
     public static void main(String[] args) {
 
-        ArrayList<Thread> threads = new ArrayList<>();
-        for (int i = 0; i < 10; i++) {
-            threads.add(new Thread(Main::someHeaveMethod));
-        }
-        threads.forEach(Thread::start);
-    }
+        Callable<Double> callable = (() -> {
 
-    private static void someHeaveMethod() {
-
-        for (int i = 0; i < 1_000_000; i++) {
-
-            double value = Math.random() / Math.random();
-            synchronized (Main.class) {
-                numbers.add(value);
+            double sum = 0;
+            for (int i = 0; i < 1000; i++) {
+                sum += Math.random();
             }
+
+            if (sum / 1000 < 0.5) {
+                throw new IllegalArgumentException("Error!");
+            }
+            return sum / 1000;
+        });
+
+        FutureTask futureTask = new FutureTask(callable);
+        new Thread(futureTask).start();
+        try {
+            System.out.println(futureTask.get());
+        } catch (InterruptedException | ExecutionException | IllegalArgumentException ex) {
+            System.err.println(ex.getMessage());
         }
-        System.out.println(numbers.size());
-        numbers.clear();
+
     }
 }

@@ -21,41 +21,52 @@ public class Bank {
      */
     public void transfer(String fromAccountNum, String toAccountNum, long amount) {
 
-        Thread thread = new Thread(()-> {
+        if (fromAccountNum.equals(toAccountNum)) {
+            return;
+        }
 
-            if (fromAccountNum.equals(toAccountNum)) {
-                return;
+        Account fromAccount = getAccount(fromAccountNum);
+        Account toAccount = getAccount(toAccountNum);
+
+        if (fromAccountNum.compareTo(toAccountNum) > 0) {
+            synchronized (fromAccount) {
+                synchronized (toAccount) {
+                    doTransfer(fromAccount, toAccount, amount);
+                }
+            }
+        } else {
+            synchronized (toAccount) {
+                synchronized (fromAccount) {
+                    doTransfer(fromAccount, toAccount, amount);
+                }
+            }
+        }
+    }
+
+    private void doTransfer(Account fromAccount, Account toAccount, long amount) {
+
+        if (!fromAccount.isBlock() && !toAccount.isBlock() && (fromAccount.getBalance() >= amount && amount > 0)) {
+
+            fromAccount.getMoney(amount);
+            toAccount.setMoney(amount);
+            System.out.println("Операция прошла успещно!");
+            boolean isBlock = false;
+
+            if (amount > 50_000) {
+                try {
+                    isBlock = isFraud(fromAccount.getAccNumber(), toAccount.getAccNumber(), amount);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
             }
 
-            Account fromAccount = getAccount(fromAccountNum);
-            Account toAccount = getAccount(toAccountNum);
+            fromAccount.setBlock(isBlock);
+            toAccount.setBlock(isBlock);
 
-            synchronized (Account.class) {
-                if (!fromAccount.isBlock() && !toAccount.isBlock() && (fromAccount.getBalance() >= amount && amount > 0)) {
-
-                    fromAccount.getMoney(amount);
-                    toAccount.setMoney(amount);
-                    System.out.println("Операция прошла успещно!");
-                    boolean isBlock = false;
-
-                    if (amount > 50_000) {
-                        try {
-                            isBlock = isFraud(fromAccountNum, toAccountNum, amount);
-                        } catch (InterruptedException e) {
-                            e.printStackTrace();
-                        }
-                    }
-
-                    fromAccount.setBlock(isBlock);
-                    toAccount.setBlock(isBlock);
-
-                } else {
-                    System.err.println("Один или оба аккаунта заблокированы!" +
-                        "\n Либо проверьте наличие переводимой суммы."); }
-            }
-        });
-
-        thread.start();
+        } else {
+            System.err.println("Один или оба аккаунта заблокированы!" +
+                    "\n Либо проверьте наличие переводимой суммы.");
+        }
     }
 
     /**

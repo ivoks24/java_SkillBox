@@ -14,14 +14,12 @@ public class BankTest extends TestCase {
     public void setUp() {
 
         bank = new Bank();
-
     }
 
     @Test
     public void testTransfer_siBlock() throws InterruptedException {
 
         Account account = new Account();
-//        Account account = mock(Account.class);
         Account account1 = new Account();
 
         account.setMoney(600_000);
@@ -30,8 +28,11 @@ public class BankTest extends TestCase {
         bank.setAccount(account1);
 
 //        when(account.isBlock()).thenReturn(true);
+
         do {
-            bank.transfer(account.getAccNumber(), account1.getAccNumber(), 55_000);
+            new Thread(() -> {
+                bank.transfer(account.getAccNumber(), account1.getAccNumber(), 55_000);
+            }).start();
             Thread.sleep(500);
         } while (!account.isBlock());
     }
@@ -39,29 +40,37 @@ public class BankTest extends TestCase {
     @Test
     public void testTransfer() {
 
+
         Account account = new Account();
         Account account1 = new Account();
-        Account account2 = new Account();
 
-        account1.setMoney(100_000);
-        account2.setMoney(100_000);
+        account.setMoney(200_000);
+        account1.setMoney(200_000);
 
         bank.setAccount(account);
         bank.setAccount(account1);
-        bank.setAccount(account2);
 
-        bank.transfer(account1.getAccNumber(), account.getAccNumber(), 10_000);
-        bank.transfer(account2.getAccNumber(), account.getAccNumber(), 10_000);
-        bank.transfer(account1.getAccNumber(), account.getAccNumber(), 25_000);
-        bank.transfer(account.getAccNumber(), account1.getAccNumber(), 5_000);
+
+        for (int i = 0; i < 20; i++) {
+
+            new Thread(() -> {
+                bank.transfer(account1.getAccNumber(), account.getAccNumber(), 10_000);
+            }).start();
+            new Thread(() -> {
+                bank.transfer(account1.getAccNumber(), account.getAccNumber(), 5_000);
+            }).start();
+            new Thread(() -> {
+                bank.transfer(account.getAccNumber(), account1.getAccNumber(), 15_000);
+            }).start();
+        }
 
         try {
-            Thread.sleep(2000);
+            Thread.sleep(10_000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
 
         long money = bank.getBalance(account.getAccNumber());
-        assertEquals(money, 40_000);
+        assertEquals(money, 200_000);
     }
 }
