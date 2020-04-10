@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="52e3c821-d800-4615-b012-47e56eb3f355" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/../../10_SQLAndHibernate/Lesson 2. Hibernate/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../10_SQLAndHibernate/Lesson 2. Hibernate/src/main/resources/hibernate.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ImageResizer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ImageResizer/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Transactions/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Transactions/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Transactions/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Transactions/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Transactions/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Transactions/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -165,14 +160,14 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="422" y="101" key="FileChooserDialogImpl" timestamp="1585976983451">
+    <state x="422" y="101" key="FileChooserDialogImpl" timestamp="1586342577184">
       <screen x="0" y="0" width="1280" height="690" />
     </state>
-    <state x="422" y="101" key="FileChooserDialogImpl/0.0.1280.690@0.0.1280.690" timestamp="1585976983451" />
-    <state x="65" y="41" key="new project wizard" timestamp="1585977075044">
+    <state x="422" y="101" key="FileChooserDialogImpl/0.0.1280.690@0.0.1280.690" timestamp="1586342577184" />
+    <state x="65" y="0" key="new project wizard" timestamp="1586342621377">
       <screen x="0" y="0" width="1280" height="690" />
     </state>
-    <state x="65" y="41" key="new project wizard/0.0.1280.690@0.0.1280.690" timestamp="1585977075044" />
+    <state x="65" y="0" key="new project wizard/0.0.1280.690@0.0.1280.690" timestamp="1586342621377" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />

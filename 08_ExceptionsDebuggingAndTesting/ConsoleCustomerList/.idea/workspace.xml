@@ -2,26 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f368384a-e66f-46cb-aa05-8a5865081856" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../11_Multithreading/Concurrency/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../11_Multithreading/Concurrency/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../11_Multithreading/Concurrency/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../11_Multithreading/Concurrency/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../11_Multithreading/Concurrency/Concurrency.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../11_Multithreading/Concurrency/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../11_Multithreading/Concurrency/src/Task.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../11_Multithreading/Concurrency/src/ValueStorage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../11_Multithreading/Transactions/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../11_Multithreading/Transactions/src/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../10_SQLAndHibernate/Lesson 2. Hibernate/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../10_SQLAndHibernate/Lesson 2. Hibernate/src/main/resources/hibernate.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../11_Multithreading/Deadlock/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../11_Multithreading/Deadlock/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../11_Multithreading/Lesson 3. MapSite/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../11_Multithreading/Lesson 3. MapSite/.idea/libraries/jsoup_1_13_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../11_Multithreading/Lesson 3. MapSite/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../11_Multithreading/Lesson 3. MapSite/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../11_Multithreading/Lesson 3. MapSite/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../11_Multithreading/Lesson 3. MapSite/Lesson 3. MapSite.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../11_Multithreading/Lesson 3. MapSite/data/LentaRU.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../11_Multithreading/Lesson 3. MapSite/lib/jsoup-1.13.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../11_Multithreading/Lesson 3. MapSite/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../09_FilesAndNetwork/Lesson 1. Files/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../09_FilesAndNetwork/Lesson 1. Files/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../11_Multithreading/Deadlock/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../11_Multithreading/Deadlock/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../11_Multithreading/ImageResizer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../11_Multithreading/ImageResizer/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../11_Multithreading/Transactions/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../11_Multithreading/Transactions/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../11_Multithreading/Transactions/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../11_Multithreading/Transactions/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../11_Multithreading/Transactions/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../11_Multithreading/Transactions/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../11_Multithreading/Transactions/src/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../11_Multithreading/Transactions/src/Account.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../11_Multithreading/Transactions/src/Bank.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../11_Multithreading/Transactions/src/Bank.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +41,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559109403663" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../07_AdvancedOOPFeatures/Experiments" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -88,9 +80,10 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="446" y="76" key="#com.intellij.ide.util.MemberChooser/0.0.1280.720@0.0.1280.720" timestamp="1583505573047" />
-    <state x="421" y="115" key="FileChooserDialogImpl" timestamp="1583503548770">
-      <screen x="0" y="0" width="1280" height="720" />
+    <state x="421" y="110" key="FileChooserDialogImpl" timestamp="1586363768935">
+      <screen x="0" y="0" width="1280" height="690" />
     </state>
+    <state x="421" y="110" key="FileChooserDialogImpl/0.0.1280.690@0.0.1280.690" timestamp="1586363768935" />
     <state x="421" y="115" key="FileChooserDialogImpl/0.0.1280.720@0.0.1280.720" timestamp="1583503548770" />
     <state width="1238" height="176" key="GridCell.Tab.0.bottom" timestamp="1583671049715">
       <screen x="0" y="0" width="1280" height="720" />

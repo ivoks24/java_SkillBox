@@ -2,35 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="020e5092-1208-494e-b08a-63187e7af290" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Lesson 5. JSON/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lesson 5. JSON/.idea/libraries/json_simple_1_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lesson 5. JSON/.idea/libraries/jsoup_1_13_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lesson 5. JSON/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lesson 5. JSON/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lesson 5. JSON/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lesson 5. JSON/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lesson 5. JSON/Lesson 5. JSON.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lesson 5. JSON/data/metro.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lesson 5. JSON/lib/json-simple-1.1.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lesson 5. JSON/lib/jsoup-1.13.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lesson 5. JSON/src/Line.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lesson 5. JSON/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lesson 5. JSON/src/Metro.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lesson 5. JSON/src/Station.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lesson 5. JSON_#2/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lesson 5. JSON_#2/.idea/libraries/json_simple_1_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lesson 5. JSON_#2/.idea/libraries/jsoup_1_13_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lesson 5. JSON_#2/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lesson 5. JSON_#2/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lesson 5. JSON_#2/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lesson 5. JSON_#2/Lesson 5. JSON_#2.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lesson 5. JSON_#2/data/metro.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lesson 5. JSON_#2/lib/json-simple-1.1.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lesson 5. JSON_#2/lib/jsoup-1.13.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lesson 5. JSON_#2/src/Line.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lesson 5. JSON_#2/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../08_ExceptionsDebuggingAndTesting/logging.2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../08_ExceptionsDebuggingAndTesting/logging.2/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../11_Multithreading/Lesson 3. MapSite/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../11_Multithreading/Lesson 3. MapSite/.idea/libraries/jsoup_1_13_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../11_Multithreading/Lesson 3. MapSite/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../11_Multithreading/Lesson 3. MapSite/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../11_Multithreading/Lesson 3. MapSite/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../11_Multithreading/Lesson 3. MapSite/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../11_Multithreading/Lesson 3. MapSite/Lesson 3. MapSite.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../11_Multithreading/Lesson 3. MapSite/data/LentaRU.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../11_Multithreading/Lesson 3. MapSite/lib/jsoup-1.13.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../11_Multithreading/Lesson 3. MapSite/src/Form.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../11_Multithreading/Lesson 3. MapSite/src/Form.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../11_Multithreading/Lesson 3. MapSite/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../11_Multithreading/Lesson 3. MapSite/src/Process.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../11_Multithreading/Lesson 3. MapSite/src/SimpleGUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../08_ExceptionsDebuggingAndTesting/ConsoleCustomerList/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../08_ExceptionsDebuggingAndTesting/ConsoleCustomerList/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../11_Multithreading/Deadlock/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../11_Multithreading/Deadlock/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../11_Multithreading/Transactions/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../11_Multithreading/Transactions/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +46,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Lesson 3. Table" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Lesson 4. HTML_#2" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -96,30 +85,34 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="421" y="110" key="FileChooserDialogImpl" timestamp="1584852079730">
+    <state x="421" y="110" key="FileChooserDialogImpl" timestamp="1586408042490">
       <screen x="0" y="0" width="1280" height="690" />
     </state>
-    <state x="421" y="110" key="FileChooserDialogImpl/0.0.1280.690@0.0.1280.690" timestamp="1584852079730" />
+    <state x="421" y="110" key="FileChooserDialogImpl/0.0.1280.690@0.0.1280.690" timestamp="1586408042490" />
     <state x="421" y="115" key="FileChooserDialogImpl/0.0.1280.720/2560.0.1280.720@0.0.1280.720" timestamp="1583763106814" />
     <state x="421" y="115" key="FileChooserDialogImpl/0.0.1280.720@0.0.1280.720" timestamp="1584029460918" />
-    <state width="1238" height="141" key="GridCell.Tab.0.bottom" timestamp="1584004508311">
-      <screen x="0" y="0" width="1280" height="720" />
+    <state width="1238" height="167" key="GridCell.Tab.0.bottom" timestamp="1586363757266">
+      <screen x="0" y="0" width="1280" height="690" />
     </state>
+    <state width="1238" height="167" key="GridCell.Tab.0.bottom/0.0.1280.690@0.0.1280.690" timestamp="1586363757266" />
     <state width="1238" height="141" key="GridCell.Tab.0.bottom/0.0.1280.720/2560.0.1280.720@0.0.1280.720" timestamp="1583911113939" />
     <state width="1238" height="141" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1584004508311" />
-    <state width="1238" height="141" key="GridCell.Tab.0.center" timestamp="1584004508311">
-      <screen x="0" y="0" width="1280" height="720" />
+    <state width="1238" height="167" key="GridCell.Tab.0.center" timestamp="1586363757266">
+      <screen x="0" y="0" width="1280" height="690" />
     </state>
+    <state width="1238" height="167" key="GridCell.Tab.0.center/0.0.1280.690@0.0.1280.690" timestamp="1586363757266" />
     <state width="1238" height="141" key="GridCell.Tab.0.center/0.0.1280.720/2560.0.1280.720@0.0.1280.720" timestamp="1583911113939" />
     <state width="1238" height="141" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1584004508311" />
-    <state width="1238" height="141" key="GridCell.Tab.0.left" timestamp="1584004508311">
-      <screen x="0" y="0" width="1280" height="720" />
+    <state width="1238" height="167" key="GridCell.Tab.0.left" timestamp="1586363757266">
+      <screen x="0" y="0" width="1280" height="690" />
     </state>
+    <state width="1238" height="167" key="GridCell.Tab.0.left/0.0.1280.690@0.0.1280.690" timestamp="1586363757266" />
     <state width="1238" height="141" key="GridCell.Tab.0.left/0.0.1280.720/2560.0.1280.720@0.0.1280.720" timestamp="1583911113939" />
     <state width="1238" height="141" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1584004508311" />
-    <state width="1238" height="141" key="GridCell.Tab.0.right" timestamp="1584004508311">
-      <screen x="0" y="0" width="1280" height="720" />
+    <state width="1238" height="167" key="GridCell.Tab.0.right" timestamp="1586363757266">
+      <screen x="0" y="0" width="1280" height="690" />
     </state>
+    <state width="1238" height="167" key="GridCell.Tab.0.right/0.0.1280.690@0.0.1280.690" timestamp="1586363757266" />
     <state width="1238" height="141" key="GridCell.Tab.0.right/0.0.1280.720/2560.0.1280.720@0.0.1280.720" timestamp="1583911113939" />
     <state width="1238" height="141" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1584004508311" />
     <state x="122" y="7" key="SettingsEditor" timestamp="1584029227774">
