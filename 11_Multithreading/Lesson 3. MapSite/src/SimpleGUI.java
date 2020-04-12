@@ -49,7 +49,7 @@ public class SimpleGUI extends JFrame {
                 output.setText("");
 
                 JFileChooser fc = new JFileChooser();
-//                if (fc.showSaveDialog(null) == JFileChooser.APPROVE_OPTION) {
+                if (fc.showSaveDialog(null) == JFileChooser.APPROVE_OPTION) {
                     FileWriter fw = new FileWriter(fc.getSelectedFile());
                     process.getTreeSite().forEach(line -> {
                         try {
@@ -58,7 +58,7 @@ public class SimpleGUI extends JFrame {
                             ioException.printStackTrace();
                         }
                     });
-//                }
+                }
             } catch (Exception ex) {
                 label.setVisible(true);
             }

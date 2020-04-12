@@ -1,7 +1,5 @@
 import org.jsoup.Jsoup;
-import org.jsoup.nodes.Document;
 
-import java.io.File;
 import java.io.IOException;
 import java.net.InetSocketAddress;
 import java.net.Proxy;
@@ -11,7 +9,7 @@ import java.util.concurrent.Executors;
 
 public class Process {
 
-    private ExecutorService executorService;
+    private final ExecutorService executorService;
     private Set<String> treeSite = Collections.synchronizedNavigableSet(new TreeSet<>());
 
     public Process(String url) {
@@ -19,7 +17,6 @@ public class Process {
         int cores = Runtime.getRuntime().availableProcessors();
         executorService = Executors.newFixedThreadPool(cores);
         parseURL(url);
-
     }
 
     private synchronized void parseURL(String searchUrl) {
@@ -28,8 +25,8 @@ public class Process {
             try {
                 Thread.sleep(100);
 
-//                Jsoup.connect(searchUrl).proxy(getProxy()).get()
-                Jsoup.parse(new File("data/LentaRU.html"), "UTF-8")
+                Jsoup.connect(searchUrl).proxy(getProxy()).get()
+//                Jsoup.parse(new File("data/LentaRU.html"), "UTF-8")
                         .select("a").forEach(el -> {
 
                     String path = el.absUrl("href");
@@ -40,7 +37,7 @@ public class Process {
                 });
 
             } catch (IOException | InterruptedException e) {
-                e.printStackTrace();
+                System.out.println(e.getLocalizedMessage());
             }
         }));
     }
@@ -49,17 +46,15 @@ public class Process {
 
          List<String> finalSites = new ArrayList<>();
         for (String str : treeSite) {
-            StringBuilder tab = new StringBuilder();
-            tab.append("\t".repeat(str.split("/").length - 2));
-            finalSites.add("\n" + str);
+            finalSites.add("\n" + "\t".repeat(str.split("/").length - 3) + str);
         }
         return finalSites;
     }
 
     private Proxy getProxy() {
 
-        String proxyAddress = "185.36.157.30"; //127.0.0.1:51080
-        int proxyPort = 8080;
+        String proxyAddress = "127.0.0.1"; //127.0.0.1:51080
+        int proxyPort = 3213;
         InetSocketAddress sa = new InetSocketAddress(proxyAddress, proxyPort);
 
         return new Proxy(Proxy.Type.HTTP, sa);
