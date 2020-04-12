@@ -23,29 +23,29 @@ public class Form extends JFrame {
                 BorderFactory.createEmptyBorder(0, 5, 0, 5),
                 BorderFactory.createMatteBorder(2, 0, 2, 0, Color.LIGHT_GRAY)));
 
-        clickButton.addActionListener(e -> {
-
-            label.setVisible(false);
-
-            try {
-                Process process = new Process(output.getText());
-                output.setText("");
-
-                JFileChooser fc = new JFileChooser();
-                if (fc.showSaveDialog(null) == JFileChooser.APPROVE_OPTION) {
-                    FileWriter fw = new FileWriter(fc.getSelectedFile());
-                    process.getFinalSites().forEach(line -> {
-                        try {
-                            fw.write(line);
-                        } catch (IOException ioException) {
-                            ioException.printStackTrace();
-                        }
-                    });
-                }
-            } catch (IllegalArgumentException | IOException ex) {
-                label.setVisible(true);
-            }
-        });
+//        clickButton.addActionListener(e -> {
+//
+//            label.setVisible(false);
+//
+//            try {
+//                Process process = new Process(output.getText());
+//                output.setText("");
+//
+//                JFileChooser fc = new JFileChooser();
+//                if (fc.showSaveDialog(null) == JFileChooser.APPROVE_OPTION) {
+//                    FileWriter fw = new FileWriter(fc.getSelectedFile());
+//                    process.getFinalSites().forEach(line -> {
+//                        try {
+//                            fw.write(line);
+//                        } catch (IOException ioException) {
+//                            ioException.printStackTrace();
+//                        }
+//                    });
+//                }
+//            } catch (IllegalArgumentException | IOException ex) {
+//                label.setVisible(true);
+//            }
+//        });
     }
 
     public JPanel getRootPanel() {

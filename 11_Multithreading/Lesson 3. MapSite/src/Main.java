@@ -1,24 +1,16 @@
-import javax.swing.*;
 
 public class Main {
 
     public static void main(String[] args) {
 
-//        SimpleGUI app = new SimpleGUI();
-//        app.setVisible(true);
+        SimpleGUI app = new SimpleGUI();
 
-        JFrame frame = new JFrame();
+        app.setLocationRelativeTo(null);
+        app.setVisible(true);
+        app.setResizable(false);
 
-        Form form = new Form();
-        frame.setContentPane(form.getRootPanel());
+//        Process process = new Process("https://lenta.ru");
+//        process.getTreeSite().forEach(System.out::println);
 
-        frame.setSize(300, 140);
-        frame.setLocationRelativeTo(null);
-//         frame.dispose();
-//         frame.setUndecorated(true);
-        frame.setResizable(false);
-
-        frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-        frame.setVisible(true);
     }
 }

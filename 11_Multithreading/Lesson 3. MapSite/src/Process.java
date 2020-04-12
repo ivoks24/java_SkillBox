@@ -6,65 +6,62 @@ import java.io.IOException;
 import java.net.InetSocketAddress;
 import java.net.Proxy;
 import java.util.*;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
 public class Process {
 
-    private String searchUrl; //https://lenta.ru
-    private Set<String> treeSite = new TreeSet<>();
-    private List<String> finalSites = new ArrayList<>();
+    private ExecutorService executorService;
+    private Set<String> treeSite = Collections.synchronizedNavigableSet(new TreeSet<>());
 
     public Process(String url) {
 
-        searchUrl = url;
+        int cores = Runtime.getRuntime().availableProcessors();
+        executorService = Executors.newFixedThreadPool(cores);
         parseURL(url);
 
-        finalSites.forEach(this::action);
-        finalSites = new ArrayList<>();
-        StringBuilder tab;
-        for (String str : treeSite) {
-            tab = new StringBuilder();
-            tab.append("\t".repeat(str.split("/").length - 3));
-            finalSites.add("\n" + tab + str);
-        }
     }
 
-    public List<String> getFinalSites() {
+    private synchronized void parseURL(String searchUrl) {
+
+        executorService.submit(new Thread(() -> {
+            try {
+                Thread.sleep(100);
+
+//                Jsoup.connect(searchUrl).proxy(getProxy()).get()
+                Jsoup.parse(new File("data/LentaRU.html"), "UTF-8")
+                        .select("a").forEach(el -> {
+
+                    String path = el.absUrl("href");
+                    if (path.contains(searchUrl) && !treeSite.contains(path)) {
+                        treeSite.add(path);
+                        parseURL(path);
+                    }
+                });
+
+            } catch (IOException | InterruptedException e) {
+                e.printStackTrace();
+            }
+        }));
+    }
+
+    public synchronized List<String> getTreeSite() {
+
+         List<String> finalSites = new ArrayList<>();
+        for (String str : treeSite) {
+            StringBuilder tab = new StringBuilder();
+            tab.append("\t".repeat(str.split("/").length - 2));
+            finalSites.add("\n" + str);
+        }
         return finalSites;
     }
 
-    private void parseURL(String searchUrl) {
+    private Proxy getProxy() {
 
-        treeSite.add(searchUrl + "/");
+        String proxyAddress = "185.36.157.30"; //127.0.0.1:51080
+        int proxyPort = 8080;
+        InetSocketAddress sa = new InetSocketAddress(proxyAddress, proxyPort);
 
-        Document htmlFile;
-        try {
-
-            String proxyAddress = "185.236.67.91";
-            int proxyPort = 8080;
-            InetSocketAddress sa = new InetSocketAddress(proxyAddress, proxyPort);
-            Proxy proxy = new Proxy(Proxy.Type.HTTP, sa);
-
-//            URL url = new URL(searchUrl);
-//            URLConnection conn = url.openConnection(proxy);
-
-            htmlFile = Jsoup.parse(new File("data/LentaRU.html"), "UTF-8");
-
-//            htmlFile = Jsoup.connect(searchUrl).proxy(proxy).get(); // https://lenta.ru
-            htmlFile.select("a").forEach(el -> finalSites.add(el.attr("href")));
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        finalSites.removeIf(site -> site.indexOf("/") != 0 || site.length() < 2);
-    }
-
-    private void action(String site) {
-
-        String[] path = site.split("/");
-        StringBuilder stringBuilder = new StringBuilder();
-
-        for (String dir : path) {
-            stringBuilder.append(dir).append("/");
-            treeSite.add(searchUrl + stringBuilder);
-        }
+        return new Proxy(Proxy.Type.HTTP, sa);
     }
 }
