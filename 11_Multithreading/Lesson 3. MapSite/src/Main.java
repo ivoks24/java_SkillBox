@@ -11,6 +11,5 @@ public class Main {
 
 //        Process process = new Process("https://lenta.ru");
 //        process.getTreeSite().forEach(System.out::println);
-
     }
 }

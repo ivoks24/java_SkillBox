@@ -1,14 +1,12 @@
 import java.awt.*;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.net.URL;
 import javax.swing.*;
 
 public class SimpleGUI extends JFrame {
 
-    private JPanel panel = new JPanel();
-    private JButton button = new JButton("Click");
-    private JTextField output = new JTextField(15); // Document doc = Jsoup.connect(paths).get();
-    private JLabel label = new JLabel("Error!");
+    private final JTextField output = new JTextField(15); // Document doc = Jsoup.connect(paths).get();
 
     public SimpleGUI() {
 
@@ -22,29 +20,19 @@ public class SimpleGUI extends JFrame {
         container.setLayout(new FlowLayout(FlowLayout.CENTER, 20, 15));
         container.setBackground(Color.DARK_GRAY);
 
-        panel.setLayout(new BoxLayout(panel, BoxLayout.Y_AXIS));
-        panel.setBackground(Color.DARK_GRAY);
-
         output.setBorder(BorderFactory.createCompoundBorder(
                 BorderFactory.createEmptyBorder(0, 5, 0, 5),
                 BorderFactory.createMatteBorder(2, 0, 2, 0, Color.LIGHT_GRAY)));
 
-        label.setVisible(false);
-        label.setAlignmentX(Component.CENTER_ALIGNMENT);
-        label.setBorder(BorderFactory.createEmptyBorder(14, 0, 0, 0));
-        label.setForeground(Color.RED);
-
-        panel.add(output);
-        panel.add(label);
-
-        container.add(panel);
+        JButton button = new JButton("Click");
+        container.add(output);
         container.add(button);
 
         button.addActionListener(e -> {
-
-            label.setVisible(false);
-
             try {
+
+                new URL(output.getText());
+
                 Process process = new Process(output.getText());
                 output.setText("");
 
@@ -60,9 +48,9 @@ public class SimpleGUI extends JFrame {
                     });
                 }
             } catch (Exception ex) {
-                label.setVisible(true);
+                JOptionPane.showMessageDialog(null,
+                        ex.getLocalizedMessage(), "Error dialog!", JOptionPane.ERROR_MESSAGE);
             }
         });
-
     }
 }
