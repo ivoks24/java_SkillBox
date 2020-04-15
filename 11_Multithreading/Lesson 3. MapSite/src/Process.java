@@ -4,16 +4,14 @@ import java.io.IOException;
 import java.net.InetSocketAddress;
 import java.net.Proxy;
 import java.util.*;
-import java.util.concurrent.ExecutionException;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-import java.util.concurrent.Future;
+import java.util.concurrent.*;
+import java.util.concurrent.atomic.AtomicInteger;
 
 public class Process {
 
     private final ExecutorService executorService;
     private final Set<String> treeSite = Collections.synchronizedNavigableSet(new TreeSet<>());
-    private final List<Future<?>> tasks = new ArrayList<>();
+    private static AtomicInteger countThread = new AtomicInteger(0);
 
     public Process(String url) {
 
@@ -21,19 +19,12 @@ public class Process {
         executorService = Executors.newFixedThreadPool(cores);
         parseURL(url);
 
-        for (Future<?> f : tasks) {
-            try {
-                f.get();
-            } catch (InterruptedException | ExecutionException e) {
-                e.printStackTrace();
-            }
-        }
-        executorService.shutdown();
     }
 
     private synchronized void parseURL(String searchUrl) {
 
-        Future<?> submit = executorService.submit(new Thread(() -> {
+        countThread.incrementAndGet();
+        executorService.submit(new Thread(() -> {
             try {
                 Thread.sleep(100);
 
@@ -50,8 +41,8 @@ public class Process {
             } catch (IOException | InterruptedException e) {
                 System.out.println(e.getLocalizedMessage());
             }
+            countThread.decrementAndGet();
         }));
-        tasks.add(submit);
     }
 
     public synchronized List<String> getTreeSite() {
@@ -70,5 +61,9 @@ public class Process {
         InetSocketAddress sa = new InetSocketAddress(proxyAddress, proxyPort);
 
         return new Proxy(Proxy.Type.HTTP, sa);
+    }
+
+    public AtomicInteger getCountThread() {
+        return countThread;
     }
 }

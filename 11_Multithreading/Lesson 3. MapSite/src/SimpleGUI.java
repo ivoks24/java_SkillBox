@@ -36,6 +36,10 @@ public class SimpleGUI extends JFrame {
                 Process process = new Process(output.getText());
                 output.setText("");
 
+                do {
+                    Thread.sleep(200);
+                } while (process.getCountThread().get() != 0);
+
                 JFileChooser fc = new JFileChooser();
                 if (fc.showSaveDialog(null) == JFileChooser.APPROVE_OPTION) {
                     FileWriter fw = new FileWriter(fc.getSelectedFile());
