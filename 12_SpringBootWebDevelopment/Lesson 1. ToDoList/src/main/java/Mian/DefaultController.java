@@ -12,4 +12,9 @@ public class DefaultController {
     public String index() {
         return (new Date()).toString();
     }
+
+    @RequestMapping("/hello")
+    public String hello() {
+        return "Hello world!";
+    }
 }

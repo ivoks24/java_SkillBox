@@ -26,6 +26,40 @@ public class Main {
         Metadata metadata = new MetadataSources(registry).getMetadataBuilder().build();
         SessionFactory sessionFactory = metadata.getSessionFactoryBuilder().build();
 
+        Session session = sessionFactory.openSession();
+        Transaction transaction = session.beginTransaction();
+        CriteriaBuilder builder = session.getCriteriaBuilder();
+
+        CriteriaQuery<Course> queryCourse = builder.createQuery(Course.class);
+        Root<Course> rootCourse = queryCourse.from(Course.class);
+        queryCourse.select(rootCourse);
+        List<Course> courseList = session.createQuery(queryCourse).getResultList();
+
+        CriteriaQuery<Student> queryStudent = builder.createQuery(Student.class);
+        Root<Student> rootStudent = queryStudent.from(Student.class);
+        queryStudent.select(rootStudent);
+        List<Student> studentList = session.createQuery(queryStudent).getResultList();
+
+        CompositeKey key = new CompositeKey(studentList.get(6), courseList.get(3));
+        PurchaseList purchaseList = session.get(PurchaseList.class, key);
+
+//        CriteriaQuery<PurchaseList>  queryPurchase = builder.createQuery(PurchaseList.class);
+//        Root<PurchaseList> rootPurchase = queryPurchase.from(PurchaseList.class);
+//        queryPurchase.select(rootPurchase);
+//        List<PurchaseList> purchaseList = session.createQuery(queryPurchase).getResultList();
+
+//        for (PurchaseList purchase : purchaseList) {
+//            System.out.println(purchase.getCourse());
+//        }
+
+//        for (Student student : studentList) {
+//            System.out.println(student.getId());
+//        }
+//
+//        for (Course course : courseList) {
+//            System.out.println(course.getName() + " - " + course.getPrice());
+//        }
+
 
 
         sessionFactory.close();

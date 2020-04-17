@@ -1,15 +1,16 @@
 import lombok.Data;
 
-import javax.persistence.Column;
-import javax.persistence.OneToOne;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.util.Date;
 
 @Data
+@Entity
 @Table(name = "purchaselist")
 public class PurchaseList {
 
-    @OneToOne
+    @EmbeddedId
+    private CompositeKey compositeKey;
+
     @Column(name = "student_name")
     private Student student;
 
