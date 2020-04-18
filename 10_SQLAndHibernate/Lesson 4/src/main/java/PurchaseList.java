@@ -5,20 +5,22 @@ import java.util.Date;
 
 @Data
 @Entity
-@Table(name = "purchaselist")
+@Table(name = "PurchaseList")
 public class PurchaseList {
 
     @EmbeddedId
     private CompositeKey compositeKey;
 
     @Column(name = "student_name")
-    private Student student;
+    private String student;
 
     @Column(name = "course_name")
-    private Course course;
+    private String course;
 
+    @Column(name = "price")
     private int price;
 
+    @Temporal(TemporalType.TIMESTAMP)
     @Column(name = "subscription_date")
     private Date subscriptionDate;
 }

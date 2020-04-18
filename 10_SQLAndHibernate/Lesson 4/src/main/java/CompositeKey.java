@@ -11,12 +11,10 @@ import java.io.Serializable;
 @AllArgsConstructor
 public class CompositeKey implements Serializable {
 
-    @ManyToOne//(fetch = FetchType.LAZY, optional=false)
-    @JoinColumn(name = "student_id") //insertable = false, updatable = false, nullable=false
-    private Student student;
+    @Column(name = "keyStudent")
+    private String student;
 
-    @ManyToOne//(fetch = FetchType.LAZY, optional=false)
-    @JoinColumn(name = "course_id")
-    private Course course;
+    @Column(name = "keyCourse")
+    private String course;
 
 }

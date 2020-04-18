@@ -8,8 +8,17 @@ import java.util.Date;
 @Table(name = "subscriptions")
 public class Subscription {
 
-    @EmbeddedId
-    private CompositeKey compositeKey;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int id;
+
+    @ManyToOne//(fetch = FetchType.LAZY, optional=false)
+    @JoinColumn(name = "student_id") //insertable = false, updatable = false, nullable=false
+    private Student student;
+
+    @ManyToOne//(fetch = FetchType.LAZY, optional=false)
+    @JoinColumn(name = "course_id")
+    private Course course;
 
     @Column(name = "subscription_date")
     private Date subscriptionDate;

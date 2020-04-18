@@ -1,9 +1,6 @@
 import lombok.*;
 
-import javax.persistence.Column;
-import javax.persistence.EmbeddedId;
-import javax.persistence.Entity;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Data
 @Entity
@@ -11,9 +8,6 @@ import javax.persistence.Table;
 @NoArgsConstructor
 @Table(name = "LinkedPurchaseList")
 public class LinkedPurchaseList {
-
-    @EmbeddedId
-    private CompositeKey compositeKey;
 
     @Column(name = "course_id")
     private Integer courseId;
