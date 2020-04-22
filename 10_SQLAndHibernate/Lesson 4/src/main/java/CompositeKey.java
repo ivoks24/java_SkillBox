@@ -11,10 +11,10 @@ import java.io.Serializable;
 @AllArgsConstructor
 public class CompositeKey implements Serializable {
 
-    @Column(name = "keyStudent")
+    @Column(name = "student_name")
     private String student;
 
-    @Column(name = "keyCourse")
+    @Column(name = "course_name")
     private String course;
 
 }

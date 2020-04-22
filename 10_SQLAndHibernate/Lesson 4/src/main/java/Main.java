@@ -5,7 +5,9 @@ import org.hibernate.boot.Metadata;
 import org.hibernate.boot.MetadataSources;
 import org.hibernate.boot.registry.StandardServiceRegistry;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
+import org.hibernate.query.Query;
 
+//import javax.persistence.Query;
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Root;
@@ -15,48 +17,37 @@ public class Main {
     public static void main(String[] args) {
 
         final StandardServiceRegistry registry = new StandardServiceRegistryBuilder()
-                .configure("hibernate.cfg.xml").build();
-
+                .configure().build(); //"hibernate.cfg.xml"
         Metadata metadata = new MetadataSources(registry).getMetadataBuilder().build();
         SessionFactory sessionFactory = metadata.getSessionFactoryBuilder().build();
 
         Session session = sessionFactory.openSession();
-//        Transaction transaction = session.beginTransaction();
         CriteriaBuilder builder = session.getCriteriaBuilder();
+        Transaction transaction = session.beginTransaction();
 
         CriteriaQuery<PurchaseList>  queryPurchase = builder.createQuery(PurchaseList.class);
         Root<PurchaseList> rootPurchase = queryPurchase.from(PurchaseList.class);
         queryPurchase.select(rootPurchase);
-        List<PurchaseList> purchaseList = session.createQuery(queryPurchase).getResultList();
 
-        for (PurchaseList p : purchaseList) {
-            System.out.println(p.toString());
+//        Query query = session.createQuery("FROM PurchaseList");
+        List<PurchaseList> purchaseList = session.createQuery(queryPurchase).getResultList(); //session.createQuery(queryPurchase).getResultList();
+
+
+        for (PurchaseList purchase : purchaseList) {
+
+            Query<Course> fromCourseQuery = session.createQuery("From Course where name = :name", Course.class);
+            fromCourseQuery.setParameter("name", purchase.getCompositeKey().getCourse());
+            Course course = fromCourseQuery.getSingleResult();
+
+            Query<Student> fromStudentQuery = session.createQuery("From Student where name = :name", Student.class);
+            fromStudentQuery.setParameter("name", purchase.getCompositeKey().getStudent());
+            Student student = fromStudentQuery.getSingleResult();
+
+            LinkedPurchaseList linkedPurchase = new LinkedPurchaseList(student.getId(), course.getId());
+            session.save(linkedPurchase);
         }
-//
-//        CriteriaQuery<Course> queryCourse = builder.createQuery(Course.class);
-//        Root<Course> rootCourse = queryCourse.from(Course.class);
-//        queryCourse.select(rootCourse);
-//        List<Course> courseList = session.createQuery(queryCourse).getResultList();
-//
-//        CriteriaQuery<Student> queryStudent = builder.createQuery(Student.class);
-//        Root<Student> rootStudent = queryStudent.from(Student.class);
-//        queryStudent.select(rootStudent);
-//        List<Student> studentList = session.createQuery(queryStudent).getResultList();
 
-//        for (PurchaseList purchase : purchaseList) {
-//            System.out.println(purchase.getCourse());
-//        }
-
-//        for (Student student : studentList) {
-//            System.out.println(student.getId());
-//        }
-//
-//        for (Course course : courseList) {
-//            System.out.println(course.getName() + " - " + course.getPrice());
-//        }
-
-
-
+        transaction.commit();
         sessionFactory.close();
     }
 }

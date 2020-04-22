@@ -11,12 +11,6 @@ public class PurchaseList {
     @EmbeddedId
     private CompositeKey compositeKey;
 
-    @Column(name = "student_name")
-    private String student;
-
-    @Column(name = "course_name")
-    private String course;
-
     @Column(name = "price")
     private int price;
 
