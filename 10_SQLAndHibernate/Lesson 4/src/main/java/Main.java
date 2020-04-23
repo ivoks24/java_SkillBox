@@ -5,13 +5,14 @@ import org.hibernate.boot.Metadata;
 import org.hibernate.boot.MetadataSources;
 import org.hibernate.boot.registry.StandardServiceRegistry;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
-import org.hibernate.query.Query;
 
 //import javax.persistence.Query;
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Root;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class Main {
     public static void main(String[] args) {
@@ -25,25 +26,32 @@ public class Main {
         CriteriaBuilder builder = session.getCriteriaBuilder();
         Transaction transaction = session.beginTransaction();
 
-        CriteriaQuery<PurchaseList>  queryPurchase = builder.createQuery(PurchaseList.class);
-        Root<PurchaseList> rootPurchase = queryPurchase.from(PurchaseList.class);
-        queryPurchase.select(rootPurchase);
+        CriteriaQuery<PurchaseList>  query = builder.createQuery(PurchaseList.class);
+        Root<PurchaseList> root = query.from(PurchaseList.class);
+        query.select(root);
 
-//        Query query = session.createQuery("FROM PurchaseList");
-        List<PurchaseList> purchaseList = session.createQuery(queryPurchase).getResultList(); //session.createQuery(queryPurchase).getResultList();
+        List<PurchaseList> purchaseList = session.createQuery(query).getResultList();
 
+        Map<String, Integer> courses = new HashMap<>();
+        session.createQuery("SELECT name, id FROM Course").getResultList().forEach(e -> {
+            Object[] g = (Object[]) e;
+            courses.put((String) g[0],  (Integer) g[1]);
+        });
+
+        Map<String, Integer> students = new HashMap<>();
+        session.createQuery("SELECT name, id FROM Student").getResultList().forEach(e -> {
+            Object[] g = (Object[]) e;
+            students.put((String) g[0],  (Integer) g[1]);
+        });
 
         for (PurchaseList purchase : purchaseList) {
 
-            Query<Course> fromCourseQuery = session.createQuery("From Course where name = :name", Course.class);
-            fromCourseQuery.setParameter("name", purchase.getCompositeKey().getCourse());
-            Course course = fromCourseQuery.getSingleResult();
+            CompositeKey compositeKey = purchase.getCompositeKey();
 
-            Query<Student> fromStudentQuery = session.createQuery("From Student where name = :name", Student.class);
-            fromStudentQuery.setParameter("name", purchase.getCompositeKey().getStudent());
-            Student student = fromStudentQuery.getSingleResult();
+            LinkedPurchaseList linkedPurchase = new LinkedPurchaseList(
+                    students.get(compositeKey.getStudent()),
+                    courses.get(compositeKey.getCourse()));
 
-            LinkedPurchaseList linkedPurchase = new LinkedPurchaseList(student.getId(), course.getId());
             session.save(linkedPurchase);
         }
 
