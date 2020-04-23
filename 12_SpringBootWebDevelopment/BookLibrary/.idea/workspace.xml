@@ -2,23 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3515622e-3262-4f78-ade4-b03f01b3e0e4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/BookLibrary.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../10_SQLAndHibernate/Lesson 4/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../10_SQLAndHibernate/Lesson 4/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../10_SQLAndHibernate/Lesson 4/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../10_SQLAndHibernate/Lesson 4/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../10_SQLAndHibernate/Lesson 4/target/classes/CompositeKey.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../10_SQLAndHibernate/Lesson 4/target/classes/Course.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../10_SQLAndHibernate/Lesson 4/target/classes/CourseType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../10_SQLAndHibernate/Lesson 4/target/classes/LinkedPurchaseList$Id.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../10_SQLAndHibernate/Lesson 4/target/classes/LinkedPurchaseList.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../10_SQLAndHibernate/Lesson 4/target/classes/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../10_SQLAndHibernate/Lesson 4/target/classes/PurchaseList.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../10_SQLAndHibernate/Lesson 4/target/classes/Student.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../10_SQLAndHibernate/Lesson 4/target/classes/Subscription.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../10_SQLAndHibernate/Lesson 4/target/classes/Teacher.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson 1. ToDoList/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson 1. ToDoList/src/main/java/Mian/Storage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson 1. ToDoList/src/main/java/Mian/TaskController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson 1. ToDoList/src/main/java/model/Task.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson 1. ToDoList/src/main/resources/static/css/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson 1. ToDoList/src/main/resources/static/js/jquery-3.4.0.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson 1. ToDoList/src/main/resources/static/js/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson 1. ToDoList/src/main/resources/templates/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lesson 1. ToDoList/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lesson 1. ToDoList/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lesson 1. ToDoList/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lesson 1. ToDoList/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lesson 1. ToDoList/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lesson 1. ToDoList/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lesson 1. ToDoList/target/classes/Mian/DefaultController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lesson 1. ToDoList/target/classes/Mian/Main.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +43,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556358434513" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../10_SQLAndHibernate/Lesson 4" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Lesson 1. ToDoList" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -95,10 +92,10 @@
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.sql" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="421" y="100" key="FileChooserDialogImpl" timestamp="1587629339178">
+    <state x="421" y="100" key="FileChooserDialogImpl" timestamp="1587666895255">
       <screen x="0" y="0" width="1280" height="690" />
     </state>
-    <state x="421" y="100" key="FileChooserDialogImpl/0.0.1280.690@0.0.1280.690" timestamp="1587629339178" />
+    <state x="421" y="100" key="FileChooserDialogImpl/0.0.1280.690@0.0.1280.690" timestamp="1587666895255" />
   </component>
   <component name="masterDetails">
     <states>
