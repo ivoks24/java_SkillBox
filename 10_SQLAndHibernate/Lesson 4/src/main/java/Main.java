@@ -30,7 +30,7 @@ public class Main {
         Root<PurchaseList> root = query.from(PurchaseList.class);
         query.select(root);
 
-        List<PurchaseList> purchaseList = session.createQuery(query).getResultList();
+
 
         Map<String, Integer> courses = new HashMap<>();
         session.createQuery("SELECT name, id FROM Course").getResultList().forEach(e -> {
@@ -44,7 +44,7 @@ public class Main {
             students.put((String) g[0],  (Integer) g[1]);
         });
 
-        for (PurchaseList purchase : purchaseList) {
+        session.createQuery(query).getResultList().forEach(purchase -> {
 
             CompositeKey compositeKey = purchase.getCompositeKey();
 
@@ -53,28 +53,9 @@ public class Main {
                     courses.get(compositeKey.getCourse()));
 
             session.save(linkedPurchase);
-        }
+        });
 
         transaction.commit();
         sessionFactory.close();
     }
 }
-
-
-//    String hql = "From " + Course.class.getSimpleName() + " Where price > 120000";
-//    List<Course> coursesList = session.createQuery(hql).getResultList();
-//
-//        for (Course course : coursesList) {
-//                System.out.println(course.getName() + " - " + course.getPrice());
-//                }
-
-//        CriteriaBuilder builder = session.getCriteriaBuilder();
-//        CriteriaQuery<Course> query = builder.createQuery(Course.class);
-//        Root<Course> root = query.from(Course.class);
-//        query.select(root).where(builder.greaterThan(root.<Integer>get("price"), 100_000))
-//                .orderBy(builder.desc(root.get("price")));
-//        List<Course> courseList = session.createQuery(query).setMaxResults(5).getResultList();
-//
-//        for (Course course : courseList) {
-//            System.out.println(course.getName() + " - " + course.getPrice());
-//        }
