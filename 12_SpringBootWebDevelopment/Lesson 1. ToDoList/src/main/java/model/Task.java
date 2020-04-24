@@ -2,10 +2,9 @@ package model;
 
 public class Task {
 
-
     private int Id;
     private String name;
-    private String task;
+    private String purpose;
 
     public String getName() {
         return name;
@@ -23,11 +22,11 @@ public class Task {
         Id = id;
     }
 
-    public String getTask() {
-        return task;
+    public String getPurpose() {
+        return purpose;
     }
 
-    public void setTask(String task) {
-        this.task = task;
+    public void setPurpose(String purpose) {
+        this.purpose = purpose;
     }
 }
