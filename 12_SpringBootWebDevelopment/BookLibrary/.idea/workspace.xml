@@ -2,10 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3515622e-3262-4f78-ade4-b03f01b3e0e4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../Lesson 1. ToDoList/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lesson 1. ToDoList/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lesson 1. ToDoList/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Lesson 1. ToDoList/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lesson 1. ToDoList/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lesson 1. ToDoList/src/main/java/Mian/DefaultController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lesson 1. ToDoList/src/main/java/Mian/DefaultController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lesson 1. ToDoList/src/main/java/Mian/DefaultController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lesson 1. ToDoList/src/main/java/Mian/Storage.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lesson 1. ToDoList/src/main/java/Mian/Storage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lesson 1. ToDoList/src/main/java/Mian/TaskController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lesson 1. ToDoList/src/main/java/Mian/TaskController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lesson 1. ToDoList/src/main/java/model/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lesson 1. ToDoList/src/main/java/Mian/model/Task.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lesson 1. ToDoList/target/classes/Mian/TaskController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Lesson 1. ToDoList/target/classes/Mian/TaskController.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
