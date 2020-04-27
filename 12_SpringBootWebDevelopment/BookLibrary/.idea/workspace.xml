@@ -2,14 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3515622e-3262-4f78-ade4-b03f01b3e0e4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Lesson 1. ToDoList/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson 1. ToDoList/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson 1. ToDoList/src/main/java/Mian/DefaultController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson 1. ToDoList/src/main/resources/js/jquery-3.4.0.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson 1. ToDoList/src/main/resources/js/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lesson 1. ToDoList/src/main/resources/templates/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Lesson 1. ToDoList/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lesson 1. ToDoList/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lesson 1. ToDoList/src/main/java/Mian/DefaultController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lesson 1. ToDoList/src/main/java/Mian/Storage.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lesson 1. ToDoList/src/main/java/Mian/Storage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lesson 1. ToDoList/src/main/java/Mian/TaskController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lesson 1. ToDoList/src/main/java/Mian/TaskController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lesson 1. ToDoList/src/main/java/model/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lesson 1. ToDoList/src/main/java/Mian/model/Task.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lesson 1. ToDoList/target/classes/Mian/TaskController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Lesson 1. ToDoList/target/classes/Mian/TaskController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lesson 1. ToDoList/src/main/java/Mian/model/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lesson 1. ToDoList/src/main/java/Mian/model/Task.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lesson 1. ToDoList/target/classes/Mian/model/Task.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Lesson 1. ToDoList/target/classes/Mian/model/Task.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,6 +85,7 @@
     <servers />
   </component>
   <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.js" />
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.sql" />
   </component>
   <component name="WindowStateProjectService">
@@ -90,22 +93,22 @@
       <screen x="0" y="0" width="1280" height="690" />
     </state>
     <state x="421" y="100" key="FileChooserDialogImpl/0.0.1280.690@0.0.1280.690" timestamp="1587708201917" />
-    <state width="1238" height="115" key="GridCell.Tab.0.bottom" timestamp="1587746454113">
+    <state width="1238" height="65" key="GridCell.Tab.0.bottom" timestamp="1587959352227">
       <screen x="0" y="0" width="1280" height="690" />
     </state>
-    <state width="1238" height="115" key="GridCell.Tab.0.bottom/0.0.1280.690@0.0.1280.690" timestamp="1587746454113" />
-    <state width="1238" height="115" key="GridCell.Tab.0.center" timestamp="1587746454113">
+    <state width="1238" height="65" key="GridCell.Tab.0.bottom/0.0.1280.690@0.0.1280.690" timestamp="1587959352227" />
+    <state width="1238" height="65" key="GridCell.Tab.0.center" timestamp="1587959352227">
       <screen x="0" y="0" width="1280" height="690" />
     </state>
-    <state width="1238" height="115" key="GridCell.Tab.0.center/0.0.1280.690@0.0.1280.690" timestamp="1587746454113" />
-    <state width="1238" height="115" key="GridCell.Tab.0.left" timestamp="1587746454112">
+    <state width="1238" height="65" key="GridCell.Tab.0.center/0.0.1280.690@0.0.1280.690" timestamp="1587959352227" />
+    <state width="1238" height="65" key="GridCell.Tab.0.left" timestamp="1587959352227">
       <screen x="0" y="0" width="1280" height="690" />
     </state>
-    <state width="1238" height="115" key="GridCell.Tab.0.left/0.0.1280.690@0.0.1280.690" timestamp="1587746454112" />
-    <state width="1238" height="115" key="GridCell.Tab.0.right" timestamp="1587746454113">
+    <state width="1238" height="65" key="GridCell.Tab.0.left/0.0.1280.690@0.0.1280.690" timestamp="1587959352227" />
+    <state width="1238" height="65" key="GridCell.Tab.0.right" timestamp="1587959352227">
       <screen x="0" y="0" width="1280" height="690" />
     </state>
-    <state width="1238" height="115" key="GridCell.Tab.0.right/0.0.1280.690@0.0.1280.690" timestamp="1587746454113" />
+    <state width="1238" height="65" key="GridCell.Tab.0.right/0.0.1280.690@0.0.1280.690" timestamp="1587959352227" />
   </component>
   <component name="masterDetails">
     <states>

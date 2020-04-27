@@ -18,7 +18,7 @@ public class TaskController {
     private TaskRepository taskRepository;
 
     @GetMapping("/tasks/")
-    public synchronized ResponseEntity<List<Task>> list() {
+    public ResponseEntity<List<Task>> list() {
 
         Iterable<Task> taskIterable = taskRepository.findAll();
         ArrayList<Task> taskList = new ArrayList<>();
@@ -31,14 +31,14 @@ public class TaskController {
     }
 
     @PostMapping("/tasks/")
-    public synchronized ResponseEntity<?> add(@RequestBody Task task) {
+    public ResponseEntity<?> add(@RequestBody Task task) {
 
         taskRepository.save(task);
         return new ResponseEntity<>(HttpStatus.CREATED);
     }
 
     @GetMapping("/tasks/{id}")
-    public synchronized ResponseEntity<?> get(@PathVariable int id) {
+    public ResponseEntity<?> get(@PathVariable int id) {
 
         Optional<Task> optionalTask = taskRepository.findById(id);
 
@@ -49,7 +49,7 @@ public class TaskController {
     }
 
     @PutMapping("/tasks/{id}")
-    public  synchronized ResponseEntity<?> update(@PathVariable int id,
+    public ResponseEntity<?> update(@PathVariable int id,
                                                   @RequestParam String name,
                                                   @RequestParam String purpose) {
 
@@ -73,7 +73,7 @@ public class TaskController {
     }
 
     @DeleteMapping("/tasks/{id}")
-    public synchronized ResponseEntity<?> delete(@PathVariable int id) {
+    public ResponseEntity<?> delete(@PathVariable int id) {
 
         if (taskRepository.existsById(id)) {
 
