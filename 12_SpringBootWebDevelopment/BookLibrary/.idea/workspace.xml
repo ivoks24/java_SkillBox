@@ -2,16 +2,38 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3515622e-3262-4f78-ade4-b03f01b3e0e4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Lesson 1. ToDoList/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lesson 1. ToDoList/src/main/java/Mian/DefaultController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lesson 1. ToDoList/src/main/resources/js/jquery-3.4.0.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lesson 1. ToDoList/src/main/resources/js/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lesson 1. ToDoList/src/main/resources/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lesson 1. ToDoList/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lesson 1. ToDoList/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lesson 1. ToDoList/src/main/java/Mian/model/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lesson 1. ToDoList/src/main/java/Mian/model/Task.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lesson 1. ToDoList/target/classes/Mian/model/Task.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Lesson 1. ToDoList/target/classes/Mian/model/Task.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ToDoList/target/classes/Mian/TaskController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ToDoList/target/classes/Mian/model/Task.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lesson 1. ToDoList/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../ToDoList/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lesson 1. ToDoList/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/../ToDoList/.idea/.name" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lesson 1. ToDoList/.idea/Lesson 1. ToDoList.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../ToDoList/.idea/ToDoList.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lesson 1. ToDoList/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ToDoList/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lesson 1. ToDoList/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ToDoList/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lesson 1. ToDoList/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ToDoList/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lesson 1. ToDoList/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ToDoList/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lesson 1. ToDoList/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ToDoList/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lesson 1. ToDoList/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ToDoList/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lesson 1. ToDoList/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ToDoList/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lesson 1. ToDoList/Lesson 1. ToDoList.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../ToDoList/Lesson 1. ToDoList.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lesson 1. ToDoList/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../ToDoList/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lesson 1. ToDoList/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ToDoList/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lesson 1. ToDoList/src/main/java/Mian/DefaultController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ToDoList/src/main/java/Mian/DefaultController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lesson 1. ToDoList/src/main/java/Mian/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ToDoList/src/main/java/Mian/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lesson 1. ToDoList/src/main/java/Mian/Storage.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ToDoList/src/main/java/Mian/Storage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lesson 1. ToDoList/src/main/java/Mian/TaskController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ToDoList/src/main/java/Mian/TaskController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lesson 1. ToDoList/src/main/java/Mian/model/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ToDoList/src/main/java/Mian/model/Task.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lesson 1. ToDoList/src/main/java/Mian/model/TaskRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ToDoList/src/main/java/Mian/model/TaskRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lesson 1. ToDoList/src/main/resources/js/jquery-3.4.0.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../ToDoList/src/main/resources/js/jquery-3.4.0.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lesson 1. ToDoList/src/main/resources/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../ToDoList/src/main/resources/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lesson 1. ToDoList/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ToDoList/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lesson 1. ToDoList/target/classes/Mian/DefaultController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ToDoList/target/classes/Mian/DefaultController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lesson 1. ToDoList/target/classes/Mian/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ToDoList/target/classes/Mian/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lesson 1. ToDoList/target/classes/Mian/TaskController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lesson 1. ToDoList/target/classes/Mian/model/Task.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lesson 1. ToDoList/target/classes/Mian/model/TaskRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ToDoList/target/classes/Mian/model/TaskRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lesson 1. ToDoList/target/classes/js/jquery-3.4.0.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../ToDoList/target/classes/js/jquery-3.4.0.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lesson 1. ToDoList/target/classes/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../ToDoList/target/classes/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lesson 1. ToDoList/target/classes/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ToDoList/target/classes/templates/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
