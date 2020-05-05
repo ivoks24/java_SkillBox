@@ -1,6 +1,7 @@
 import com.mongodb.MongoClient;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
+import org.bson.BsonDocument;
 import org.bson.Document;
 
 import java.io.BufferedReader;
@@ -25,19 +26,28 @@ public class Main {
         readCSV(filePath);
 
         System.out.println("\n— общее количество студентов в базе: " + collection.countDocuments());
+
         System.out.println("\n— количество студентов старше 40 лет: " + collection
                 .countDocuments(new Document("age", new Document("$gt", 40))));
 
-        // В процессе, еще не готово
-        System.out.println("\n— имя самого молодого студента: " + collection
-                .find(new Document("name", new Document()))
-                .sort(new Document("age", 1))
-                .limit(1));
+
+//        BsonDocument query = BsonDocument.parse("{}{_id: 0}");
+//        System.out.println("\n— имя самого молодого студента: " + collection
+//                .find()
+//                .sort(new Document("age", 1))
+//                .limit(1));
+
+
+        collection.find().sort(new Document("age", 1)).limit(1).forEach((Consumer<Document>) doc ->
+                System.out.println("\n— имя самого молодого студента: " + doc.entrySet().toArray()[1]));
+
+
+
 
         // В процессе, еще не готово
-        System.out.println("\n— список курсов самого старого студента: " + collection.countDocuments());
-
-        // Используем JSON-синтаксис для создания объекта
+        collection.find().sort(new Document("age", -1)).limit(1).forEach((Consumer<Document>) doc ->
+                System.out.println("\n— список курсов самого старого студента: " +
+                        doc.entrySet().toArray()[3]));
 
         // Используем JSON-синтаксис для написания запроса (выбираем документы с Type=2)
 //        BsonDocument query = BsonDocument.parse("{Type: {$eq: 2}}");

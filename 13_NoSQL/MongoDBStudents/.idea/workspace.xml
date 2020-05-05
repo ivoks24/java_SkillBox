@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="57521de4-3543-44c6-98f8-4cc0189008be" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MongoDBStudents.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mongo.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RedisTurn/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../RedisTurn/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,22 +86,22 @@
       <screen x="0" y="0" width="1280" height="690" />
     </state>
     <state x="421" y="100" key="FileChooserDialogImpl/0.0.1280.690@0.0.1280.690" timestamp="1588611276715" />
-    <state width="1238" height="199" key="GridCell.Tab.0.bottom" timestamp="1588622034187">
+    <state width="1238" height="183" key="GridCell.Tab.0.bottom" timestamp="1588671318790">
       <screen x="0" y="0" width="1280" height="690" />
     </state>
-    <state width="1238" height="199" key="GridCell.Tab.0.bottom/0.0.1280.690@0.0.1280.690" timestamp="1588622034187" />
-    <state width="1238" height="199" key="GridCell.Tab.0.center" timestamp="1588622034187">
+    <state width="1238" height="183" key="GridCell.Tab.0.bottom/0.0.1280.690@0.0.1280.690" timestamp="1588671318790" />
+    <state width="1238" height="183" key="GridCell.Tab.0.center" timestamp="1588671318790">
       <screen x="0" y="0" width="1280" height="690" />
     </state>
-    <state width="1238" height="199" key="GridCell.Tab.0.center/0.0.1280.690@0.0.1280.690" timestamp="1588622034187" />
-    <state width="1238" height="199" key="GridCell.Tab.0.left" timestamp="1588622034187">
+    <state width="1238" height="183" key="GridCell.Tab.0.center/0.0.1280.690@0.0.1280.690" timestamp="1588671318790" />
+    <state width="1238" height="183" key="GridCell.Tab.0.left" timestamp="1588671318790">
       <screen x="0" y="0" width="1280" height="690" />
     </state>
-    <state width="1238" height="199" key="GridCell.Tab.0.left/0.0.1280.690@0.0.1280.690" timestamp="1588622034187" />
-    <state width="1238" height="199" key="GridCell.Tab.0.right" timestamp="1588622034187">
+    <state width="1238" height="183" key="GridCell.Tab.0.left/0.0.1280.690@0.0.1280.690" timestamp="1588671318790" />
+    <state width="1238" height="183" key="GridCell.Tab.0.right" timestamp="1588671318790">
       <screen x="0" y="0" width="1280" height="690" />
     </state>
-    <state width="1238" height="199" key="GridCell.Tab.0.right/0.0.1280.690@0.0.1280.690" timestamp="1588622034187" />
+    <state width="1238" height="183" key="GridCell.Tab.0.right/0.0.1280.690@0.0.1280.690" timestamp="1588671318790" />
     <state x="121" y="0" key="SettingsEditor" timestamp="1588619481415">
       <screen x="0" y="0" width="1280" height="690" />
     </state>
