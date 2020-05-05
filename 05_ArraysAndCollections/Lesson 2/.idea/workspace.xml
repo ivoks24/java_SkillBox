@@ -2,12 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="36718f2f-fb9e-4962-9b36-d96efe1ba5f1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../Lesson 1/Array of arrays/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lesson 1/Array of arrays/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lesson 1/Colors/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lesson 1/Colors/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lesson 1/Hospital/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lesson 1/Hospital/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../04_NumbersStringsAndDates/Lesson 4/.idea/Lesson 4.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../04_NumbersStringsAndDates/Lesson 4/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../04_NumbersStringsAndDates/Lesson 4/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../04_NumbersStringsAndDates/Lesson 4/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../04_NumbersStringsAndDates/Lesson 4/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../13_NoSQL/mongoDBStores/mongoDBStores.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../13_NoSQL/mongoDBStores/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../04_NumbersStringsAndDates/IntegerExperiments/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../04_NumbersStringsAndDates/IntegerExperiments/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../04_NumbersStringsAndDates/Lesson 3.2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../04_NumbersStringsAndDates/Lesson 3.2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../04_NumbersStringsAndDates/StringExperiments/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../04_NumbersStringsAndDates/StringExperiments/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../08_ExceptionsDebuggingAndTesting/ConsoleCustomerList/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../08_ExceptionsDebuggingAndTesting/ConsoleCustomerList/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../08_ExceptionsDebuggingAndTesting/SPBMetro/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../08_ExceptionsDebuggingAndTesting/SPBMetro/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../13_NoSQL/MongoDBStudents/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../13_NoSQL/MongoDBStudents/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../13_NoSQL/MongoDBStudents/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../13_NoSQL/MongoDBStudents/src/main/java/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,13 +35,13 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Lesson 3" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -52,18 +59,6 @@
         <item itemvalue="Application.Loader" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />

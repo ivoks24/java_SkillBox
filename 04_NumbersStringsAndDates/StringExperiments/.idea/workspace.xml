@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="74551ef3-e027-45c0-ba92-5e70ee5f73c4" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/../../08_ExceptionsDebuggingAndTesting/ConsoleCustomerList/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../08_ExceptionsDebuggingAndTesting/ConsoleCustomerList/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../08_ExceptionsDebuggingAndTesting/ConsoleCustomerList/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../08_ExceptionsDebuggingAndTesting/ConsoleCustomerList/src/CustomerStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../08_ExceptionsDebuggingAndTesting/ConsoleCustomerList/src/CustomerStorage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../08_ExceptionsDebuggingAndTesting/ConsoleCustomerList/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../08_ExceptionsDebuggingAndTesting/ConsoleCustomerList/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../13_NoSQL/mongoDBStores/mongoDBStores.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../13_NoSQL/mongoDBStores/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../13_NoSQL/MongoDBStudents/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../13_NoSQL/MongoDBStudents/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../13_NoSQL/MongoDBStudents/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../13_NoSQL/MongoDBStudents/src/main/java/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,9 +14,6 @@
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
-  </component>
-  <component name="FavoritesManager">
-    <favorites_list name="StringExperiments" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -32,13 +29,14 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="FullScreen" value="false" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="dynamic.classpath" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../05_ArraysAndCollections/Lesson 2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Lesson 3.2" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -139,18 +137,6 @@
       </list>
     </recent_temporary>
   </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
-  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -173,9 +159,10 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state x="421" y="116" key="FileChooserDialogImpl" timestamp="1583439758477">
-      <screen x="0" y="0" width="1280" height="720" />
+    <state x="421" y="111" key="FileChooserDialogImpl" timestamp="1588682477172">
+      <screen x="0" y="0" width="1280" height="690" />
     </state>
+    <state x="421" y="111" key="FileChooserDialogImpl/0.0.1280.690@0.0.1280.690" timestamp="1588682477172" />
     <state x="421" y="116" key="FileChooserDialogImpl/0.0.1280.720@0.0.1280.720" timestamp="1583439758477" />
     <state width="1238" height="176" key="GridCell.Tab.0.bottom" timestamp="1581446636435">
       <screen x="0" y="0" width="1280" height="720" />

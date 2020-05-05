@@ -30,30 +30,12 @@ public class Main {
         System.out.println("\n— количество студентов старше 40 лет: " + collection
                 .countDocuments(new Document("age", new Document("$gt", 40))));
 
-
-//        BsonDocument query = BsonDocument.parse("{}{_id: 0}");
-//        System.out.println("\n— имя самого молодого студента: " + collection
-//                .find()
-//                .sort(new Document("age", 1))
-//                .limit(1));
-
-
         collection.find().sort(new Document("age", 1)).limit(1).forEach((Consumer<Document>) doc ->
-                System.out.println("\n— имя самого молодого студента: " + doc.entrySet().toArray()[1]));
+                System.out.println("\n— имя самого молодого студента: " + doc.get("name")));
 
-
-
-
-        // В процессе, еще не готово
         collection.find().sort(new Document("age", -1)).limit(1).forEach((Consumer<Document>) doc ->
-                System.out.println("\n— список курсов самого старого студента: " +
-                        doc.entrySet().toArray()[3]));
-
-        // Используем JSON-синтаксис для написания запроса (выбираем документы с Type=2)
-//        BsonDocument query = BsonDocument.parse("{Type: {$eq: 2}}");
-//        collection.find(query).forEach((Consumer<Document>) document -> {
-//            System.out.println("Наш второй документ:\n" + document);
-//        });
+                System.out.println("\n— список курсов самого старого студента: " + doc.get("courses")));
+                        //doc.entrySet().toArray()[3]));
     }
 
     private static void readCSV(String filePath) {

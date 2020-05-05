@@ -2,13 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="52d8d626-1917-42f9-80d7-13c8d641ae20" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../05_ArraysAndCollections/Lesson 1/Array of arrays/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../05_ArraysAndCollections/Lesson 1/Array of arrays/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../05_ArraysAndCollections/Lesson 1/Colors/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../05_ArraysAndCollections/Lesson 1/Colors/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../05_ArraysAndCollections/Lesson 1/Hospital/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../05_ArraysAndCollections/Lesson 1/Hospital/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../05_ArraysAndCollections/Lesson 2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../05_ArraysAndCollections/Lesson 2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../05_ArraysAndCollections/Lesson 4/out/production/Phone book/Loader.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../05_ArraysAndCollections/Lesson 4/out/production/Phone book/Loader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../08_ExceptionsDebuggingAndTesting/ConsoleCustomerList/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../08_ExceptionsDebuggingAndTesting/ConsoleCustomerList/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../08_ExceptionsDebuggingAndTesting/SPBMetro/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../08_ExceptionsDebuggingAndTesting/SPBMetro/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../13_NoSQL/mongoDBStores/mongoDBStores.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../13_NoSQL/mongoDBStores/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lesson 3.2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lesson 3.2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../StringExperiments/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../StringExperiments/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../13_NoSQL/MongoDBStudents/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../13_NoSQL/MongoDBStudents/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../13_NoSQL/MongoDBStudents/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../13_NoSQL/MongoDBStudents/src/main/java/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,10 +21,10 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551865119735" />
@@ -45,18 +44,6 @@
       </list>
     </recent_temporary>
   </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
-  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -71,9 +58,10 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="410" y="104" key="FileChooserDialogImpl" timestamp="1583497909199">
-      <screen x="0" y="0" width="1280" height="720" />
+    <state x="410" y="100" key="FileChooserDialogImpl" timestamp="1588682498998">
+      <screen x="0" y="0" width="1280" height="690" />
     </state>
+    <state x="410" y="100" key="FileChooserDialogImpl/0.0.1280.690@0.0.1280.690" timestamp="1588682498998" />
     <state x="410" y="104" key="FileChooserDialogImpl/0.0.1280.720@0.0.1280.720" timestamp="1583497909199" />
     <state x="453" y="104" key="FileChooserDialogImpl/63.0.1217.720@63.0.1217.720" timestamp="1581217406154" />
     <state width="1174" height="176" key="GridCell.Tab.0.bottom" timestamp="1581184208444">

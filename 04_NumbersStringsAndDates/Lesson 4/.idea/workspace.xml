@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="564b0590-5b8f-4be5-be13-50be433a02a2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../13_NoSQL/mongoDBStores/mongoDBStores.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../13_NoSQL/mongoDBStores/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IntegerExperiments/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../IntegerExperiments/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lesson 3.2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lesson 3.2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../StringExperiments/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../StringExperiments/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../13_NoSQL/MongoDBStudents/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../13_NoSQL/MongoDBStudents/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../13_NoSQL/MongoDBStudents/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../13_NoSQL/MongoDBStudents/src/main/java/Main.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="1bUN3wjnKBVTJTHKaKnKmLZMkCW" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../05_ArraysAndCollections/Lesson 2" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="564b0590-5b8f-4be5-be13-50be433a02a2" name="Default Changelist" comment="" />
+      <created>1588682516083</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1588682516083</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="421" y="100" key="FileChooserDialogImpl" timestamp="1588682539304">
+      <screen x="0" y="0" width="1280" height="690" />
+    </state>
+    <state x="421" y="100" key="FileChooserDialogImpl/0.0.1280.690@0.0.1280.690" timestamp="1588682539304" />
+  </component>
+</project>
