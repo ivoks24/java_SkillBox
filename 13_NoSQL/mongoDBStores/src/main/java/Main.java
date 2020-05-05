@@ -1,4 +1,5 @@
 import com.mongodb.MongoClient;
+import com.mongodb.client.FindIterable;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
 import com.mongodb.client.model.Filters;
@@ -9,6 +10,8 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.function.Consumer;
 
 public class Main {
 
@@ -25,13 +28,18 @@ public class Main {
         connectMongodb();
         System.out.println(helper);
 
-        addStore("stor");
-        addStore("sto");
+//        addStore("Bravo");
+//        addStore("Careful");
+//
+//        addProduct("apple", 20);
+//        addProduct("strawberry", 55);
+//        addProduct("lemon", 45);
+//        addProduct("banana", 70);
+//        addProduct("watermelon", 30);
+//
+//        deliver("apple", "Careful");
 
-        addProduct("apple", 10);
-        addProduct("strawberry", 15);
-
-        deliver("apple", "sto");
+        statistics();
 
 
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
@@ -63,7 +71,6 @@ public class Main {
     private static void addStore(String nameStore) {
 
         try {
-
             collectionStores.find(new Document("name", nameStore)).first().isEmpty();
             System.err.println("name \"" + nameStore + "\" is busy!");
 
@@ -81,7 +88,6 @@ public class Main {
     private static void addProduct(String nameProduct, int price) {
 
         try {
-
             collectionProducts.find(new Document("name", nameProduct)).first().isEmpty();
             System.err.println(nameProduct + " is available!");
 
@@ -99,26 +105,13 @@ public class Main {
 
         try {
 //            BsonDocument query = BsonDocument.parse("{name: {$eq: '" + nameStore + "'}}");
-
             Document store = collectionStores.find(new Document("name", nameStore)).first();
             collectionProducts.find(new Document("name", nameProduct)).first().isEmpty();
 
-            ArrayList<String> products = (ArrayList<String>) store.get("products");
-            products.add(nameProduct);
-
-//            Bson updatedValue = new Document("products", products);
-//            Bson updatedOperation = new Document("$set", updatedValue);
-
-            System.out.println(store.get("name"));
-
-            Bson name = Filters.eq(store.get("name"));
-
-            Bson updatedValue = new Document("name", "SanFu");
-            Bson updatedOperation = new Document("$set", updatedValue);
+            Bson updatedValue = new Document("products", nameProduct);
+            Bson updatedOperation = new Document("$addToSet", updatedValue);
 
             collectionStores.updateOne(store, updatedOperation);
-
-            System.out.println(store.get("name"));
 
         } catch (NullPointerException ex) {
             System.err.println("Not found!");
@@ -126,6 +119,25 @@ public class Main {
     }
 
     private static void statistics() {
+
+        FindIterable<Document> stores = collectionStores.find();
+        FindIterable<Document> allProducts = collectionProducts.find();
+
+        stores.forEach((Consumer<Document>) store -> {
+
+            String nameStore = (String) store.get("name");
+            ArrayList<String> products = store.get("products", new ArrayList<>());
+            int countProduct = products.size();
+
+
+            System.out.println("\nStore " + nameStore
+                    + "\n— Общее количество товаров " + countProduct
+                    + "\n— Среднюю цену товара"
+                    + "\n— Самый дорогой и самый дешевый товар"
+                    + "\n— Количество товаров, дешевле 100 рублей");
+
+
+        });
 
     }
 
