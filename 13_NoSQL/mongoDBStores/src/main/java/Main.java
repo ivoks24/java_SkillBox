@@ -1,8 +1,10 @@
 import com.mongodb.MongoClient;
+import com.mongodb.client.AggregateIterable;
 import com.mongodb.client.FindIterable;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
-import com.mongodb.client.model.Filters;
+import com.mongodb.client.model.Accumulators;
+import com.mongodb.client.model.Aggregates;
 import org.bson.Document;
 import org.bson.conversions.Bson;
 
@@ -10,7 +12,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
-import java.util.HashMap;
+import java.util.Arrays;
 import java.util.function.Consumer;
 
 public class Main {
@@ -30,6 +32,7 @@ public class Main {
 
 //        addStore("Bravo");
 //        addStore("Careful");
+//        addStore("SanFu");
 //
 //        addProduct("apple", 20);
 //        addProduct("strawberry", 55);
@@ -38,8 +41,8 @@ public class Main {
 //        addProduct("watermelon", 30);
 //
 //        deliver("apple", "Careful");
-
-        statistics();
+//
+//        statistics();
 
 
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
@@ -121,24 +124,47 @@ public class Main {
     private static void statistics() {
 
         FindIterable<Document> stores = collectionStores.find();
-        FindIterable<Document> allProducts = collectionProducts.find();
-
         stores.forEach((Consumer<Document>) store -> {
 
-            String nameStore = (String) store.get("name");
             ArrayList<String> products = store.get("products", new ArrayList<>());
-            int countProduct = products.size();
 
+            AggregateIterable<Document> aggregate = collectionProducts.aggregate(
+                    Arrays.asList(
+                            Aggregates.match(new Document("name", new Document("$in", products))),
+                            Aggregates.group(1,
+                                    Accumulators.sum("count", 1),
+                                    Accumulators.avg("avg", "$price"),
+                                    Accumulators.max("max", "$price"),
+                                    Accumulators.min("min", "$price")
+                            )
+                    )
+            );
 
-            System.out.println("\nStore " + nameStore
-                    + "\n— Общее количество товаров " + countProduct
-                    + "\n— Среднюю цену товара"
-                    + "\n— Самый дорогой и самый дешевый товар"
-                    + "\n— Количество товаров, дешевле 100 рублей");
+            Document sample = collectionProducts.aggregate(Arrays.asList(
+                    Aggregates.match(new Document("name", new Document("$in", products))),
+                    Aggregates.match(new Document("price", new Document("$lt", 50))),
+                    Aggregates.group(null, Accumulators.sum("sample", 1))
+            )).first();
 
+            Document array = aggregate.first();
+            boolean hasArray = (array != null);
 
+            System.out.println("\nStore " + store.get("name")
+
+                    + "\n— Общее количество товаров: "
+                    + (hasArray ? array.get("count") : null)
+
+                    + "\n— Среднюю цену товара: "
+                    + (hasArray ? array.getDouble("avg") : 0)
+
+                    + "\n— Самый дорогой "
+                    + (hasArray ? array.get("max") : 0)
+                    + ", самый дешевый "
+                    + (hasArray ? array.get("min") : 0)
+
+                    + "\n— Количество товаров, дешевле 50 рублей: "
+                    + ((sample != null) ? sample.get("sample") : null));
         });
-
     }
 
     private static void connectMongodb() {
