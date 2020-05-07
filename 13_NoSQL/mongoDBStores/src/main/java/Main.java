@@ -73,50 +73,47 @@ public class Main {
 
     private static void addStore(String nameStore) {
 
-        try {
-            collectionStores.find(new Document("name", nameStore)).first().isEmpty();
+        if (collectionStores.find(new Document("name", nameStore)).first() != null) {
             System.err.println("name \"" + nameStore + "\" is busy!");
-
-        } catch (NullPointerException ex) {
-
-            Document store = new Document()
-                    .append("name", nameStore)
-                    .append("products", new ArrayList<String>());
-
-            collectionStores.insertOne(store);
-            System.err.println("store \"" + nameStore + "\" added!");
+            return;
         }
+
+        Document store = new Document()
+                .append("name", nameStore)
+                .append("products", new ArrayList<String>());
+
+        collectionStores.insertOne(store);
+        System.err.println("store \"" + nameStore + "\" added!");
     }
 
     private static void addProduct(String nameProduct, int price) {
 
-        try {
-            collectionProducts.find(new Document("name", nameProduct)).first().isEmpty();
+
+        if (collectionProducts.find(new Document("name", nameProduct)).first() != null) {
             System.err.println(nameProduct + " is available!");
-
-        } catch (NullPointerException ex) {
-
-            Document product = new Document("name", nameProduct)
-                    .append("price", price);
-
-            collectionProducts.insertOne(product);
-            System.err.println(nameProduct + " added, price " + price + "!");
+            return;
         }
+
+        Document product = new Document("name", nameProduct)
+                .append("price", price);
+
+        collectionProducts.insertOne(product);
+        System.err.println(nameProduct + " added, price " + price + "!");
     }
 
     private static void deliver(String nameProduct, String nameStore) {
 
-        try {
-//            BsonDocument query = BsonDocument.parse("{name: {$eq: '" + nameStore + "'}}");
-            Document store = collectionStores.find(new Document("name", nameStore)).first();
-            collectionProducts.find(new Document("name", nameProduct)).first().isEmpty();
+//        BsonDocument query = BsonDocument.parse("{name: {$eq: '" + nameStore + "'}}");
+        Document store = collectionStores.find(new Document("name", nameStore)).first();
+        Document product = collectionProducts.find(new Document("name", nameProduct)).first();
 
+        if (store != null && product != null) {
             Bson updatedValue = new Document("products", nameProduct);
             Bson updatedOperation = new Document("$addToSet", updatedValue);
 
             collectionStores.updateOne(store, updatedOperation);
 
-        } catch (NullPointerException ex) {
+        } else {
             System.err.println("Not found!");
         }
     }
@@ -124,6 +121,7 @@ public class Main {
     private static void statistics() {
 
         FindIterable<Document> stores = collectionStores.find();
+
         stores.forEach((Consumer<Document>) store -> {
 
             ArrayList<String> products = store.get("products", new ArrayList<>());
@@ -169,7 +167,7 @@ public class Main {
 
     private static void connectMongodb() {
 
-        MongoClient mongoClient = new MongoClient( "127.0.0.1" , 27017 );
+        MongoClient mongoClient = new MongoClient("127.0.0.1", 27017);
         MongoDatabase database = mongoClient.getDatabase("test");
 
         collectionStores = database.getCollection("stores"); // Создаем коллекцию
@@ -177,5 +175,7 @@ public class Main {
 
 //        collectionStores.drop(); // Удалим из нее все документы
 //        collectionProducts.drop();
+
+        System.out.println("Database connected");
     }
 }
