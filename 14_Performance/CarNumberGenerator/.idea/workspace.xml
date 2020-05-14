@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dc9b9c81-4490-4706-bd79-31420047e9e7" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MainVersion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MainVersion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SecondVersion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SecondVersion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VoteAnalyzer/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../VoteAnalyzer/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VoteAnalyzer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../VoteAnalyzer/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="dc9b9c81-4490-4706-bd79-31420047e9e7" name="Default" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
