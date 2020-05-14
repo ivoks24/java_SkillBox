@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dc9b9c81-4490-4706-bd79-31420047e9e7" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/MainVersion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SecondVersion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Loader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MainVersion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MainVersion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SecondVersion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SecondVersion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VoteAnalyzer/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../VoteAnalyzer/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../VoteAnalyzer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../VoteAnalyzer/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +38,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1571378817833" />
     <property name="dynamic.classpath" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../CarNumberGenerator" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -192,26 +192,26 @@
       <screen x="0" y="0" width="1280" height="690" />
     </state>
     <state x="446" y="61" key="#com.intellij.ide.util.MemberChooser/0.0.1280.690@0.0.1280.690" timestamp="1589384374283" />
-    <state x="421" y="100" key="FileChooserDialogImpl" timestamp="1589360249482">
+    <state x="421" y="100" key="FileChooserDialogImpl" timestamp="1589441549451">
       <screen x="0" y="0" width="1280" height="690" />
     </state>
-    <state x="421" y="100" key="FileChooserDialogImpl/0.0.1280.690@0.0.1280.690" timestamp="1589360249482" />
-    <state width="1238" height="204" key="GridCell.Tab.0.bottom" timestamp="1589389221607">
+    <state x="421" y="100" key="FileChooserDialogImpl/0.0.1280.690@0.0.1280.690" timestamp="1589441549451" />
+    <state width="1238" height="204" key="GridCell.Tab.0.bottom" timestamp="1589394431494">
       <screen x="0" y="0" width="1280" height="690" />
     </state>
-    <state width="1238" height="204" key="GridCell.Tab.0.bottom/0.0.1280.690@0.0.1280.690" timestamp="1589389221607" />
-    <state width="1238" height="204" key="GridCell.Tab.0.center" timestamp="1589389221607">
+    <state width="1238" height="204" key="GridCell.Tab.0.bottom/0.0.1280.690@0.0.1280.690" timestamp="1589394431494" />
+    <state width="1238" height="204" key="GridCell.Tab.0.center" timestamp="1589394431494">
       <screen x="0" y="0" width="1280" height="690" />
     </state>
-    <state width="1238" height="204" key="GridCell.Tab.0.center/0.0.1280.690@0.0.1280.690" timestamp="1589389221607" />
-    <state width="1238" height="204" key="GridCell.Tab.0.left" timestamp="1589389221606">
+    <state width="1238" height="204" key="GridCell.Tab.0.center/0.0.1280.690@0.0.1280.690" timestamp="1589394431494" />
+    <state width="1238" height="204" key="GridCell.Tab.0.left" timestamp="1589394431493">
       <screen x="0" y="0" width="1280" height="690" />
     </state>
-    <state width="1238" height="204" key="GridCell.Tab.0.left/0.0.1280.690@0.0.1280.690" timestamp="1589389221606" />
-    <state width="1238" height="204" key="GridCell.Tab.0.right" timestamp="1589389221607">
+    <state width="1238" height="204" key="GridCell.Tab.0.left/0.0.1280.690@0.0.1280.690" timestamp="1589394431493" />
+    <state width="1238" height="204" key="GridCell.Tab.0.right" timestamp="1589394431494">
       <screen x="0" y="0" width="1280" height="690" />
     </state>
-    <state width="1238" height="204" key="GridCell.Tab.0.right/0.0.1280.690@0.0.1280.690" timestamp="1589389221607" />
+    <state width="1238" height="204" key="GridCell.Tab.0.right/0.0.1280.690@0.0.1280.690" timestamp="1589394431494" />
     <state x="304" y="13" width="672" height="678" key="search.everywhere.popup" timestamp="1589387760410">
       <screen x="0" y="0" width="1280" height="690" />
     </state>

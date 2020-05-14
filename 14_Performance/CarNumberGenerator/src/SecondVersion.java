@@ -14,69 +14,78 @@ public class SecondVersion {
         long start = System.currentTimeMillis();
 
         ForkJoinPool pool = new ForkJoinPool(4);
-        pool.invoke(new Generation(1, 81));
+        pool.invoke(new Generation(1, countRegionCode + 1, countRegionCode / 4));
 
         System.out.println((System.currentTimeMillis() - start) + " ms");
     }
 
 
 
-    static class Generation extends RecursiveTask<Integer> {
+    static class Generation extends RecursiveTask<Void> {
 
-        int fromRegionCode;
-        int toRegionCode;
+        private final int fromRegionCode;
+        private int toRegionCode;
+        private final int minCountOfRegion;
 
-        public Generation(int fromRegionCode, int toRegionCode) {
+        public Generation(int fromRegionCode, int toRegionCode, int minCountOfRegion) {
             this.fromRegionCode = fromRegionCode;
             this.toRegionCode = toRegionCode;
+            this.minCountOfRegion = minCountOfRegion;
         }
 
         @Override
-        protected Integer compute() {
+        protected Void compute() {
 
-            if (toRegionCode - fromRegionCode <= countRegionCode / 4) {
+            Generation generation = null;
+            if (toRegionCode - fromRegionCode > minCountOfRegion) {
+                int nextFromRegionCode = fromRegionCode + minCountOfRegion;
+                generation = new Generation(nextFromRegionCode, toRegionCode, minCountOfRegion);
+                generation.fork();
+                toRegionCode = nextFromRegionCode;
+            }
 
-                FileOutputStream writer = null;
-                try {
-                    writer = new FileOutputStream("res/regionCodeFrom" + fromRegionCode + ".txt");
-                } catch (FileNotFoundException e) {
-                    e.printStackTrace();
-                }
 
-                for (int number = 1; number < 1000; number++) {
+            FileOutputStream writer = null;
+            try {
+                writer = new FileOutputStream("res/regionCodeFrom" + fromRegionCode + ".txt");
+            } catch (FileNotFoundException e) {
+                e.printStackTrace();
+            }
 
-                    StringBuffer buffer = new StringBuffer();
-                    for (char firstLetter : letters) {
-                        for (char secondLetter : letters) {
-                            for (char thirdLetter : letters) {
-                                for (int regionCode = fromRegionCode; regionCode < toRegionCode; regionCode++) {
+            for (int number = 1; number < 1000; number++) {
 
-                                    buffer.append(firstLetter);
-                                    padNumber(buffer, number, 3);
-                                    buffer.append(secondLetter);
-                                    buffer.append(thirdLetter);
-                                    padNumber(buffer, regionCode, 2);
-                                    buffer.append('\n');
-                                }
+                StringBuffer buffer = new StringBuffer();
+                for (char firstLetter : letters) {
+                    for (char secondLetter : letters) {
+                        for (char thirdLetter : letters) {
+                            for (int regionCode = fromRegionCode; regionCode < toRegionCode; regionCode++) {
+
+                                buffer.append(firstLetter);
+                                padNumber(buffer, number, 3);
+                                buffer.append(secondLetter);
+                                buffer.append(thirdLetter);
+                                padNumber(buffer, regionCode, 2);
+                                buffer.append('\n');
                             }
                         }
                     }
-                    try {
-                        writer.write(buffer.toString().getBytes());
-                    } catch (IOException e) {
-                        e.printStackTrace();
-                    }
                 }
-                return toRegionCode;
-            } else {
-                int middle = (toRegionCode - fromRegionCode) / 2;
-                Generation firstHalf = new Generation(fromRegionCode, middle);
-                firstHalf.fork();
-                Generation secondHalf = new Generation(middle + 1, toRegionCode);
-                secondHalf.fork();
-//                int secondValue = secondHalf.compute();
-                return firstHalf.join();
+                try {
+                    writer.write(buffer.toString().getBytes());
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
             }
+            try {
+                writer.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+
+            if (generation != null) {
+                generation.join();
+            }
+            return null;
         }
 
         private static void padNumber(StringBuffer buffer, int number, int numberLength) {

@@ -24,7 +24,7 @@ public class MainVersion {
         System.out.println((System.currentTimeMillis() - start) + " ms");
     }
 
-    private static void generator(int fromRegionCode, int toRegionCode){
+    private static void generator(int fromRegionCode, int toRegionCode) {
 
         if (toRegionCode - fromRegionCode == countRegion / countThrow) {
 
@@ -63,7 +63,14 @@ public class MainVersion {
                         e.printStackTrace();
                     }
                 }
+                try {
+                    writer.flush();
+                    writer.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
             }));
+
         } else {
             int middle = (fromRegionCode + toRegionCode) / 2;
             generator(fromRegionCode, middle);
