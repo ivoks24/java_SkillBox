@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c392377-0462-4686-963c-341260b7892d" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/../CarNumberGenerator/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CarNumberGenerator/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CarNumberGenerator/src/SecondVersion.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CarNumberGenerator/src/SecondVersion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Loader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Loader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/XMLHandlerImproved.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/XMLHandlerImproved.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,21 +50,21 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="recentsLimit" value="5" />
-    <property name="restartRequiresConfirmation" value="true" />
     <property name="settings.editor.selected.configurable" value="File.Encoding" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Danya\Documents\Development\Idea Projects\VoteAnalyzer\src" />
-      <recent name="C:\Users\Danya\Documents\Development\Idea Projects\VoteAnalyzer\res" />
-      <recent name="C:\Users\Danya\Documents\Development\Idea Projects\VoteAnalyzer\lib" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Danya\Documents\Development\Idea Projects\VoteAnalyzer\src" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Uladzislau\Desktop\java_basics\14_Performance\VoteAnalyzer\src" />
+      <recent name="C:\Users\Danya\Documents\Development\Idea Projects\VoteAnalyzer\src" />
+      <recent name="C:\Users\Danya\Documents\Development\Idea Projects\VoteAnalyzer\res" />
+      <recent name="C:\Users\Danya\Documents\Development\Idea Projects\VoteAnalyzer\lib" />
     </key>
   </component>
   <component name="RunManager">
@@ -119,8 +118,6 @@
     <configuration name="Loader" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Loader" />
       <module name="VoteAnalyzer" />
-      <option name="VM_PARAMETERS" value="-Xmx50M" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <RunnerSettings RunnerId="JProfiler">
         <option name="WINDOW" value="false" />
       </RunnerSettings>
@@ -191,10 +188,34 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state x="421" y="100" key="FileChooserDialogImpl" timestamp="1589441584778">
+    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589555943204">
       <screen x="0" y="0" width="1280" height="690" />
     </state>
-    <state x="421" y="100" key="FileChooserDialogImpl/0.0.1280.690@0.0.1280.690" timestamp="1589441584778" />
+    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.690@0.0.1280.690" timestamp="1589555943204" />
+    <state x="400" y="147" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1589481820659">
+      <screen x="0" y="0" width="1280" height="690" />
+    </state>
+    <state x="400" y="147" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.690@0.0.1280.690" timestamp="1589481820659" />
+    <state x="421" y="100" key="FileChooserDialogImpl" timestamp="1589556041248">
+      <screen x="0" y="0" width="1280" height="690" />
+    </state>
+    <state x="421" y="100" key="FileChooserDialogImpl/0.0.1280.690@0.0.1280.690" timestamp="1589556041248" />
+    <state width="1238" height="234" key="GridCell.Tab.0.bottom" timestamp="1589556042506">
+      <screen x="0" y="0" width="1280" height="690" />
+    </state>
+    <state width="1238" height="234" key="GridCell.Tab.0.bottom/0.0.1280.690@0.0.1280.690" timestamp="1589556042506" />
+    <state width="1238" height="234" key="GridCell.Tab.0.center" timestamp="1589556042505">
+      <screen x="0" y="0" width="1280" height="690" />
+    </state>
+    <state width="1238" height="234" key="GridCell.Tab.0.center/0.0.1280.690@0.0.1280.690" timestamp="1589556042505" />
+    <state width="1238" height="234" key="GridCell.Tab.0.left" timestamp="1589556042505">
+      <screen x="0" y="0" width="1280" height="690" />
+    </state>
+    <state width="1238" height="234" key="GridCell.Tab.0.left/0.0.1280.690@0.0.1280.690" timestamp="1589556042505" />
+    <state width="1238" height="234" key="GridCell.Tab.0.right" timestamp="1589556042505">
+      <screen x="0" y="0" width="1280" height="690" />
+    </state>
+    <state width="1238" height="234" key="GridCell.Tab.0.right/0.0.1280.690@0.0.1280.690" timestamp="1589556042505" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />

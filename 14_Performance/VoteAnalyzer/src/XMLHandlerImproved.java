@@ -13,7 +13,7 @@ public class XMLHandlerImproved extends DefaultHandler {
 
     private Voter voter;
     private static final SimpleDateFormat birthDayFormat = new SimpleDateFormat("yyyy.MM.dd");
-    private final HashMap<Voter, Integer> voterCount;
+    private final HashMap<Voter, Byte> voterCount;
 
     public XMLHandlerImproved(String fileName) throws Exception {
 
@@ -32,8 +32,8 @@ public class XMLHandlerImproved extends DefaultHandler {
                 Date birthDay = birthDayFormat.parse(attributes.getValue("birthDay"));
                 voter = new Voter(attributes.getValue("name"), birthDay);
             } else if (qName.equals("visit") && voter != null) {
-                int count = voterCount.getOrDefault(voter, 0);
-                voterCount.put(voter, count + 1);
+                byte count = voterCount.getOrDefault(voter, (byte) 0);
+                voterCount.put(voter, (byte) (count + 1));
             }
         } catch (ParseException ex) {
             ex.printStackTrace();
@@ -52,7 +52,7 @@ public class XMLHandlerImproved extends DefaultHandler {
 
         for (Voter voter : voterCount.keySet()) {
 
-            int count = voterCount.get(voter);
+            byte count = voterCount.get(voter);
             if (count > 1) {
                 System.out.println(voter.toString() + " - " + count);
             }
