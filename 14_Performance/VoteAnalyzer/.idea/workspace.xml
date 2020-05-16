@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="1c392377-0462-4686-963c-341260b7892d" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Loader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Loader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/XMLHandlerImproved.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/XMLHandlerImproved.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -45,7 +44,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1571898024206" />
     <property name="dynamic.classpath" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../VoteAnalyzer" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/res" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -54,17 +53,18 @@
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Danya\Documents\Development\Idea Projects\VoteAnalyzer\src" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Uladzislau\Desktop\java_basics\14_Performance\VoteAnalyzer\res" />
       <recent name="C:\Users\Uladzislau\Desktop\java_basics\14_Performance\VoteAnalyzer\src" />
       <recent name="C:\Users\Danya\Documents\Development\Idea Projects\VoteAnalyzer\src" />
       <recent name="C:\Users\Danya\Documents\Development\Idea Projects\VoteAnalyzer\res" />
       <recent name="C:\Users\Danya\Documents\Development\Idea Projects\VoteAnalyzer\lib" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Danya\Documents\Development\Idea Projects\VoteAnalyzer\src" />
     </key>
   </component>
   <component name="RunManager">
@@ -200,22 +200,22 @@
       <screen x="0" y="0" width="1280" height="690" />
     </state>
     <state x="421" y="100" key="FileChooserDialogImpl/0.0.1280.690@0.0.1280.690" timestamp="1589556041248" />
-    <state width="1238" height="234" key="GridCell.Tab.0.bottom" timestamp="1589556042506">
+    <state width="1238" height="234" key="GridCell.Tab.0.bottom" timestamp="1589655999795">
       <screen x="0" y="0" width="1280" height="690" />
     </state>
-    <state width="1238" height="234" key="GridCell.Tab.0.bottom/0.0.1280.690@0.0.1280.690" timestamp="1589556042506" />
-    <state width="1238" height="234" key="GridCell.Tab.0.center" timestamp="1589556042505">
+    <state width="1238" height="234" key="GridCell.Tab.0.bottom/0.0.1280.690@0.0.1280.690" timestamp="1589655999795" />
+    <state width="1238" height="234" key="GridCell.Tab.0.center" timestamp="1589655999795">
       <screen x="0" y="0" width="1280" height="690" />
     </state>
-    <state width="1238" height="234" key="GridCell.Tab.0.center/0.0.1280.690@0.0.1280.690" timestamp="1589556042505" />
-    <state width="1238" height="234" key="GridCell.Tab.0.left" timestamp="1589556042505">
+    <state width="1238" height="234" key="GridCell.Tab.0.center/0.0.1280.690@0.0.1280.690" timestamp="1589655999795" />
+    <state width="1238" height="234" key="GridCell.Tab.0.left" timestamp="1589655999795">
       <screen x="0" y="0" width="1280" height="690" />
     </state>
-    <state width="1238" height="234" key="GridCell.Tab.0.left/0.0.1280.690@0.0.1280.690" timestamp="1589556042505" />
-    <state width="1238" height="234" key="GridCell.Tab.0.right" timestamp="1589556042505">
+    <state width="1238" height="234" key="GridCell.Tab.0.left/0.0.1280.690@0.0.1280.690" timestamp="1589655999795" />
+    <state width="1238" height="234" key="GridCell.Tab.0.right" timestamp="1589655999795">
       <screen x="0" y="0" width="1280" height="690" />
     </state>
-    <state width="1238" height="234" key="GridCell.Tab.0.right/0.0.1280.690@0.0.1280.690" timestamp="1589556042505" />
+    <state width="1238" height="234" key="GridCell.Tab.0.right/0.0.1280.690@0.0.1280.690" timestamp="1589655999795" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />

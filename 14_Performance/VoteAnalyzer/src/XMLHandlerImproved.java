@@ -11,9 +11,10 @@ import java.util.HashMap;
 
 public class XMLHandlerImproved extends DefaultHandler {
 
-    private Voter voter;
-    private static final SimpleDateFormat birthDayFormat = new SimpleDateFormat("yyyy.MM.dd");
-    private final HashMap<Voter, Byte> voterCount;
+//    private Voter voter;
+    private String voter;
+//    private static final SimpleDateFormat birthDayFormat = new SimpleDateFormat("yyyy.MM.dd");
+    private final HashMap<String, Byte> voterCount;
 
     public XMLHandlerImproved(String fileName) throws Exception {
 
@@ -27,16 +28,13 @@ public class XMLHandlerImproved extends DefaultHandler {
     @Override
     public void startElement(String uri, String localName, String qName, Attributes attributes) {
 
-        try {
-            if (qName.equals("voter") && voter == null) {
-                Date birthDay = birthDayFormat.parse(attributes.getValue("birthDay"));
-                voter = new Voter(attributes.getValue("name"), birthDay);
-            } else if (qName.equals("visit") && voter != null) {
-                byte count = voterCount.getOrDefault(voter, (byte) 0);
-                voterCount.put(voter, (byte) (count + 1));
-            }
-        } catch (ParseException ex) {
-            ex.printStackTrace();
+        if (qName.equals("voter") && voter == null) {
+//                Date birthDay = birthDayFormat.parse(attributes.getValue("birthDay"));
+//                voter = new Voter(attributes.getValue("name"), birthDay);
+            voter = attributes.getValue("name") + attributes.getValue("birthDay");
+        } else if (qName.equals("visit") && voter != null) {
+            byte count = voterCount.getOrDefault(voter, (byte) 0);
+            voterCount.put(voter, (byte) (count + 1));
         }
     }
 
@@ -50,11 +48,11 @@ public class XMLHandlerImproved extends DefaultHandler {
 
     public void printDuplicatedVoters() {
 
-        for (Voter voter : voterCount.keySet()) {
+        for (String voter : voterCount.keySet()) {
 
             byte count = voterCount.get(voter);
             if (count > 1) {
-                System.out.println(voter.toString() + " - " + count);
+                System.out.println(voter + " - " + count);
             }
         }
     }
