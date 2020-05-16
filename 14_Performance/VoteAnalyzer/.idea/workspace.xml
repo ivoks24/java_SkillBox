@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1c392377-0462-4686-963c-341260b7892d" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/XMLHandlerImproved.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/XMLHandlerImproved.java" afterDir="false" />
-    </list>
+    <list default="true" id="1c392377-0462-4686-963c-341260b7892d" name="Default" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -196,10 +193,10 @@
       <screen x="0" y="0" width="1280" height="690" />
     </state>
     <state x="400" y="147" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.690@0.0.1280.690" timestamp="1589481820659" />
-    <state x="421" y="100" key="FileChooserDialogImpl" timestamp="1589556041248">
+    <state x="421" y="100" key="FileChooserDialogImpl" timestamp="1589656144531">
       <screen x="0" y="0" width="1280" height="690" />
     </state>
-    <state x="421" y="100" key="FileChooserDialogImpl/0.0.1280.690@0.0.1280.690" timestamp="1589556041248" />
+    <state x="421" y="100" key="FileChooserDialogImpl/0.0.1280.690@0.0.1280.690" timestamp="1589656144531" />
     <state width="1238" height="234" key="GridCell.Tab.0.bottom" timestamp="1589655999795">
       <screen x="0" y="0" width="1280" height="690" />
     </state>

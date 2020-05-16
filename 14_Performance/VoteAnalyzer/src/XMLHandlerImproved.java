@@ -31,7 +31,7 @@ public class XMLHandlerImproved extends DefaultHandler {
         if (qName.equals("voter") && voter == null) {
 //                Date birthDay = birthDayFormat.parse(attributes.getValue("birthDay"));
 //                voter = new Voter(attributes.getValue("name"), birthDay);
-            voter = attributes.getValue("name") + attributes.getValue("birthDay");
+            voter = attributes.getValue("name") + " - " + attributes.getValue("birthDay");
         } else if (qName.equals("visit") && voter != null) {
             byte count = voterCount.getOrDefault(voter, (byte) 0);
             voterCount.put(voter, (byte) (count + 1));
