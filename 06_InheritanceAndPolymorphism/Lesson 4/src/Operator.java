@@ -1,7 +1,7 @@
 public class Operator implements Employee {
 
     private Company company;
-    private int salary;
+    private final int salary;
 
     public Operator() {
 

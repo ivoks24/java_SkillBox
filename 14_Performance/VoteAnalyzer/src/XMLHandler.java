@@ -8,20 +8,26 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.HashMap;
+import java.util.Locale;
 
 public class XMLHandler extends DefaultHandler {
 
     private Voter voter;
     private static final SimpleDateFormat birthDayFormat = new SimpleDateFormat("yyyy.MM.dd");
     private final HashMap<Voter, Integer> voterCount;
+    private long usage;
 
     public XMLHandler(String fileName) throws Exception {
 
         voterCount = new HashMap<>();
 
+        usage = Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory();
+
         SAXParserFactory factory = SAXParserFactory.newInstance();
         SAXParser parser = factory.newSAXParser();
         parser.parse(new File(fileName), this);
+
+        usage = Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory() - usage;
     }
 
     @Override
@@ -46,6 +52,10 @@ public class XMLHandler extends DefaultHandler {
         if (qName.equals("voter")) {
             voter = null;
         }
+    }
+
+    public void checkMemory() {
+        System.out.printf(Locale.GERMAN, "\nЗамер по памяти при парсинге SAX: %,d", usage);
     }
 
     public void printDuplicatedVoters() {

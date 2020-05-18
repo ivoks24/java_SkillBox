@@ -8,42 +8,55 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.HashMap;
+import java.util.Locale;
 
 public class XMLHandlerImproved extends DefaultHandler {
 
-//    private Voter voter;
-    private String voter;
-//    private static final SimpleDateFormat birthDayFormat = new SimpleDateFormat("yyyy.MM.dd");
+    private static final SimpleDateFormat birthDayFormat = new SimpleDateFormat("yyyy.MM.dd");
     private final HashMap<String, Byte> voterCount;
+    private long usage;
 
     public XMLHandlerImproved(String fileName) throws Exception {
 
         voterCount = new HashMap<>();
 
+
+        usage = Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory();
+
         SAXParserFactory factory = SAXParserFactory.newInstance();
         SAXParser parser = factory.newSAXParser();
         parser.parse(new File(fileName), this);
+
+        usage = Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory() - usage;
+
     }
 
     @Override
     public void startElement(String uri, String localName, String qName, Attributes attributes) {
 
-        if (qName.equals("voter") && voter == null) {
-//                Date birthDay = birthDayFormat.parse(attributes.getValue("birthDay"));
-//                voter = new Voter(attributes.getValue("name"), birthDay);
-            voter = attributes.getValue("name") + " - " + attributes.getValue("birthDay");
-        } else if (qName.equals("visit") && voter != null) {
-            byte count = voterCount.getOrDefault(voter, (byte) 0);
-            voterCount.put(voter, (byte) (count + 1));
+        try {
+            if (qName.equals("voter")) {
+                Date birthDay = birthDayFormat.parse(attributes.getValue("birthDay"));
+                String voterString = new Voter(attributes.getValue("name"), birthDay).toString();
+
+                byte count = voterCount.getOrDefault(voterString, (byte) 0);
+                voterCount.put(voterString, (byte) (count + 1));
+            }
+        } catch (ParseException ex) {
+            ex.printStackTrace();
         }
     }
 
-    @Override
-    public void endElement(String uri, String localName, String qName) {
+//    @Override
+//    public void endElement(String uri, String localName, String qName) {
+//
+//        if (qName.equals("voter")) {
+//            voter = null;
+//        }
+//    }
 
-        if (qName.equals("voter")) {
-            voter = null;
-        }
+    public void checkMemory() {
+        System.out.printf(Locale.GERMAN, "\nЗамер по памяти при парсинге SAX-improved: %,d", usage);
     }
 
     public void printDuplicatedVoters() {

@@ -9,6 +9,7 @@ import java.io.File;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.HashMap;
+import java.util.Locale;
 
 public class XMLDocument {
 
@@ -18,8 +19,16 @@ public class XMLDocument {
     private static final HashMap<Integer, WorkTime> voteStationWorkTimes = new HashMap<>();
     private static final HashMap<Voter, Integer> voterCounts = new HashMap<>();
 
+    private long usage;
+
     public XMLDocument(String fileName) throws Exception {
+
+        usage = Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory();
+
         parseFile(fileName);
+
+        usage = Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory() - usage;
+
     }
 
     private static void parseFile(String fileName) throws Exception {
@@ -66,6 +75,10 @@ public class XMLDocument {
             }
             workTime.addVisitTime(time.getTime());
         }
+    }
+
+    public void checkMemory() {
+        System.out.printf(Locale.GERMAN, "\nЗамер по памяти при парсинге DOC: %,d", usage);
     }
 
     public void printVoters() {

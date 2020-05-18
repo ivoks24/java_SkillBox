@@ -6,8 +6,8 @@ import java.util.List;
 
 public class Company {
 
-    private List<Employee> staff = new ArrayList<>();
-    private long incomeCompany;
+    private final List<Employee> staff = new ArrayList<>();
+    private final long incomeCompany;
     private int countManager = 0;
     private int bonusForManagers;
 
@@ -104,7 +104,7 @@ public class Company {
         if (count > staff.size())
             return null;
 
-        staff.sort((o1, o2) -> String.valueOf(o1.getMonthSalary()).compareTo(String.valueOf(o2.getMonthSalary())));
+        staff.sort(Comparator.comparing(o -> String.valueOf(o.getMonthSalary())));
         ArrayList<Employee> lowestSalaryStaff = new ArrayList<>();
 
         for (int i = 0; i < count; i++) {
