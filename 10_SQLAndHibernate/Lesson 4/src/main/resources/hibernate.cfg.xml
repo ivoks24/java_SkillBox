@@ -8,7 +8,7 @@
         <property name="connection.url">jdbc:mysql://localhost:3306/skillbox?useSSL=false&amp;serverTimezone=UTC</property>
 <!--        allowPublicKeyRetrieval=true&amp;-->
         <property name="connection.username">root</property>
-        <property name="connection.password">9241026ivoks</property>
+        <property name="connection.password">1234</property>
         <!-- JDBC connection pool settings ... using built-in test pool -->
         <property name="connection.pool_size">10</property>
         <!-- Select our SQL dialect -->
