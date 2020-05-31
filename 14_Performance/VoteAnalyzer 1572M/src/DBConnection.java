@@ -19,10 +19,6 @@ public class DBConnection
                         "jdbc:mysql://localhost:3306/" + dbName +
                                 "?user=" + dbUser + "&password=" + dbPass +
                                 "&serverTimezone=UTC");
-//                connection = DriverManager.getConnection(
-//                        "jdbc:mysql://localhost:3306/learn?useSSL=false&serverTimezone=UTC",
-//                        "root",
-//                        "1234");
                 connection.createStatement().execute("DROP TABLE IF EXISTS voter_count");
                 connection.createStatement().execute("CREATE TABLE voter_count(" +
                         "id INT NOT NULL AUTO_INCREMENT, " +
@@ -41,8 +37,8 @@ public class DBConnection
     public static void executeMultiInsert() throws SQLException {
         String sql =
                 "INSERT INTO voter_count(name, birthDate, `count`) " +
-                        "VALUES" + insertQuery.toString() +
-                        "ON DUPLICATE KEY UPDATE `count`=`count` + 1";
+                "VALUES " + insertQuery.toString() +
+                "ON DUPLICATE KEY UPDATE `count`=`count` + 1";
         DBConnection.getConnection().createStatement().execute(sql);
     }
 
@@ -57,21 +53,6 @@ public class DBConnection
                 .append("', '")
                 .append(birthDay)
                 .append("', 1)");
-
-//        String sql = "SELECT id FROM voter_count WHERE birthDate='" + birthDay + "' AND name='" + name + "'";
-//        ResultSet rs = DBConnection.getConnection().createStatement().executeQuery(sql);
-//        if(!rs.next())
-//        {
-//            DBConnection.getConnection().createStatement()
-//                    .execute("INSERT INTO voter_count(name, birthDate, `count`) VALUES('" +
-//                            name + "', '" + birthDay + "', 1)");
-//        }
-//        else {
-//            Integer id = rs.getInt("id");
-//            DBConnection.getConnection().createStatement()
-//                    .execute("UPDATE voter_count SET `count`=`count`+1 WHERE id=" + id);
-//        }
-//        rs.close();
     }
 
     public static void printVoterCounts() throws SQLException

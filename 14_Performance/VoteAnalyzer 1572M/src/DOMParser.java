@@ -10,7 +10,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.HashMap;
 
-public class XMLDocument {
+public class DOMParser {
 
     private static final SimpleDateFormat birthDayFormat = new SimpleDateFormat("yyyy.MM.dd");
     private static final SimpleDateFormat visitDateFormat = new SimpleDateFormat("yyyy.MM.dd HH:mm:ss");
@@ -18,7 +18,7 @@ public class XMLDocument {
     private static final HashMap<Integer, WorkTime> voteStationWorkTimes = new HashMap<>();
     private static final HashMap<Voter, Integer> voterCounts = new HashMap<>();
 
-    public XMLDocument(String fileName) throws Exception {
+    public DOMParser(String fileName) throws Exception {
 
         long start = System.currentTimeMillis();
         parseFile(fileName);
@@ -78,23 +78,23 @@ public class XMLDocument {
         }
     }
 
-    public void printVoters() {
-
-        //Printing results
-        System.out.println("Voting station work times: ");
-        for(Integer votingStation : voteStationWorkTimes.keySet())
-        {
-            WorkTime workTime = voteStationWorkTimes.get(votingStation);
-            System.out.println("\t" + votingStation + " - " + workTime);
-        }
-
-        System.out.println("Duplicated voters: ");
-        for(Voter voter : voterCounts.keySet())
-        {
-            Integer count = voterCounts.get(voter);
-            if(count > 1) {
-                System.out.println("\t" + voter + " - " + count);
-            }
-        }
-    }
+//    public void printVoters() {
+//
+//        //Printing results
+//        System.out.println("Voting station work times: ");
+//        for(Integer votingStation : voteStationWorkTimes.keySet())
+//        {
+//            WorkTime workTime = voteStationWorkTimes.get(votingStation);
+//            System.out.println("\t" + votingStation + " - " + workTime);
+//        }
+//
+//        System.out.println("Duplicated voters: ");
+//        for(Voter voter : voterCounts.keySet())
+//        {
+//            Integer count = voterCounts.get(voter);
+//            if(count > 1) {
+//                System.out.println("\t" + voter + " - " + count);
+//            }
+//        }
+//    }
 }

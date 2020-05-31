@@ -2,8 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c392377-0462-4686-963c-341260b7892d" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/../../10_SQLAndHibernate/Lesson 4/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../10_SQLAndHibernate/Lesson 4/src/main/resources/hibernate.cfg.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_8_0_20.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VoteAnalyzer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/VoteAnalyzer.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VoteAnalyzer/DBConnection.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VoteAnalyzer/DBConnection.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VoteAnalyzer/Loader.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VoteAnalyzer/Loader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VoteAnalyzer/TimePeriod.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VoteAnalyzer/TimePeriod.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VoteAnalyzer/Voter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VoteAnalyzer/Voter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VoteAnalyzer/WorkTime.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VoteAnalyzer/WorkTime.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VoteAnalyzer/XMLDocument.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VoteAnalyzer/XMLDocument.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VoteAnalyzer/XMLHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VoteAnalyzer/XMLHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/VoteAnalyzer/XMLHandlerImproved.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VoteAnalyzer/XMLHandlerImproved.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DBConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DBConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Loader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Loader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/XMLDocument.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/XMLDocument.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,15 +56,15 @@
     <property name="OverrideImplement.overriding.sorted" value="false" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1571898024206" />
     <property name="dynamic.classpath" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../VoteAnalyzer" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib" />
     <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="recentsLimit" value="5" />
-    <property name="settings.editor.selected.configurable" value="File.Encoding" />
-    <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -60,11 +74,11 @@
       <recent name="" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Uladzislau\Desktop\java_basics\14_Performance\VoteAnalyzer\lib" />
       <recent name="C:\Users\Uladzislau\Desktop\java_basics\14_Performance\VoteAnalyzer\res" />
       <recent name="C:\Users\Uladzislau\Desktop\java_basics\14_Performance\VoteAnalyzer\src" />
       <recent name="C:\Users\Danya\Documents\Development\Idea Projects\VoteAnalyzer\src" />
       <recent name="C:\Users\Danya\Documents\Development\Idea Projects\VoteAnalyzer\res" />
-      <recent name="C:\Users\Danya\Documents\Development\Idea Projects\VoteAnalyzer\lib" />
     </key>
   </component>
   <component name="RunManager">
@@ -188,10 +202,10 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589555943204">
+    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1590911394070">
       <screen x="0" y="0" width="1280" height="690" />
     </state>
-    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.690@0.0.1280.690" timestamp="1589555943204" />
+    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.690@0.0.1280.690" timestamp="1590911394070" />
     <state x="400" y="147" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1589481820659">
       <screen x="0" y="0" width="1280" height="690" />
     </state>
@@ -201,22 +215,22 @@
     </state>
     <state x="421" y="100" key="FileChooserDialogImpl/0.0.1280.690/2560.0.1920.1050@0.0.1280.690" timestamp="1589821136021" />
     <state x="421" y="100" key="FileChooserDialogImpl/0.0.1280.690@0.0.1280.690" timestamp="1589747984186" />
-    <state width="1238" height="170" key="GridCell.Tab.0.bottom" timestamp="1589872964426">
+    <state width="1238" height="180" key="GridCell.Tab.0.bottom" timestamp="1590912077561">
       <screen x="0" y="0" width="1280" height="690" />
     </state>
-    <state width="1238" height="170" key="GridCell.Tab.0.bottom/0.0.1280.690@0.0.1280.690" timestamp="1589872964426" />
-    <state width="1238" height="170" key="GridCell.Tab.0.center" timestamp="1589872964426">
+    <state width="1238" height="180" key="GridCell.Tab.0.bottom/0.0.1280.690@0.0.1280.690" timestamp="1590912077561" />
+    <state width="1238" height="180" key="GridCell.Tab.0.center" timestamp="1590912077561">
       <screen x="0" y="0" width="1280" height="690" />
     </state>
-    <state width="1238" height="170" key="GridCell.Tab.0.center/0.0.1280.690@0.0.1280.690" timestamp="1589872964426" />
-    <state width="1238" height="170" key="GridCell.Tab.0.left" timestamp="1589872964425">
+    <state width="1238" height="180" key="GridCell.Tab.0.center/0.0.1280.690@0.0.1280.690" timestamp="1590912077561" />
+    <state width="1238" height="180" key="GridCell.Tab.0.left" timestamp="1590912077561">
       <screen x="0" y="0" width="1280" height="690" />
     </state>
-    <state width="1238" height="170" key="GridCell.Tab.0.left/0.0.1280.690@0.0.1280.690" timestamp="1589872964425" />
-    <state width="1238" height="170" key="GridCell.Tab.0.right" timestamp="1589872964426">
+    <state width="1238" height="180" key="GridCell.Tab.0.left/0.0.1280.690@0.0.1280.690" timestamp="1590912077561" />
+    <state width="1238" height="180" key="GridCell.Tab.0.right" timestamp="1590912077561">
       <screen x="0" y="0" width="1280" height="690" />
     </state>
-    <state width="1238" height="170" key="GridCell.Tab.0.right/0.0.1280.690@0.0.1280.690" timestamp="1589872964426" />
+    <state width="1238" height="180" key="GridCell.Tab.0.right/0.0.1280.690@0.0.1280.690" timestamp="1590912077561" />
     <state width="1238" height="208" key="GridCell.Tab.1.bottom" timestamp="1589792891027">
       <screen x="0" y="0" width="1280" height="690" />
     </state>
@@ -233,6 +247,10 @@
       <screen x="0" y="0" width="1280" height="690" />
     </state>
     <state width="1238" height="208" key="GridCell.Tab.1.right/0.0.1280.690@0.0.1280.690" timestamp="1589792891027" />
+    <state x="121" y="0" key="SettingsEditor" timestamp="1590911450131">
+      <screen x="0" y="0" width="1280" height="690" />
+    </state>
+    <state x="121" y="0" key="SettingsEditor/0.0.1280.690@0.0.1280.690" timestamp="1590911450131" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
