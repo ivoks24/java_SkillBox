@@ -4,10 +4,11 @@ public class Loader {
 
     public static void main(String[] args) throws Exception {
 
-        String fileName = "res/data-18M.xml";
+        String fileName = "res/data-1M.xml";
 
-        XMLDocument xmlDocument = new XMLDocument(fileName);
+//        XMLDocument xmlDocument = new XMLDocument(fileName);
 
+        XMLHandler xmlHandler = new XMLHandler(fileName);
 
     }
 }

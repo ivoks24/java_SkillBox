@@ -3,17 +3,17 @@ import org.xml.sax.helpers.DefaultHandler;
 
 import javax.xml.parsers.SAXParserFactory;
 import java.io.File;
+import java.sql.SQLException;
 
 public class SAXParser extends DefaultHandler {
 
     public SAXParser(String fileName) throws Exception {
 
         long start = System.currentTimeMillis();
-
         parseFile(fileName);
 
         System.out.println("Parsing duration: " + (System.currentTimeMillis() - start) + " ms");
-        DBConnection.printVoterCounts();
+//        DBConnection.printVoterCounts();
 
     }
 
@@ -27,15 +27,14 @@ public class SAXParser extends DefaultHandler {
     @Override
     public void startElement(String uri, String localName, String qName, Attributes attributes) {
 
-        String name = attributes.getValue("name");
-        String birthDay = attributes.getValue("birthDay");
-
         try {
             if (qName.equals("voter")) {
 
-                DBConnection.countVoter(name, birthDay);
+                DBConnection.countVoter(
+                        attributes.getValue("name"),
+                        attributes.getValue("birthDay")
+                );
             }
-            DBConnection.executeMultiInsert();
 
         } catch (Exception ex) {
             ex.printStackTrace();
@@ -45,20 +44,13 @@ public class SAXParser extends DefaultHandler {
 
     @Override
     public void endElement(String uri, String localName, String qName) {
-//
-//        if (qName.equals("voter")) {
-//            voter = null;
-//        }
-    }
 
-//    public void printDuplicatedVoters() {
-//
-//        for (String voter : voterCount.keySet()) {
-//
-//            byte count = voterCount.get(voter);
-//            if (count > 1) {
-//                System.out.println(voter + " - " + count);
-//            }
-//        }
-//    }
+        if (qName.equals("voters")) {
+            try {
+                DBConnection.executeMultiInsert();
+            } catch (SQLException ex) {
+                ex.printStackTrace();
+            }
+        }
+    }
 }

@@ -2,22 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c392377-0462-4686-963c-341260b7892d" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_8_0_20.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VoteAnalyzer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/VoteAnalyzer.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/VoteAnalyzer/DBConnection.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VoteAnalyzer/DBConnection.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/VoteAnalyzer/Loader.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VoteAnalyzer/Loader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/VoteAnalyzer/TimePeriod.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VoteAnalyzer/TimePeriod.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/VoteAnalyzer/Voter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VoteAnalyzer/Voter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/VoteAnalyzer/WorkTime.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VoteAnalyzer/WorkTime.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/VoteAnalyzer/XMLDocument.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VoteAnalyzer/XMLDocument.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/VoteAnalyzer/XMLHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VoteAnalyzer/XMLHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/VoteAnalyzer/XMLHandlerImproved.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/VoteAnalyzer/XMLHandlerImproved.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DBConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DBConnection.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Loader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Loader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/XMLDocument.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/XMLDocument.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +46,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1571898024206" />
     <property name="dynamic.classpath" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/res" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -67,18 +54,18 @@
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Uladzislau\Desktop\java_basics\14_Performance\VoteAnalyzer\res" />
+      <recent name="C:\Users\Uladzislau\Desktop\java_basics\14_Performance\VoteAnalyzer\lib" />
+      <recent name="C:\Users\Uladzislau\Desktop\java_basics\14_Performance\VoteAnalyzer\src" />
       <recent name="C:\Users\Danya\Documents\Development\Idea Projects\VoteAnalyzer\src" />
+      <recent name="C:\Users\Danya\Documents\Development\Idea Projects\VoteAnalyzer\res" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Uladzislau\Desktop\java_basics\14_Performance\VoteAnalyzer\lib" />
-      <recent name="C:\Users\Uladzislau\Desktop\java_basics\14_Performance\VoteAnalyzer\res" />
-      <recent name="C:\Users\Uladzislau\Desktop\java_basics\14_Performance\VoteAnalyzer\src" />
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Danya\Documents\Development\Idea Projects\VoteAnalyzer\src" />
-      <recent name="C:\Users\Danya\Documents\Development\Idea Projects\VoteAnalyzer\res" />
     </key>
   </component>
   <component name="RunManager">
@@ -215,42 +202,58 @@
     </state>
     <state x="421" y="100" key="FileChooserDialogImpl/0.0.1280.690/2560.0.1920.1050@0.0.1280.690" timestamp="1589821136021" />
     <state x="421" y="100" key="FileChooserDialogImpl/0.0.1280.690@0.0.1280.690" timestamp="1589747984186" />
-    <state width="1238" height="180" key="GridCell.Tab.0.bottom" timestamp="1590912077561">
+    <state width="1238" height="125" key="GridCell.Tab.0.bottom" timestamp="1591026305016">
       <screen x="0" y="0" width="1280" height="690" />
     </state>
-    <state width="1238" height="180" key="GridCell.Tab.0.bottom/0.0.1280.690@0.0.1280.690" timestamp="1590912077561" />
-    <state width="1238" height="180" key="GridCell.Tab.0.center" timestamp="1590912077561">
+    <state width="1238" height="125" key="GridCell.Tab.0.bottom/0.0.1280.690@0.0.1280.690" timestamp="1591026305016" />
+    <state width="1238" height="125" key="GridCell.Tab.0.center" timestamp="1591026305016">
       <screen x="0" y="0" width="1280" height="690" />
     </state>
-    <state width="1238" height="180" key="GridCell.Tab.0.center/0.0.1280.690@0.0.1280.690" timestamp="1590912077561" />
-    <state width="1238" height="180" key="GridCell.Tab.0.left" timestamp="1590912077561">
+    <state width="1238" height="125" key="GridCell.Tab.0.center/0.0.1280.690@0.0.1280.690" timestamp="1591026305016" />
+    <state width="1238" height="125" key="GridCell.Tab.0.left" timestamp="1591026305016">
       <screen x="0" y="0" width="1280" height="690" />
     </state>
-    <state width="1238" height="180" key="GridCell.Tab.0.left/0.0.1280.690@0.0.1280.690" timestamp="1590912077561" />
-    <state width="1238" height="180" key="GridCell.Tab.0.right" timestamp="1590912077561">
+    <state width="1238" height="125" key="GridCell.Tab.0.left/0.0.1280.690@0.0.1280.690" timestamp="1591026305016" />
+    <state width="1238" height="125" key="GridCell.Tab.0.right" timestamp="1591026305016">
       <screen x="0" y="0" width="1280" height="690" />
     </state>
-    <state width="1238" height="180" key="GridCell.Tab.0.right/0.0.1280.690@0.0.1280.690" timestamp="1590912077561" />
-    <state width="1238" height="208" key="GridCell.Tab.1.bottom" timestamp="1589792891027">
+    <state width="1238" height="125" key="GridCell.Tab.0.right/0.0.1280.690@0.0.1280.690" timestamp="1591026305016" />
+    <state width="1238" height="125" key="GridCell.Tab.1.bottom" timestamp="1591026305016">
       <screen x="0" y="0" width="1280" height="690" />
     </state>
-    <state width="1238" height="208" key="GridCell.Tab.1.bottom/0.0.1280.690@0.0.1280.690" timestamp="1589792891027" />
-    <state width="1238" height="208" key="GridCell.Tab.1.center" timestamp="1589792891027">
+    <state width="1238" height="125" key="GridCell.Tab.1.bottom/0.0.1280.690@0.0.1280.690" timestamp="1591026305016" />
+    <state width="1238" height="125" key="GridCell.Tab.1.center" timestamp="1591026305016">
       <screen x="0" y="0" width="1280" height="690" />
     </state>
-    <state width="1238" height="208" key="GridCell.Tab.1.center/0.0.1280.690@0.0.1280.690" timestamp="1589792891027" />
-    <state width="1238" height="208" key="GridCell.Tab.1.left" timestamp="1589792891027">
+    <state width="1238" height="125" key="GridCell.Tab.1.center/0.0.1280.690@0.0.1280.690" timestamp="1591026305016" />
+    <state width="1238" height="125" key="GridCell.Tab.1.left" timestamp="1591026305016">
       <screen x="0" y="0" width="1280" height="690" />
     </state>
-    <state width="1238" height="208" key="GridCell.Tab.1.left/0.0.1280.690@0.0.1280.690" timestamp="1589792891027" />
-    <state width="1238" height="208" key="GridCell.Tab.1.right" timestamp="1589792891027">
+    <state width="1238" height="125" key="GridCell.Tab.1.left/0.0.1280.690@0.0.1280.690" timestamp="1591026305016" />
+    <state width="1238" height="125" key="GridCell.Tab.1.right" timestamp="1591026305016">
       <screen x="0" y="0" width="1280" height="690" />
     </state>
-    <state width="1238" height="208" key="GridCell.Tab.1.right/0.0.1280.690@0.0.1280.690" timestamp="1589792891027" />
+    <state width="1238" height="125" key="GridCell.Tab.1.right/0.0.1280.690@0.0.1280.690" timestamp="1591026305016" />
     <state x="121" y="0" key="SettingsEditor" timestamp="1590911450131">
       <screen x="0" y="0" width="1280" height="690" />
     </state>
     <state x="121" y="0" key="SettingsEditor/0.0.1280.690@0.0.1280.690" timestamp="1590911450131" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/XMLHandler.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/XMLHandler.java</url>
+          <line>51</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
