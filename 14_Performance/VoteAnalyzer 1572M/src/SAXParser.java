@@ -3,7 +3,6 @@ import org.xml.sax.helpers.DefaultHandler;
 
 import javax.xml.parsers.SAXParserFactory;
 import java.io.File;
-import java.sql.SQLException;
 
 public class SAXParser extends DefaultHandler {
 
@@ -12,6 +11,11 @@ public class SAXParser extends DefaultHandler {
         long start = System.currentTimeMillis();
         parseFile(fileName);
 
+        while (DBConnection.getCountThread().get() != 0) {
+            Thread.sleep(200);
+        }
+
+        DBConnection.getExecutorService().shutdown();
         System.out.println("Parsing duration: " + (System.currentTimeMillis() - start) + " ms");
 //        DBConnection.printVoterCounts();
 
@@ -46,11 +50,7 @@ public class SAXParser extends DefaultHandler {
     public void endElement(String uri, String localName, String qName) {
 
         if (qName.equals("voters")) {
-            try {
-                DBConnection.executeMultiInsert();
-            } catch (SQLException ex) {
-                ex.printStackTrace();
-            }
+            DBConnection.executeMultiInsert();
         }
     }
 }

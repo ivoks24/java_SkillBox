@@ -1,19 +1,23 @@
 import java.sql.*;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.atomic.AtomicInteger;
 
 public class DBConnection
 {
     private static Connection connection;
 
-    private static String dbName = "learn";
-    private static String dbUser = "root";
-    private static String dbPass = "1234";
+    private static final String dbName = "learn";
+    private static final String dbUser = "root";
+    private static final String dbPass = "1234";
 
     private static StringBuilder insertQuery = new StringBuilder();
+    private static final ExecutorService executorService = Executors.newFixedThreadPool(4);
+    private static AtomicInteger countThread = new AtomicInteger(0);
 
-    public static Connection getConnection()
-    {
-        if(connection == null)
-        {
+    public static Connection getConnection() {
+
+        if(connection == null) {
             try {
                 connection = DriverManager.getConnection(
                         "jdbc:mysql://localhost:3306/" + dbName +
@@ -33,16 +37,26 @@ public class DBConnection
         return connection;
     }
 
-    public static void executeMultiInsert() throws SQLException {
+    public static void executeMultiInsert() {
 
-        String sql =
-                "INSERT INTO voter_count(name, birthDate, `count`) " +
-                        "VALUES " + insertQuery.toString() +
-                        "ON DUPLICATE KEY UPDATE `count`=`count` + 1";
-        DBConnection.getConnection().createStatement().execute(sql);
+        countThread.incrementAndGet();
+        String query = insertQuery.toString();
+        executorService.execute(new Thread(() -> {
+            String sql =
+                    "INSERT INTO voter_count(name, birthDate, `count`) " +
+                            "VALUES " + query +
+                            "ON DUPLICATE KEY UPDATE `count`=`count` + 1";
+            try {
+                DBConnection.getConnection().createStatement().execute(sql);
+            } catch (SQLException ex) {
+                ex.printStackTrace();
+            }
+            countThread.decrementAndGet();
+        }));
+
     }
 
-    public static void countVoter(String name, String birthDay) throws SQLException {
+    public static void countVoter(String name, String birthDay) {
 
         birthDay = birthDay.replace('.', '-');
 
@@ -55,7 +69,6 @@ public class DBConnection
                 .append("', 1)");
 
         if (insertQuery.length() >= 40_000_000) {
-
             executeMultiInsert();
             insertQuery = new StringBuilder();
         }
@@ -70,5 +83,13 @@ public class DBConnection
             System.out.println("\t" + rs.getString("name") + " (" +
                     rs.getString("birthDate") + ") - " + rs.getInt("count"));
         }
+    }
+
+    public static ExecutorService getExecutorService() {
+        return executorService;
+    }
+
+    public static AtomicInteger getCountThread() {
+        return countThread;
     }
 }
