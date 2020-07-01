@@ -49,8 +49,4 @@ public class Main {
         }
         return builder.toString();
     }
-
-    public static FileSystem getHDFS() {
-        return hdfs;
-    }
 }

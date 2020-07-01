@@ -1,3 +1,5 @@
+import org.apache.hadoop.fs.FSDataInputStream;
+import org.apache.hadoop.fs.FileSystem;
 import org.apache.hadoop.fs.Path;
 
 import java.io.IOException;
@@ -5,14 +7,25 @@ import java.nio.file.Paths;
 import java.util.List;
 
 public class FileAccess {
+
+    private static FileSystem hdfs;
+
     /**
      * Initializes the class, using rootPath as "/" directory
      *
      * @param rootPath - the path to the root of HDFS,
      * for example, hdfs://localhost:32771
      */
-    public FileAccess(String rootPath) {
 
+    public FileAccess(String rootPath, FileSystem hdfs) throws IOException {
+
+        FileAccess.hdfs = hdfs;
+
+        if (isDirectory(rootPath)) {
+            hdfs.mkdirs((Path) Paths.get(rootPath));
+        } else {
+            create(rootPath);
+        }
 
     }
 
@@ -23,7 +36,7 @@ public class FileAccess {
      */
     public void create(String path) throws IOException {
 
-        Main.getHDFS().createNewFile((Path) Paths.get(path));
+        hdfs.createNewFile((Path) Paths.get(path));
     }
 
     /**
@@ -34,7 +47,11 @@ public class FileAccess {
      */
     public void append(String path, String content) throws IOException {
 
-        Main.getHDFS().append((Path) Paths.get(path));
+        Path isPath = (Path) Paths.get(path);
+
+        if (hdfs.isFile(isPath)) {
+            hdfs.append(isPath);
+        }
     }
 
     /**
@@ -45,6 +62,12 @@ public class FileAccess {
      */
     public String read(String path) throws IOException {
 
+        Path isPath = (Path) Paths.get(path);
+
+        if (hdfs.isFile(isPath)) {
+            FSDataInputStream open = hdfs.open(isPath);
+
+        }
         return null;
     }
 
@@ -55,7 +78,7 @@ public class FileAccess {
      */
     public void delete(String path) throws IOException {
 
-        Main.getHDFS().deleteOnExit((Path) Paths.get(path));
+        hdfs.delete((Path) Paths.get(path), true);
     }
 
     /**
@@ -66,7 +89,7 @@ public class FileAccess {
      */
     public boolean isDirectory(String path) throws IOException {
 
-        return Main.getHDFS().isDirectory((Path) Paths.get(path));
+        return hdfs.isDirectory((Path) Paths.get(path));
     }
 
     /**
@@ -77,6 +100,6 @@ public class FileAccess {
      */
     public List<String> list(String path) throws IOException {
 
-        return Main.getHDFS().listXAttrs((Path) Paths.get(path));
+        return hdfs.listXAttrs((Path) Paths.get(path));
     }
 }
