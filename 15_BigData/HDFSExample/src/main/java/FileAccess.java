@@ -2,7 +2,10 @@ import org.apache.hadoop.fs.FSDataInputStream;
 import org.apache.hadoop.fs.FileSystem;
 import org.apache.hadoop.fs.Path;
 
+import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
+import java.nio.charset.StandardCharsets;
 import java.nio.file.Paths;
 import java.util.List;
 
@@ -36,7 +39,11 @@ public class FileAccess {
      */
     public void create(String path) throws IOException {
 
-        hdfs.createNewFile((Path) Paths.get(path));
+        if (path.endsWith("/")) {
+            hdfs.mkdirs((Path) Paths.get(path));
+        } else {
+            hdfs.createNewFile((Path) Paths.get(path));
+        }
     }
 
     /**
@@ -62,13 +69,25 @@ public class FileAccess {
      */
     public String read(String path) throws IOException {
 
+        StringBuilder builder = new StringBuilder();
         Path isPath = (Path) Paths.get(path);
 
         if (hdfs.isFile(isPath)) {
-            FSDataInputStream open = hdfs.open(isPath);
 
+            FSDataInputStream open = hdfs.open(isPath);
+            BufferedReader reader = new BufferedReader(new InputStreamReader(open, StandardCharsets.UTF_8));
+
+            while (true){
+                String string = reader.readLine();
+                if (string == null)
+                    break;
+                builder.append(string).append("\n");
+            }
+
+            reader.close();
+            open.close();
         }
-        return null;
+        return builder.toString();
     }
 
     /**
