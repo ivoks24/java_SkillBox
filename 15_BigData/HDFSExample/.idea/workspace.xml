@@ -2,8 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eb3068d8-10fd-4c9f-a811-17d26034f0f1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../SparkExample/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SparkExample/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SparkExample/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SparkExample/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SparkExample/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SparkExample/SparkExample.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SparkExample/src/main/java/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/FileAccess.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FileAccess.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,7 +36,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1575357028024" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../SparkExample" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
@@ -69,10 +76,14 @@
       <screen x="0" y="0" width="1280" height="690" />
     </state>
     <state x="446" y="46" key="#com.intellij.ide.util.MemberChooser/0.0.1280.690@0.0.1280.690" timestamp="1592814977886" />
-    <state x="421" y="100" key="FileChooserDialogImpl" timestamp="1592666495658">
+    <state x="421" y="17" width="436" height="570" key="FileChooserDialogImpl" timestamp="1594442926200">
       <screen x="0" y="0" width="1280" height="690" />
     </state>
-    <state x="421" y="100" key="FileChooserDialogImpl/0.0.1280.690@0.0.1280.690" timestamp="1592666495658" />
+    <state x="421" y="17" width="436" height="570" key="FileChooserDialogImpl/0.0.1280.690@0.0.1280.690" timestamp="1594442926200" />
+    <state x="65" y="6" key="new project wizard" timestamp="1594437261930">
+      <screen x="0" y="0" width="1280" height="690" />
+    </state>
+    <state x="65" y="6" key="new project wizard/0.0.1280.690@0.0.1280.690" timestamp="1594437261930" />
   </component>
   <component name="masterDetails">
     <states>

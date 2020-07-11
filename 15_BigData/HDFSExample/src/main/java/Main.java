@@ -31,7 +31,7 @@ public class Main {
             new OutputStreamWriter(os, "UTF-8")
         );
 
-        for(int i = 0; i < 10_000_000; i++) {
+        for(int i = 0; i < 100_000; i++) {
             br.write(getRandomWord() + " ");
         }
 
