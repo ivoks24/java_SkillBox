@@ -57,9 +57,11 @@ public class MainForm {
 
                     if (!sur.isEmpty() && !name.isEmpty()) {
 
+                        button.setText("Expand");
+
                         frame.setSize(250, 110);
                         surname.setSize(200, 30);
-                        
+
                         button.setName("Expand");
                         surname.setText(sur + " " + name + " " + patronymic.getText().trim());
 
@@ -83,6 +85,8 @@ public class MainForm {
                             .split(" ");
 
                     if (fullName.length > 1) {
+
+                        button.setText("Collapse");
 
                         frame.setSize(200, 170);
                         surname.setSize(110, 30);
