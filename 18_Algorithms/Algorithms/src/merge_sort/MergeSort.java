@@ -27,5 +27,24 @@ public class MergeSort
     private static void merge(int[] array, int[] left, int[] right)
     {
         //TODO
+        int markLeftArray = 0, markRightArray = 0;
+        int rightLength = right.length, leftLength = left.length;
+
+        for (int i = 0; i < array.length; i++) {
+
+            if (markLeftArray == leftLength) {
+                array[i] = right[markRightArray];
+                markRightArray++;
+            } else if (markRightArray == rightLength) {
+                array[i] = left[markLeftArray];
+                markLeftArray++;
+            } else if (left[markLeftArray] >= right[markRightArray]) {
+                array[i] = right[markRightArray];
+                markRightArray++;
+            } else if (left[markLeftArray] < right[markRightArray]) {
+                array[i] = left[markLeftArray];
+                markLeftArray++;
+            }
+        }
     }
 }
