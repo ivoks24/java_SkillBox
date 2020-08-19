@@ -8,7 +8,7 @@ public class RabinKarpExtended {
 
     private String text;
     private TreeMap<Integer, Integer> number2position;
-    private TreeMap<Character, Integer> letterNumber;
+    private final int MAX_PATTERN_SIZE = 18;
 
     public RabinKarpExtended(String text) {
 
@@ -21,34 +21,54 @@ public class RabinKarpExtended {
         ArrayList<Integer> indices = new ArrayList<>();
         //TODO: implement search algorithm
 
-        int queryLength = query.length();
-        int textLength = text.length();
-        int queryNumber = 0;
-
-        for (int i = 0; i < queryLength; i++) {
-            queryNumber = queryNumber * 10 + letterNumber.get(query.charAt(i));
+        if(query.length() > MAX_PATTERN_SIZE) {
+            throw new IllegalArgumentException("Размер паттерна превышает 18");
+        }
+        if(query.length() > text.length()){
+            return indices;
         }
 
-        for (int i = 0; i < textLength - queryLength; i++) {
-
+        String alphabetQuery = textToIndex(query);
+        if(alphabetQuery == null){
+            return indices;
         }
+        long patternL = Long.parseLong(alphabetQuery);
 
-
+        for (int i  = 0; i < text.length() - query.length() + 1; i++) {
+            String textSubstring = textToIndex(text.substring(i, i + query.length()));
+            assert textSubstring != null;
+            long substringL = Long.parseLong(textSubstring);
+            if (patternL == substringL) {
+                indices.add(i);
+            }
+        }
         return indices;
+    }
+
+    private String textToIndex(String text){
+        StringBuilder sb = new StringBuilder();
+        for(char c : text.toCharArray()){
+            Integer index = number2position.getOrDefault((int)c, null);
+            if(index == null){
+                System.out.println("Index \"" + c + "\" not found");
+                return null;
+            }
+            sb.append(index);
+        }
+        return sb.toString();
     }
 
     private void createIndex() {
 
         //TODO: implement text indexing
 
-        int number = 1;
-        for (int position = 0; position < text.length(); position++) {
-
-            char c = text.charAt(position);
-            if (!letterNumber.containsKey(c)) {
-                letterNumber.put(c, number++);
-            }
-            number2position.put(position, letterNumber.get(c));
+        number2position = new TreeMap<>();
+        int index = 0;
+        for(char c : text.toCharArray()){
+            number2position.put((int)c, number2position.getOrDefault((int)c, index++));
+        }
+        if(number2position.size() > 10){
+            throw new IllegalArgumentException("Алфавит не должен превышать 10 символов");
         }
     }
 }
