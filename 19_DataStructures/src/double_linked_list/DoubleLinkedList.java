@@ -1,49 +1,43 @@
 package double_linked_list;
 
-public class DoubleLinkedList
-{
+public class DoubleLinkedList {
+
     private ListItem head;
     private ListItem tail;
 
-    public ListItem getHeadElement()
-    {
+    public ListItem getHeadElement() {
         return head;
     }
 
-    public ListItem getTailElement()
-    {
+    public ListItem getTailElement() {
         return tail;
     }
 
-    public ListItem popHeadElement()
-    {
-        //TODO
-        return null;
+    public ListItem popHeadElement() {
+        return head;
     }
 
-    public ListItem popTailElement()
-    {
-        //TODO
-        return null;
+    public ListItem popTailElement() {
+        return tail;
     }
 
-    public void removeHeadElement()
-    {
-        //TODO
+    public void removeHeadElement() {
+//        ListItem item = head;
+//        if (head != null) {
+//        }
+        head = null;
     }
 
-    public void removeTailElement()
-    {
-        //TODO
+    public void removeTailElement() {
+        tail = null;
     }
 
-    public void addToHead(ListItem item)
-    {
-        //TODO
+    public void addToHead(ListItem item) {
+        head = item;
+
     }
 
-    public void addToTail(ListItem item)
-    {
-        //TODO
+    public void addToTail(ListItem item) {
+        tail = item;
     }
 }
