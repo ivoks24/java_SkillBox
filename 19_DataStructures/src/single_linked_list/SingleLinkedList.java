@@ -1,7 +1,6 @@
 package single_linked_list;
 
 public class SingleLinkedList {
-
     private ListItem top;
 
     public void push(ListItem item) {
@@ -15,7 +14,8 @@ public class SingleLinkedList {
     public ListItem pop() {
 
         ListItem item = top;
-        if(top != null) {
+        if(top != null)
+        {
             top = top.getNext();
             item.setNext(null);
         }
@@ -29,18 +29,23 @@ public class SingleLinkedList {
         }
     }
 
-    public void removeLast() {
+    public void removeLat() {
 
         if (top != null) {
-            ListItem last = top, findNull = top;
 
-            while (findNull != null) {
-
-                last = findNull;
-                findNull = findNull.getNext();
+            ListItem prev = top;
+            ListItem item = top.getNext();
+            if (item != null) {
+                while (item.getNext() != null) {
+                    prev = item;
+                    item = item.getNext();
+                }
+                prev.setNext(null);
+            } else {
+                top = null;
             }
-            last.setNext(null);
-        }
 
+        }
     }
+
 }
