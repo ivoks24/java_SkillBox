@@ -8,6 +8,14 @@ public class Node
     private Node left;
     private Node right;
 
+    public String getData() {
+        return data;
+    }
+
+    public void setData(String data) {
+        this.data = data;
+    }
+
     public Node getRight() {
         return right;
     }
